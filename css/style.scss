@@ -1,0 +1,150 @@
+$color-main:#ff6700;
+$color-brown:#7f746e;
+$color-black:#000000;
+$color-white:#ffffff;
+$color-dummy:#888888;
+
+//global
+html{
+	font-size: 62.5%; /*10px*/
+}
+body {
+	font-size: 1.6rem;
+    line-height: 1.5;
+    font-family: 'Open Sans', sans-serif;
+    color:$color-black;
+    width: 100%;
+}
+button{
+    font-size: 1.6rem;
+    line-height: 1.5;
+    font-family: 'Open Sans', sans-serif;
+    color:$color-black;
+}
+.hidden{
+    display:none
+}
+h1,
+h2,
+h3{
+    font-family: 'Oswald', sans-serif;
+}
+h1{
+    font-size: 6.78rem;
+    line-height: 1;
+    font-weight: bold;
+}
+h2{
+    font-size: 4.19rem;
+}
+h3{
+    font-size: 25.9rem;
+}
+p{
+    padding-top:2rem;
+}
+.button{
+    display: flex;
+    background: $color-main;
+    width: 16rem;
+    border-radius: .3rem;
+    a{
+        text-decoration: none;
+        color:$color-white;
+        padding:0.5rem;
+        display:block;
+        width: 100%;
+        text-align: center;
+    }
+    button{
+        border:none;
+        background: none;
+        color:$color-white;
+        padding:0.5rem;
+        width: 100%;
+        text-align: center;
+    }
+}
+///////////////////////////////////////////////////////nav
+header{
+    display: flex;
+    position: fixed;
+    justify-content: space-between;
+    width: 100%;
+    background: $color-white;
+    .logo{
+        width:4rem;
+        padding: 1rem;
+    }
+    .menu-icon{
+        width: 4rem;
+        height: 4rem;
+        padding: 1rem;
+        svg{
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
+/////////////////////////////////////////sections
+section{
+    padding: 5rem 1rem 0 1rem;
+}
+///////////////////banner
+section.banner{
+    padding-top: 7rem;
+    background:url(../img/mountain.webp) no-repeat;
+    background-position: left -45rem bottom -25rem;
+    height: 59rem;
+    background-size: auto 130%;
+    h1{
+        padding: 1rem 0;
+    }
+    p{
+        padding: 1rem;
+        background-color: $color-white;
+        width: 22rem;
+    }
+    div{
+        margin:1rem 0;
+    }
+}
+////////////////about
+////////////////websites
+section.websites{
+    color:$color-white;
+    background: $color-black;
+    h1{
+        padding-bottom:2rem;
+    }
+    .web-cards-container{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 3rem;
+        .web-card{
+            background: $color-dummy;
+            .content{
+                padding:0 1rem 2rem 1rem;
+                p{
+                    padding-bottom:2rem;
+                }
+            }
+            .tools-used{
+                padding:1rem;
+                background:$color-white;
+                display: flex;
+                gap: 1rem;
+                flex-wrap: wrap;
+                color:$color-black;
+                p{
+                    padding: 0;
+                }
+            }
+        }
+    }
+}
+////////////////////////////////////////footer
+footer{
+    color:$color-white;
+    background: $color-black;
+}
