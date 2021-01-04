@@ -2,13 +2,14 @@ $color-main:#ff6700;
 $color-brown:#7f746e;
 $color-black:#000000;
 $color-white:#ffffff;
+$color-off-white:#dfdfdf;
 $color-dummy:#888888;
 
 //global
 html{
 	font-size: 62.5%; /*10px*/
 }
-body {
+body{
 	font-size: 1.6rem;
     line-height: 1.5;
     font-family: 'Open Sans', sans-serif;
@@ -20,9 +21,6 @@ button{
     line-height: 1.5;
     font-family: 'Open Sans', sans-serif;
     color:$color-black;
-}
-.hidden{
-    display:none
 }
 h1,
 h2,
@@ -43,13 +41,16 @@ h3{
 p{
     padding-top:2rem;
 }
+a{
+    text-decoration: none;
+    color:$color-main;
+}
 .button{
     display: flex;
     background: $color-main;
     width: 16rem;
     border-radius: .3rem;
     a{
-        text-decoration: none;
         color:$color-white;
         padding:0.5rem;
         display:block;
@@ -76,6 +77,27 @@ header{
         width:4rem;
         padding: 1rem;
     }
+    nav ul{
+        width: 100%;
+        position: absolute;
+        top: 6.5rem;
+        right: 0;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-end;
+        background: $color-white;
+        padding-bottom:5rem ;
+        li{
+            width: 100%;
+            text-align: center;
+            a{
+                text-transform: uppercase;
+                color: $color-black;
+                display: block;
+                padding: 5rem 0;
+            }
+        }
+    }
     .menu-icon{
         width: 4rem;
         height: 4rem;
@@ -88,7 +110,7 @@ header{
 }
 /////////////////////////////////////////sections
 section{
-    padding: 5rem 1rem 0 1rem;
+    padding: 5rem 1rem 5rem 1rem;
 }
 ///////////////////banner
 section.banner{
@@ -112,39 +134,91 @@ section.banner{
 ////////////////about
 ////////////////websites
 section.websites{
-    color:$color-white;
     background: $color-black;
     h1{
         padding-bottom:2rem;
+        color: $color-white;
     }
     .web-cards-container{
         display: flex;
         flex-wrap: wrap;
         gap: 3rem;
         .web-card{
+            padding:1rem 0;
             background: $color-dummy;
-            .content{
-                padding:0 1rem 2rem 1rem;
-                p{
-                    padding-bottom:2rem;
+            a{
+                color:$color-white;
+                .content{
+                    padding:1rem 1rem 1rem 1rem;
+                }
+                .tools-used{
+                    margin:1rem;
+                    padding:1rem;
+                    background:$color-white;
+                    display: flex;
+                    gap: 1rem;
+                    flex-wrap: wrap;
+                    color:$color-black;
+                    p{
+                        padding: 0;
+                    }
                 }
             }
-            .tools-used{
-                padding:1rem;
-                background:$color-white;
-                display: flex;
-                gap: 1rem;
-                flex-wrap: wrap;
-                color:$color-black;
-                p{
-                    padding: 0;
-                }
+            a:hover{
+
             }
         }
+    }
+    .button{
+        margin-top: 3rem;
+    }
+}
+////////////////contacts
+section.contact{
+    div{
+        div{
+            display: flex;
+            margin:2rem 0;            
+        }
+    }
+    input,
+    textarea{
+        background: $color-off-white;
+        border:none;
+        padding:1rem;
+        width: 100%;
+    }
+    textarea{
+        min-height: 20rem;
     }
 }
 ////////////////////////////////////////footer
 footer{
     color:$color-white;
     background: $color-black;
+    padding: 3rem 1rem;
+    .social-media{
+        display: flex;
+        div{
+            padding-right: 2rem;
+            a{
+                width: 3rem;
+                height: 3rem;
+                display:block;
+                svg{
+                    fill: $color-off-white;
+                    width: 100%;
+                    height:auto;
+                }
+            }            
+        }
+    }
+}
+
+
+
+
+////////////////////helper class
+.hidden{
+    display:none
 }
