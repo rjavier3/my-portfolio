@@ -1,5 +1,5 @@
 $color-main:#ff6700;
-$color-brown:#7f746e;
+$color-hover:#7f746e;
 $color-black:#000000;
 $color-white:#ffffff;
 $color-off-white:#dfdfdf;
@@ -44,19 +44,24 @@ p{
 a{
     text-decoration: none;
     color:$color-main;
+    display:block;
 }
+////////////////////////////////////button
 .button{
     display: flex;
+    position: relative;
     background: $color-main;
     width: 16rem;
     border-radius: .3rem;
     a{
         color:$color-white;
         padding:0.5rem;
-        display:block;
+
         width: 100%;
         text-align: center;
-    }
+        transition: padding 300ms ease-in-out;
+        z-index: 1;
+    }      
     button{
         border:none;
         background: none;
@@ -64,10 +69,39 @@ a{
         padding:0.5rem;
         width: 100%;
         text-align: center;
+        transition: padding 300ms ease-in-out;
+        z-index: 1;
+    }
+    a:hover,
+    a:focus,
+    button:hover,
+    button:focus {
+      padding: 0.5rem 0.2rem 0.5rem 0.8rem;
     }
 }
+
+.button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 0;
+    background-color: $color-hover;
+  
+    transition: transform 300ms ease-in-out;
+    transform: scaleX(0);
+    transform-origin: left;
+  }
+  
+  .button:hover::before,
+  .button:focus::before {
+    transform: scaleX(1);
+  }
 ///////////////////////////////////////////////////////nav
 header{
+    z-index: 10;
     display: flex;
     position: fixed;
     justify-content: space-between;
@@ -108,7 +142,7 @@ header{
         }
     }
 }
-/////////////////////////////////////////sections
+////////////////////////////////////////////////sections//////
 section{
     padding: 5rem 1rem 5rem 1rem;
 }
@@ -144,12 +178,15 @@ section.websites{
         flex-wrap: wrap;
         gap: 3rem;
         .web-card{
-            padding:1rem 0;
             background: $color-dummy;
             a{
+                padding:1rem 0;
                 color:$color-white;
                 .content{
-                    padding:1rem 1rem 1rem 1rem;
+                    padding:1rem;
+                    h2{
+                        transition: padding 300ms ease-in-out;
+                    }
                 }
                 .tools-used{
                     margin:1rem;
@@ -163,9 +200,9 @@ section.websites{
                         padding: 0;
                     }
                 }
-            }
-            a:hover{
-
+                &:hover h2{
+                    padding-left: 1rem;
+                }
             }
         }
     }

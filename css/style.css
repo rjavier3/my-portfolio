@@ -45,12 +45,14 @@ p {
 a {
   text-decoration: none;
   color: #ff6700;
+  display: block;
 }
 
 .button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  position: relative;
   background: #ff6700;
   width: 16rem;
   border-radius: .3rem;
@@ -59,9 +61,11 @@ a {
 .button a {
   color: #ffffff;
   padding: 0.5rem;
-  display: block;
   width: 100%;
   text-align: center;
+  -webkit-transition: padding 300ms ease-in-out;
+  transition: padding 300ms ease-in-out;
+  z-index: 1;
 }
 
 .button button {
@@ -71,9 +75,45 @@ a {
   padding: 0.5rem;
   width: 100%;
   text-align: center;
+  -webkit-transition: padding 300ms ease-in-out;
+  transition: padding 300ms ease-in-out;
+  z-index: 1;
+}
+
+.button a:hover,
+.button a:focus,
+.button button:hover,
+.button button:focus {
+  padding: 0.5rem 0.2rem 0.5rem 0.8rem;
+}
+
+.button::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 0;
+  background-color: #7f746e;
+  -webkit-transition: -webkit-transform 300ms ease-in-out;
+  transition: -webkit-transform 300ms ease-in-out;
+  transition: transform 300ms ease-in-out;
+  transition: transform 300ms ease-in-out, -webkit-transform 300ms ease-in-out;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  -webkit-transform-origin: left;
+          transform-origin: left;
+}
+
+.button:hover::before,
+.button:focus::before {
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
 }
 
 header {
+  z-index: 10;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -175,16 +215,21 @@ section.websites .web-cards-container {
 }
 
 section.websites .web-cards-container .web-card {
-  padding: 1rem 0;
   background: #888888;
 }
 
 section.websites .web-cards-container .web-card a {
+  padding: 1rem 0;
   color: #ffffff;
 }
 
 section.websites .web-cards-container .web-card a .content {
-  padding: 1rem 1rem 1rem 1rem;
+  padding: 1rem;
+}
+
+section.websites .web-cards-container .web-card a .content h2 {
+  -webkit-transition: padding 300ms ease-in-out;
+  transition: padding 300ms ease-in-out;
 }
 
 section.websites .web-cards-container .web-card a .tools-used {
@@ -202,6 +247,10 @@ section.websites .web-cards-container .web-card a .tools-used {
 
 section.websites .web-cards-container .web-card a .tools-used p {
   padding: 0;
+}
+
+section.websites .web-cards-container .web-card a:hover h2 {
+  padding-left: 1rem;
 }
 
 section.websites .button {
