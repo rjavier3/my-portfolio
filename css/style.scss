@@ -120,8 +120,9 @@ header{
         flex-wrap: wrap;
         align-items: flex-end;
         background: $color-white;
-        padding-bottom:5rem;
-        transition: padding 300ms ease-in-out;
+        max-height: 80vh;
+        overflow: hidden;
+        transition: max-height 300ms ease-in-out;
         li{
             width: 100%;
             text-align: center;
@@ -273,6 +274,10 @@ footer{
 
 
 ////////////////////helper class
-.hidden{
+.hidden-icon{
     display: none;
+}
+
+.hidden{
+    max-height: 0;
 }

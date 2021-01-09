@@ -144,9 +144,10 @@ header nav ul {
       -ms-flex-align: end;
           align-items: flex-end;
   background: #ffffff;
-  padding-bottom: 5rem;
-  -webkit-transition: padding 300ms ease-in-out;
-  transition: padding 300ms ease-in-out;
+  max-height: 80vh;
+  overflow: hidden;
+  -webkit-transition: max-height 300ms ease-in-out;
+  transition: max-height 300ms ease-in-out;
 }
 
 header nav ul li {
@@ -330,7 +331,11 @@ footer .social-media div a svg {
   height: auto;
 }
 
-.hidden {
+.hidden-icon {
   display: none;
+}
+
+.hidden {
+  max-height: 0;
 }
 /*# sourceMappingURL=style.css.map */
