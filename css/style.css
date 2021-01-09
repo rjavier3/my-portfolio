@@ -48,6 +48,14 @@ a {
   display: block;
 }
 
+.hidden-icon {
+  display: none;
+}
+
+.hidden {
+  max-height: 0;
+}
+
 .button {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -331,11 +339,62 @@ footer .social-media div a svg {
   height: auto;
 }
 
-.hidden-icon {
-  display: none;
-}
-
-.hidden {
-  max-height: 0;
+@media only screen and (min-width: 768px) {
+  section {
+    padding: 10rem 5rem;
+  }
+  .hidden {
+    max-height: 100vh;
+  }
+  header nav ul {
+    width: auto;
+    position: static;
+  }
+  header nav ul li {
+    width: auto;
+    min-width: 0;
+  }
+  header nav ul li a {
+    padding: 2rem;
+  }
+  header .menu-icons-container {
+    display: none;
+  }
+  section.banner {
+    background-position: left -15rem top 5rem;
+    height: 28rem;
+    background-size: 140% auto;
+  }
+  section.about p {
+    max-width: 55rem;
+    margin-left: 5rem;
+  }
+  section.works .web-cards-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    gap: 2%;
+  }
+  section.works .web-cards-container .web-card {
+    width: 48%;
+    margin-bottom: 2rem;
+  }
+  footer > div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+  }
+  footer > div p {
+    padding: 0;
+  }
 }
 /*# sourceMappingURL=style.css.map */
