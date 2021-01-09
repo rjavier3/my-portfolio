@@ -120,7 +120,8 @@ header{
         flex-wrap: wrap;
         align-items: flex-end;
         background: $color-white;
-        padding-bottom:5rem ;
+        padding-bottom:5rem;
+        transition: padding 300ms ease-in-out;
         li{
             width: 100%;
             text-align: center;
@@ -166,8 +167,8 @@ section.banner{
     }
 }
 ////////////////about
-////////////////websites
-section.websites{
+////////////////works
+section.works{
     background: $color-black;
     h1{
         padding-bottom:2rem;
@@ -204,6 +205,22 @@ section.websites{
                     padding-left: 1rem;
                 }
             }
+        }
+        .eggle{
+            background: rgb(172,170,166);
+            background: linear-gradient(180deg, rgba(172,170,166,1) 0%, rgba(43,40,41,1) 80%);
+        }
+        .dashboard{
+            background: rgb(172,170,166);
+            background: linear-gradient(180deg, rgba(172,170,166,1) 0%, rgba(43,40,41,1) 80%);
+        }
+        .stock-app{
+            background: rgb(172,170,166);
+            background: linear-gradient(180deg, rgba(172,170,166,1) 0%, rgba(43,40,41,1) 80%);
+        }
+        .pennywise{
+            background: rgb(172,170,166);
+            background: linear-gradient(180deg, rgba(172,170,166,1) 0%, rgba(43,40,41,1) 80%);
         }
     }
     .button{
@@ -257,5 +274,5 @@ footer{
 
 ////////////////////helper class
 .hidden{
-    display:none
+    display: none;
 }

@@ -145,6 +145,8 @@ header nav ul {
           align-items: flex-end;
   background: #ffffff;
   padding-bottom: 5rem;
+  -webkit-transition: padding 300ms ease-in-out;
+  transition: padding 300ms ease-in-out;
 }
 
 header nav ul li {
@@ -196,16 +198,16 @@ section.banner div {
   margin: 1rem 0;
 }
 
-section.websites {
+section.works {
   background: #000000;
 }
 
-section.websites h1 {
+section.works h1 {
   padding-bottom: 2rem;
   color: #ffffff;
 }
 
-section.websites .web-cards-container {
+section.works .web-cards-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -214,25 +216,25 @@ section.websites .web-cards-container {
   gap: 3rem;
 }
 
-section.websites .web-cards-container .web-card {
+section.works .web-cards-container .web-card {
   background: #888888;
 }
 
-section.websites .web-cards-container .web-card a {
+section.works .web-cards-container .web-card a {
   padding: 1rem 0;
   color: #ffffff;
 }
 
-section.websites .web-cards-container .web-card a .content {
+section.works .web-cards-container .web-card a .content {
   padding: 1rem;
 }
 
-section.websites .web-cards-container .web-card a .content h2 {
+section.works .web-cards-container .web-card a .content h2 {
   -webkit-transition: padding 300ms ease-in-out;
   transition: padding 300ms ease-in-out;
 }
 
-section.websites .web-cards-container .web-card a .tools-used {
+section.works .web-cards-container .web-card a .tools-used {
   margin: 1rem;
   padding: 1rem;
   background: #ffffff;
@@ -245,15 +247,39 @@ section.websites .web-cards-container .web-card a .tools-used {
   color: #000000;
 }
 
-section.websites .web-cards-container .web-card a .tools-used p {
+section.works .web-cards-container .web-card a .tools-used p {
   padding: 0;
 }
 
-section.websites .web-cards-container .web-card a:hover h2 {
+section.works .web-cards-container .web-card a:hover h2 {
   padding-left: 1rem;
 }
 
-section.websites .button {
+section.works .web-cards-container .eggle {
+  background: #acaaa6;
+  background: -webkit-gradient(linear, left top, left bottom, from(#acaaa6), color-stop(80%, #2b2829));
+  background: linear-gradient(180deg, #acaaa6 0%, #2b2829 80%);
+}
+
+section.works .web-cards-container .dashboard {
+  background: #acaaa6;
+  background: -webkit-gradient(linear, left top, left bottom, from(#acaaa6), color-stop(80%, #2b2829));
+  background: linear-gradient(180deg, #acaaa6 0%, #2b2829 80%);
+}
+
+section.works .web-cards-container .stock-app {
+  background: #acaaa6;
+  background: -webkit-gradient(linear, left top, left bottom, from(#acaaa6), color-stop(80%, #2b2829));
+  background: linear-gradient(180deg, #acaaa6 0%, #2b2829 80%);
+}
+
+section.works .web-cards-container .pennywise {
+  background: #acaaa6;
+  background: -webkit-gradient(linear, left top, left bottom, from(#acaaa6), color-stop(80%, #2b2829));
+  background: linear-gradient(180deg, #acaaa6 0%, #2b2829 80%);
+}
+
+section.works .button {
   margin-top: 3rem;
 }
 
