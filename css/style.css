@@ -231,7 +231,7 @@ section.works .web-cards-container {
 }
 
 section.works .web-cards-container .web-card {
-  background: #888888;
+  background: #2b2829;
 }
 
 section.works .web-cards-container .web-card a {
@@ -267,30 +267,6 @@ section.works .web-cards-container .web-card a .tools-used p {
 
 section.works .web-cards-container .web-card a:hover h2 {
   padding-left: 1rem;
-}
-
-section.works .web-cards-container .eggle {
-  background: #acaaa6;
-  background: -webkit-gradient(linear, left top, left bottom, from(#acaaa6), color-stop(80%, #2b2829));
-  background: linear-gradient(180deg, #acaaa6 0%, #2b2829 80%);
-}
-
-section.works .web-cards-container .dashboard {
-  background: #acaaa6;
-  background: -webkit-gradient(linear, left top, left bottom, from(#acaaa6), color-stop(80%, #2b2829));
-  background: linear-gradient(180deg, #acaaa6 0%, #2b2829 80%);
-}
-
-section.works .web-cards-container .stock-app {
-  background: #acaaa6;
-  background: -webkit-gradient(linear, left top, left bottom, from(#acaaa6), color-stop(80%, #2b2829));
-  background: linear-gradient(180deg, #acaaa6 0%, #2b2829 80%);
-}
-
-section.works .web-cards-container .pennywise {
-  background: #acaaa6;
-  background: -webkit-gradient(linear, left top, left bottom, from(#acaaa6), color-stop(80%, #2b2829));
-  background: linear-gradient(180deg, #acaaa6 0%, #2b2829 80%);
 }
 
 section.works .button {

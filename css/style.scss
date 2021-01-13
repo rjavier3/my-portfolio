@@ -3,7 +3,7 @@ $color-hover:#7f746e;
 $color-black:#000000;
 $color-white:#faf4f1;
 $color-off-white:#dfdfdf;
-$color-dummy:#888888;
+$color-dummy:rgba(43,40,41,1);
 
 //global
 html{
@@ -220,20 +220,12 @@ section.works{
             }
         }
         .eggle{
-            background: rgb(172,170,166);
-            background: linear-gradient(180deg, rgba(172,170,166,1) 0%, rgba(43,40,41,1) 80%);
         }
         .dashboard{
-            background: rgb(172,170,166);
-            background: linear-gradient(180deg, rgba(172,170,166,1) 0%, rgba(43,40,41,1) 80%);
         }
         .stock-app{
-            background: rgb(172,170,166);
-            background: linear-gradient(180deg, rgba(172,170,166,1) 0%, rgba(43,40,41,1) 80%);
         }
         .pennywise{
-            background: rgb(172,170,166);
-            background: linear-gradient(180deg, rgba(172,170,166,1) 0%, rgba(43,40,41,1) 80%);
         }
     }
     .button{
