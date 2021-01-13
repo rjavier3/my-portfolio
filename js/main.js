@@ -23,8 +23,3 @@ navMenu.addEventListener('click',(event)=>{
 	}
 	console.log(event.target);
 });
-
-//alert under construction
-// document.addEventListener("DOMContentLoaded", (event)=>{
-// 	alert('HELLO, I am still working on this website and currently optimized for mobile screen only, it will get better soon!');
-// });

@@ -1,7 +1,7 @@
 $color-main:#ff6700;
 $color-hover:#7f746e;
 $color-black:#000000;
-$color-white:#ffffff;
+$color-white:#faf4f1;
 $color-off-white:#dfdfdf;
 $color-dummy:#888888;
 
@@ -15,6 +15,7 @@ body{
     font-family: 'Open Sans', sans-serif;
     color:$color-black;
     width: 100%;
+    background: $color-white;
 }
 button{
     font-size: 1.6rem;
@@ -139,6 +140,9 @@ header{
                 color: $color-black;
                 display: block;
                 padding: 5rem 0;
+            }
+            a:hover{
+                color:$color-hover;
             }
         }
     }
@@ -280,7 +284,7 @@ footer{
 
 
 
-@media only screen and (min-width:768px){
+@media only screen and (min-width:695px){
     section{
         padding: 10rem 5rem;
     }
@@ -298,6 +302,10 @@ footer{
                     min-width: 0;
                     a{
                         padding: 2rem;
+                        transition: padding 300ms ease-in-out;
+                    }
+                    a:hover{
+                        padding: 1.7rem 2rem 2.3rem 2rem;
                     }
                 }
             }
@@ -329,6 +337,16 @@ footer{
             .web-card{
                 width: 48%;
                 margin-bottom: 2rem;
+                height: max-content;
+                a{
+                    height: 100%;
+                    display: flex;
+                    flex-wrap: wrap;
+                    .tools-used{
+                        width: 100%;
+                        align-self: flex-end;
+                    }
+                }
             }
         }
     }
@@ -343,4 +361,80 @@ footer{
     }
 }
 
+@media only screen and (min-width:960px){
+    section.banner > div,
+    section.about > div,
+    section.works > div,
+    section.contact > div{
+        width: 96rem;
+        margin: auto;
+    }
+    //////banner
+    section.banner{
+        background-position: center bottom -32rem;
+        height: 50rem;
+        background-size: auto 135%;
+        & > div{
+            padding: 10rem 0;
+                h1{
+                    margin: 2rem 0;
+                }
+                p{
+                    margin: 2rem 0;
+                }
+                div{
+                    margin: 2rem 0;
+                }
+        }
+    }
+    //////works
+    section.works{
+        .web-cards-container{
+            .web-card{
+                a{
+                    h2,
+                    p,
+                    .tools-used {
+                        padding-left:5rem;
+                        padding-right:5rem;
+                    }        
+                }
+                a:hover h2{
+                    padding-left:6rem;
+                    padding-right: 4rem;
+                }            
+            }
+        }
+    }
+}
 
+
+@media only screen and (min-width:1740px){
+    //////banner
+    section.banner{
+        background-position: center top 0;
+        height: 40rem;
+        background-size: 100% auto;
+        & > div{
+            padding: 5rem 0;
+        }
+    }
+    //////works
+    section.works > div{
+        width: 100%;
+        margin:0;
+        .web-cards-container{
+            display: flex;
+            .web-card{
+                width: 23%;
+            }
+        }
+        h1{
+            width: 96rem;
+            margin: auto;
+        }
+        .button{
+            margin-left: auto;
+        }
+    }
+}

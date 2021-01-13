@@ -9,6 +9,7 @@ body {
   font-family: 'Open Sans', sans-serif;
   color: #000000;
   width: 100%;
+  background: #faf4f1;
 }
 
 button {
@@ -67,7 +68,7 @@ a {
 }
 
 .button a {
-  color: #ffffff;
+  color: #faf4f1;
   padding: 0.5rem;
   width: 100%;
   text-align: center;
@@ -79,7 +80,7 @@ a {
 .button button {
   border: none;
   background: none;
-  color: #ffffff;
+  color: #faf4f1;
   padding: 0.5rem;
   width: 100%;
   text-align: center;
@@ -130,7 +131,7 @@ header {
       -ms-flex-pack: justify;
           justify-content: space-between;
   width: 100%;
-  background: #ffffff;
+  background: #faf4f1;
 }
 
 header .logo {
@@ -151,7 +152,7 @@ header nav ul {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
-  background: #ffffff;
+  background: #faf4f1;
   max-height: 80vh;
   overflow: hidden;
   -webkit-transition: max-height 300ms ease-in-out;
@@ -168,6 +169,10 @@ header nav ul li a {
   color: #000000;
   display: block;
   padding: 5rem 0;
+}
+
+header nav ul li a:hover {
+  color: #7f746e;
 }
 
 header .menu-icon {
@@ -199,7 +204,7 @@ section.banner h1 {
 
 section.banner p {
   padding: 1rem;
-  background-color: #ffffff;
+  background-color: #faf4f1;
   width: 22rem;
 }
 
@@ -213,7 +218,7 @@ section.works {
 
 section.works h1 {
   padding-bottom: 2rem;
-  color: #ffffff;
+  color: #faf4f1;
 }
 
 section.works .web-cards-container {
@@ -231,7 +236,7 @@ section.works .web-cards-container .web-card {
 
 section.works .web-cards-container .web-card a {
   padding: 1rem 0;
-  color: #ffffff;
+  color: #faf4f1;
 }
 
 section.works .web-cards-container .web-card a .content {
@@ -246,7 +251,7 @@ section.works .web-cards-container .web-card a .content h2 {
 section.works .web-cards-container .web-card a .tools-used {
   margin: 1rem;
   padding: 1rem;
-  background: #ffffff;
+  background: #faf4f1;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -312,7 +317,7 @@ section.contact textarea {
 }
 
 footer {
-  color: #ffffff;
+  color: #faf4f1;
   background: #000000;
   padding: 3rem 1rem;
 }
@@ -339,7 +344,7 @@ footer .social-media div a svg {
   height: auto;
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 695px) {
   section {
     padding: 10rem 5rem;
   }
@@ -356,6 +361,11 @@ footer .social-media div a svg {
   }
   header nav ul li a {
     padding: 2rem;
+    -webkit-transition: padding 300ms ease-in-out;
+    transition: padding 300ms ease-in-out;
+  }
+  header nav ul li a:hover {
+    padding: 1.7rem 2rem 2.3rem 2rem;
   }
   header .menu-icons-container {
     display: none;
@@ -380,6 +390,22 @@ footer .social-media div a svg {
   section.works .web-cards-container .web-card {
     width: 48%;
     margin-bottom: 2rem;
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
+  }
+  section.works .web-cards-container .web-card a {
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  section.works .web-cards-container .web-card a .tools-used {
+    width: 100%;
+    -ms-flex-item-align: end;
+        align-self: flex-end;
   }
   footer > div {
     display: -webkit-box;
@@ -395,6 +421,73 @@ footer .social-media div a svg {
   }
   footer > div p {
     padding: 0;
+  }
+}
+
+@media only screen and (min-width: 960px) {
+  section.banner > div,
+  section.about > div,
+  section.works > div,
+  section.contact > div {
+    width: 96rem;
+    margin: auto;
+  }
+  section.banner {
+    background-position: center bottom -32rem;
+    height: 50rem;
+    background-size: auto 135%;
+  }
+  section.banner > div {
+    padding: 10rem 0;
+  }
+  section.banner > div h1 {
+    margin: 2rem 0;
+  }
+  section.banner > div p {
+    margin: 2rem 0;
+  }
+  section.banner > div div {
+    margin: 2rem 0;
+  }
+  section.works .web-cards-container .web-card a h2,
+  section.works .web-cards-container .web-card a p,
+  section.works .web-cards-container .web-card a .tools-used {
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
+  section.works .web-cards-container .web-card a:hover h2 {
+    padding-left: 6rem;
+    padding-right: 4rem;
+  }
+}
+
+@media only screen and (min-width: 1740px) {
+  section.banner {
+    background-position: center top 0;
+    height: 40rem;
+    background-size: 100% auto;
+  }
+  section.banner > div {
+    padding: 5rem 0;
+  }
+  section.works > div {
+    width: 100%;
+    margin: 0;
+  }
+  section.works > div .web-cards-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  section.works > div .web-cards-container .web-card {
+    width: 23%;
+  }
+  section.works > div h1 {
+    width: 96rem;
+    margin: auto;
+  }
+  section.works > div .button {
+    margin-left: auto;
   }
 }
 /*# sourceMappingURL=style.css.map */
