@@ -1,5 +1,5 @@
 $color-main:#ff6700;
-$color-hover:#7f746e;
+$color-hover:#FFC8A3;
 $color-black:#000000;
 $color-white:#faf4f1;
 $color-form-white:#dfdfdf;
@@ -64,7 +64,7 @@ a{
     border-radius: .3rem;
     a,
     button{
-        color:$color-white;
+        color:$color-black;
         padding:0.5rem;
         width: 100%;
         text-align: center;
@@ -112,6 +112,7 @@ header{
     background: $color-white;
     .logo{
         width:4rem;
+        height:auto;
         padding: 1rem;
     }
     nav ul{
