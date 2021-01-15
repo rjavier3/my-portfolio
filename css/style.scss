@@ -2,7 +2,7 @@ $color-main:#ff6700;
 $color-hover:#7f746e;
 $color-black:#000000;
 $color-white:#faf4f1;
-$color-off-white:#dfdfdf;
+$color-form-white:#dfdfdf;
 $color-dummy:rgba(43,40,41,1);
 
 //global
@@ -62,24 +62,18 @@ a{
     background: $color-main;
     width: 16rem;
     border-radius: .3rem;
-    a{
+    a,
+    button{
         color:$color-white;
         padding:0.5rem;
-
         width: 100%;
         text-align: center;
         transition: padding 300ms ease-in-out;
         z-index: 1;
-    }      
+    }     
     button{
         border:none;
         background: none;
-        color:$color-white;
-        padding:0.5rem;
-        width: 100%;
-        text-align: center;
-        transition: padding 300ms ease-in-out;
-        z-index: 1;
     }
     a:hover,
     a:focus,
@@ -163,10 +157,10 @@ section{
 ///////////////////banner
 section.banner{
     padding-top: 7rem;
-    background:url(../img/mountain.webp) no-repeat;
-    background-position: left -45rem bottom -25rem;
+    background:url(../img/banner-phone-mountain.webp) no-repeat;
+    background-position: left -5rem bottom -7rem;
     height: 59rem;
-    background-size: auto 130%;
+    background-size: auto 105%;
     h1{
         padding: 1rem 0;
     }
@@ -219,14 +213,6 @@ section.works{
                 }
             }
         }
-        .eggle{
-        }
-        .dashboard{
-        }
-        .stock-app{
-        }
-        .pennywise{
-        }
     }
     .button{
         margin-top: 3rem;
@@ -237,12 +223,12 @@ section.contact{
     div{
         div{
             display: flex;
-            margin:2rem 0;            
+            margin:2rem 0;         
         }
     }
     input,
     textarea{
-        background: $color-off-white;
+        background: $color-form-white;
         border:none;
         padding:1rem;
         width: 100%;
@@ -265,7 +251,7 @@ footer{
                 height: 3rem;
                 display:block;
                 svg{
-                    fill: $color-off-white;
+                    fill: $color-white;
                     width: 100%;
                     height:auto;
                 }
@@ -309,6 +295,7 @@ footer{
     }
     ////banner section
     section.banner{
+        background:url(../img/banner-desktop-mountain.webp) no-repeat;
         background-position: left -15rem top 5rem;
         height: 28rem;
         background-size: 140% auto;
@@ -331,7 +318,7 @@ footer{
                 margin-bottom: 2rem;
                 height: max-content;
                 a{
-                    height: 100%;
+                    height: 35rem;
                     display: flex;
                     flex-wrap: wrap;
                     .tools-used{
@@ -339,6 +326,14 @@ footer{
                         align-self: flex-end;
                     }
                 }
+            }
+        }
+    }
+    ////conctact
+    section.contact{
+        div{
+            form{
+                max-width: 55rem;
             }
         }
     }
