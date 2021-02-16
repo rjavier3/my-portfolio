@@ -12,6 +12,11 @@ body {
   background: #faf4f1;
 }
 
+input,
+textarea {
+  font-family: 'Open Sans', sans-serif;
+}
+
 button {
   font-size: 1.6rem;
   line-height: 1.5;
