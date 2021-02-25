@@ -202,7 +202,6 @@ section.works{
                     }
                 }
                 .tools-used{
-                    margin:1rem;
                     padding:1rem;
                     background:$color-white;
                     display: flex;
@@ -318,9 +317,10 @@ footer{
             display: flex;
             flex-wrap: wrap;
             gap: 2%;
+            justify-content: space-between;
             .web-card{
                 width: 48%;
-                margin-bottom: 2rem;
+                margin-bottom: 3rem;
                 height: max-content;
                 a{
                     height: 40rem;
@@ -358,7 +358,7 @@ footer{
     section.about > div,
     section.works > div,
     section.contact > div{
-        width: 96rem;
+        width: 86rem;
         margin: auto;
     }
     //////banner
