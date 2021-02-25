@@ -26,7 +26,7 @@ define( 'DB_NAME', 'u802050120_blog' );
 define( 'DB_USER', 'u802050120_russell' );
 
 /** MySQL database password */
-define( 'DB_PASSWORD', '@gqH3FZ5D9eG5uNBz&K@' );
+define( 'DB_PASSWORD', 'qc3mID0XA*jaGQfC4^FE' );
 
 /** MySQL hostname */
 define( 'DB_HOST', 'localhost' );
