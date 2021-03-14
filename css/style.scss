@@ -162,10 +162,9 @@ section{
 ///////////////////banner
 section.banner{
     padding-top: 7rem;
-    background:url(../img/banner-sm-mountain.webp) no-repeat;
-    background-position: left -5rem bottom -7rem;
+    background:url(../img/banner-sm-mountain.jpg) no-repeat;
+    background-size:auto 100%;
     height: 59rem;
-    background-size: auto 105%;
     h1{
         padding: 1rem 0;
     }
@@ -219,7 +218,6 @@ section.works{
             }
         }
     }
-
 }
 ////////////////contacts
 section.contact{
@@ -301,10 +299,8 @@ footer{
     }
     ////banner section
     section.banner{
-        background:url(../img/banner-lg-mountain.webp) no-repeat;
-        background-position: left -15rem top 5rem;
+        background:url(../img/banner-m-mountain.jpg) no-repeat;
         height: 28rem;
-        background-size: 140% auto;
     }
     //////about section
     section.about{
@@ -365,9 +361,9 @@ footer{
     }
     //////banner
     section.banner{
-        background-position: center bottom -32rem;
+        background:url(../img/banner-lg-mountain.jpg) no-repeat;
+        background-size:auto 100%;
         height: 50rem;
-        background-size: auto 135%;
         & > div{
             padding: 10rem 0;
                 h1{
@@ -402,13 +398,22 @@ footer{
     }
 }
 
+@media only screen and (min-width:1480px){
+    //////banner
+    section.banner{
+        background:url(../img/banner-lg-mountain.jpg) no-repeat;
+        background-size:100% auto;
+    }
+}
+
 
 @media only screen and (min-width:1600px){
     //////banner
     section.banner{
-        background-position: center top 0;
-        height: 40rem;
+        background:url(../img/banner-xlg-mountain.jpg) no-repeat;
         background-size: 100% auto;
+        background-position: 50% 40%;
+        height: 40rem;
         & > div{
             padding: 5rem 0;
         }
