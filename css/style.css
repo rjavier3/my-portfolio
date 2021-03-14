@@ -28,11 +28,11 @@ h1,
 h2,
 h3 {
   font-family: 'Oswald', sans-serif;
+  line-height: 1;
 }
 
 h1 {
   font-size: 6.78rem;
-  line-height: 1;
   font-weight: bold;
 }
 
@@ -172,7 +172,7 @@ header nav ul li a {
 }
 
 header nav ul li a:hover {
-  color: #FFC8A3;
+  color: #ff6700;
 }
 
 header .menu-icon {
@@ -192,7 +192,7 @@ section {
 
 section.banner {
   padding-top: 7rem;
-  background: url(../img/banner-phone-mountain.webp) no-repeat;
+  background: url(../img/banner-sm-mountain.webp) no-repeat;
   background-position: left -5rem bottom -7rem;
   height: 59rem;
   background-size: auto 105%;
@@ -232,6 +232,7 @@ section.works .web-cards-container {
 
 section.works .web-cards-container .web-card {
   background: #2b2829;
+  border-radius: 1rem;
 }
 
 section.works .web-cards-container .web-card a {
@@ -268,10 +269,6 @@ section.works .web-cards-container .web-card a:hover h2 {
   padding-left: 1rem;
 }
 
-section.works .button {
-  margin-top: 3rem;
-}
-
 section.contact div div {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -304,12 +301,12 @@ footer .social-media {
 }
 
 footer .social-media div {
-  padding-right: 2rem;
+  padding-right: 1.5rem;
 }
 
 footer .social-media div a {
-  width: 3rem;
-  height: 3rem;
+  width: 2rem;
+  height: 2rem;
   display: block;
 }
 
@@ -317,6 +314,10 @@ footer .social-media div a svg {
   fill: #faf4f1;
   width: 100%;
   height: auto;
+}
+
+footer .social-media div a:hover svg {
+  fill: #FFC8A3;
 }
 
 @media only screen and (min-width: 695px) {
@@ -346,7 +347,7 @@ footer .social-media div a svg {
     display: none;
   }
   section.banner {
-    background: url(../img/banner-desktop-mountain.webp) no-repeat;
+    background: url(../img/banner-lg-mountain.webp) no-repeat;
     background-position: left -15rem top 5rem;
     height: 28rem;
     background-size: 140% auto;
@@ -443,7 +444,7 @@ footer .social-media div a svg {
   }
 }
 
-@media only screen and (min-width: 1740px) {
+@media only screen and (min-width: 1600px) {
   section.banner {
     background-position: center top 0;
     height: 40rem;
@@ -465,7 +466,7 @@ footer .social-media div a svg {
     width: 23%;
   }
   section.works > div h1 {
-    width: 96rem;
+    width: 86rem;
     margin: auto;
   }
   section.works > div .button {

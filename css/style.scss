@@ -31,14 +31,14 @@ h1,
 h2,
 h3{
     font-family: 'Oswald', sans-serif;
+    line-height: 1;
 }
 h1{
     font-size: 6.78rem;
-    line-height: 1;
     font-weight: bold;
 }
 h2{
-    font-size: 4.19rem;
+    font-size: 4.19rem;  
 }
 h3{
     font-size: 25.9rem;
@@ -141,7 +141,7 @@ header{
                 padding: 5rem 0;
             }
             a:hover{
-                color:$color-hover;
+                color:$color-main;
             }
         }
     }
@@ -162,7 +162,7 @@ section{
 ///////////////////banner
 section.banner{
     padding-top: 7rem;
-    background:url(../img/banner-phone-mountain.webp) no-repeat;
+    background:url(../img/banner-sm-mountain.webp) no-repeat;
     background-position: left -5rem bottom -7rem;
     height: 59rem;
     background-size: auto 105%;
@@ -192,6 +192,7 @@ section.works{
         gap: 3rem;
         .web-card{
             background: $color-dummy;
+            border-radius: 1rem;
             a{
                 padding:1rem 0;
                 color:$color-white;
@@ -218,9 +219,7 @@ section.works{
             }
         }
     }
-    .button{
-        margin-top: 3rem;
-    }
+
 }
 ////////////////contacts
 section.contact{
@@ -249,17 +248,20 @@ footer{
     .social-media{
         display: flex;
         div{
-            padding-right: 2rem;
+            padding-right: 1.5rem;
             a{
-                width: 3rem;
-                height: 3rem;
+                width: 2rem;
+                height: 2rem;
                 display:block;
                 svg{
                     fill: $color-white;
                     width: 100%;
                     height:auto;
                 }
-            }            
+            }
+            a:hover svg{
+                fill: $color-hover;
+            }    
         }
     }
 }
@@ -299,7 +301,7 @@ footer{
     }
     ////banner section
     section.banner{
-        background:url(../img/banner-desktop-mountain.webp) no-repeat;
+        background:url(../img/banner-lg-mountain.webp) no-repeat;
         background-position: left -15rem top 5rem;
         height: 28rem;
         background-size: 140% auto;
@@ -401,7 +403,7 @@ footer{
 }
 
 
-@media only screen and (min-width:1740px){
+@media only screen and (min-width:1600px){
     //////banner
     section.banner{
         background-position: center top 0;
@@ -422,7 +424,7 @@ footer{
             }
         }
         h1{
-            width: 96rem;
+            width: 86rem;
             margin: auto;
         }
         .button{
