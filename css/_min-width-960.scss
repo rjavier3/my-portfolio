@@ -1,0 +1,46 @@
+@media only screen and (min-width:960px){
+    section.banner > div,
+    section.about > div,
+    section.works > div,
+    section.contact > div{
+        width: 86rem;
+        margin: auto;
+    }
+    //////banner
+    section.banner{
+        background:url(../img/banner-lg-mountain.jpg) no-repeat;
+        background-size:auto 100%;
+        height: 50rem;
+        & > div{
+            padding: 10rem 0;
+                h1{
+                    margin: 2rem 0;
+                }
+                p{
+                    margin: 2rem 0;
+                }
+                div{
+                    margin: 2rem 0;
+                }
+        }
+    }
+    //////works
+    section.works{
+        .web-cards-container{
+            .web-card{
+                a{
+                    h2,
+                    p,
+                    .tools-used {
+                        padding-left:5rem;
+                        padding-right:5rem;
+                    }        
+                }
+                a:hover h2{
+                    padding-left:6rem;
+                    padding-right: 4rem;
+                }            
+            }
+        }
+    }
+}

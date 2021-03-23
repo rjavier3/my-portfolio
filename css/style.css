@@ -215,8 +215,7 @@ section.banner h1 {
 section.banner p {
   text-transform: uppercase;
   padding: 1rem;
-  background-color: #faf4f1;
-  width: 22rem;
+  font-size: 2.4rem;
 }
 
 section.banner div {
@@ -242,8 +241,9 @@ section.works .web-cards-container {
 }
 
 section.works .web-cards-container .web-card {
-  background: #2b2829;
+  background-color: #faf4f1;
   border-radius: 1rem;
+  background-color: #202020;
 }
 
 section.works .web-cards-container .web-card a {
@@ -478,7 +478,7 @@ footer .social-media div a:hover svg {
   section.banner {
     background: url(../img/banner-xlg-mountain.jpg) no-repeat;
     background-size: 100% auto;
-    background-position: 50% 40%;
+    background-position: 0 50%;
     height: 40rem;
   }
   section.banner > div {
