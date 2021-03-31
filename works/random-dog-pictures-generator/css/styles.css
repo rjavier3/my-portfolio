@@ -1,0 +1,104 @@
+html{
+	font-size: 62.5%;
+	line-height: 1.5;
+}
+body {
+	font-size: 1.6rem;
+    font-family: 'Montserrat', sans-serif;
+}
+.container {
+	margin:0 auto;
+	width:100%;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 7rem;
+    background-color: #ebebeb;
+}
+h1{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight:bold;
+}
+a{
+    text-decoration:none;
+}
+
+/****************body*****************/
+header{
+    padding: 2rem 0;
+}
+h1{
+    font-size: 3rem;
+}
+.image-con{
+    width: 95vw;
+    height: 55vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:#8d8d8d;
+}
+img{
+    max-width:100%;
+    max-height: 100%;
+}
+.action-con{
+    padding: 2rem 0;
+    display: flex;
+    justify-content: space-between;
+}
+.action-con p{
+    padding-bottom: 1rem;
+}
+p{
+    padding:.5rem 0;
+}
+/**buttons**/
+.button{
+    background-color:#ff6700;
+    text-align: center;
+    height: 4rem;
+    width:47%;
+}
+.button a{
+    color:#ffff;
+    display: block;
+    height:100%;
+    line-height: 4rem;
+}
+.button:active{
+    background-color:#ffff;
+}
+.button:active a{
+    color:#ff6700;
+}
+
+
+@media only screen and (min-width:700px){
+    .image-con{
+        height:60rem;
+    }
+}
+
+@media only screen and (min-width: 960px){
+    .container{
+        width:96rem;
+    }
+    .image-con{
+        width:85rem;
+        height:60rem;
+    }
+}
+
+
+
+/**Helper classes**/
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
