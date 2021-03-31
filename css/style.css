@@ -9,7 +9,7 @@ body {
   font-family: 'Open Sans', sans-serif;
   color: #000000;
   width: 100%;
-  background: #faf4f1;
+  background: #ffffff;
 }
 
 input,
@@ -42,7 +42,7 @@ h2 {
 }
 
 h3 {
-  font-size: 25.9rem;
+  font-size: 2.59rem;
 }
 
 p {
@@ -147,7 +147,7 @@ header nav ul {
   right: 0;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  background-color: #faf4f1;
+  background-color: #ffffff;
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
@@ -192,7 +192,7 @@ header .menu-icon svg {
 }
 
 .nav-colored {
-  background-color: #faf4f1;
+  background-color: #ffffff;
   -webkit-transition: background-color 300ms ease-in-out;
   transition: background-color 300ms ease-in-out;
 }
@@ -205,7 +205,7 @@ section.banner {
   padding-top: 7rem;
   background: url(../img/banner-sm-mountain.jpg) no-repeat;
   background-size: auto 100%;
-  height: 59rem;
+  height: 51rem;
 }
 
 section.banner h1 {
@@ -222,13 +222,54 @@ section.banner div {
   margin: 1rem 0;
 }
 
+.about-pictures {
+  padding: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.about-pictures .img-container {
+  width: 48%;
+  overflow: hidden;
+  height: 15rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.about-pictures .img-container img {
+  height: 120%;
+  width: auto;
+}
+
+section.about .section-title {
+  padding-bottom: 2rem;
+}
+
 section.works {
   background: #000000;
 }
 
-section.works h1 {
-  padding-bottom: 2rem;
-  color: #faf4f1;
+section.works .section-title {
+  padding-bottom: 4rem;
+}
+
+section.works .section-title h1 {
+  color: #ffffff;
+}
+
+section.works .description {
+  color: #ffffff;
 }
 
 section.works .web-cards-container {
@@ -240,44 +281,34 @@ section.works .web-cards-container {
   gap: 3rem;
 }
 
-section.works .web-cards-container .web-card {
-  background-color: #faf4f1;
-  border-radius: 1rem;
-  background-color: #202020;
-}
-
 section.works .web-cards-container .web-card a {
-  padding: 1rem 0;
-  color: #faf4f1;
+  background-color: #333333;
+  color: #d8d8d8;
+  -webkit-transition: margin 300ms ease-in-out;
+  transition: margin 300ms ease-in-out;
 }
 
-section.works .web-cards-container .web-card a .content {
-  padding: 1rem;
+section.works .web-cards-container .web-card a .head {
+  padding: 2rem 1rem;
+  background-color: #424242;
+  min-height: 12rem;
 }
 
-section.works .web-cards-container .web-card a .content h2 {
-  -webkit-transition: padding 300ms ease-in-out;
-  transition: padding 300ms ease-in-out;
-}
-
-section.works .web-cards-container .web-card a .tools-used {
-  padding: 1rem;
-  background: #faf4f1;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  gap: 1rem;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  color: #000000;
-}
-
-section.works .web-cards-container .web-card a .tools-used p {
+section.works .web-cards-container .web-card a .body {
+  visibility: hidden;
+  height: 0;
   padding: 0;
 }
 
-section.works .web-cards-container .web-card a:hover h2 {
-  padding-left: 1rem;
+section.works .web-cards-container .web-card a:hover {
+  margin-top: -1rem;
+  margin-bottom: 1rem;
+  -webkit-transition: margin 300ms ease-in-out;
+  transition: margin 300ms ease-in-out;
+}
+
+section.works .button {
+  margin-top: 2rem;
 }
 
 section.contact div div {
@@ -300,7 +331,7 @@ section.contact textarea {
 }
 
 footer {
-  color: #faf4f1;
+  color: #ffffff;
   background: #000000;
   padding: 3rem 1rem;
 }
@@ -322,13 +353,24 @@ footer .social-media div a {
 }
 
 footer .social-media div a svg {
-  fill: #faf4f1;
+  fill: #ffffff;
   width: 100%;
   height: auto;
 }
 
 footer .social-media div a:hover svg {
   fill: #FFC8A3;
+}
+
+.visually-hidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
 }
 
 @media only screen and (min-width: 695px) {
@@ -364,51 +406,48 @@ footer .social-media div a:hover svg {
   }
   section.banner {
     background: url(../img/banner-m-mountain.jpg) no-repeat;
-    height: 28rem;
+    height: 35rem;
   }
-  section.about p {
-    max-width: 55rem;
-    margin-left: 5rem;
+  .about-pictures {
+    gap: 1%;
+  }
+  .about-pictures .img-container {
+    width: 24.25%;
+    height: 25rem;
+  }
+  .about-pictures .img-container img {
+    height: 100%;
+  }
+  section.about {
+    padding-top: 5rem;
+  }
+  section.about .content .title {
+    width: 100%;
+  }
+  section.about .content .texts {
+    width: 100%;
+  }
+  section.about .content .texts p {
+    width: 50ch;
+    max-width: 50ch;
   }
   section.works .web-cards-container {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    gap: 2%;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    max-height: 132rem;
   }
   section.works .web-cards-container .web-card {
     width: 48%;
-    margin-bottom: 3rem;
-    height: -webkit-max-content;
-    height: -moz-max-content;
-    height: max-content;
   }
-  section.works .web-cards-container .web-card a {
-    height: 40rem;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-  }
-  section.works .web-cards-container .web-card a .tools-used {
-    width: 100%;
-    -ms-flex-item-align: end;
-        align-self: flex-end;
-  }
-  .web-cards-container {
-    -webkit-column-count: 3;
-            column-count: 3;
-    -webkit-column-gap: 1rem;
-            column-gap: 1rem;
-  }
-  .web-card {
-    width: calc(100% / 1);
+  section.works .web-cards-container .web-card a .body {
+    visibility: visible;
+    height: auto;
+    padding: 1rem 1rem 3rem 1rem;
   }
   section.contact div form {
     max-width: 55rem;
@@ -455,15 +494,14 @@ footer .social-media div a:hover svg {
   section.banner > div div {
     margin: 2rem 0;
   }
-  section.works .web-cards-container .web-card a h2,
-  section.works .web-cards-container .web-card a p,
-  section.works .web-cards-container .web-card a .tools-used {
-    padding-left: 5rem;
-    padding-right: 5rem;
+  section.works .web-cards-container .web-card a .head {
+    padding: 2rem 4rem;
   }
-  section.works .web-cards-container .web-card a:hover h2 {
-    padding-left: 6rem;
-    padding-right: 4rem;
+  section.works .web-cards-container .web-card a .body {
+    padding: 2rem 4rem 4rem 4rem;
+  }
+  .about-pictures .img-container {
+    height: 30rem;
   }
 }
 
@@ -471,6 +509,25 @@ footer .social-media div a:hover svg {
   section.banner {
     background: url(../img/banner-lg-mountain.jpg) no-repeat;
     background-size: 100% auto;
+  }
+  section.works > div {
+    width: 100%;
+    max-width: 148rem;
+  }
+  section.works > div .section-title,
+  section.works > div .buttons-container {
+    width: 86rem;
+    margin: 0 auto;
+  }
+  section.works > div .web-cards-container {
+    height: 87rem;
+    gap: 6rem;
+  }
+  section.works > div .web-cards-container .web-card {
+    width: 30%;
+  }
+  .about-pictures .img-container {
+    height: 35rem;
   }
 }
 
@@ -484,24 +541,8 @@ footer .social-media div a:hover svg {
   section.banner > div {
     padding: 5rem 0;
   }
-  section.works > div {
-    width: 100%;
-    margin: 0;
-  }
-  section.works > div .web-cards-container {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-  }
-  section.works > div .web-cards-container .web-card {
-    width: 23%;
-  }
-  section.works > div h1 {
-    width: 86rem;
-    margin: auto;
-  }
-  section.works > div .button {
-    margin-left: auto;
+  .about-pictures .img-container {
+    height: 45rem;
   }
 }
 /*# sourceMappingURL=style.css.map */

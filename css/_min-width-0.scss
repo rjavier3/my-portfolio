@@ -1,7 +1,7 @@
 $color-main:#ff6700;
 $color-hover:#FFC8A3;
 $color-black:#000000;
-$color-white:#faf4f1;
+$color-white:#ffffff; //preveiusly #faf4f1
 $color-form-white:#dfdfdf;
 $color-grey:#202020;
 
@@ -42,7 +42,7 @@ h2{
     font-size: 4.19rem;  
 }
 h3{
-    font-size: 25.9rem;
+    font-size: 2.59rem;
 }
 p{
     padding-top:2rem;
@@ -108,7 +108,7 @@ a{
   .button:focus::before {
     transform: scaleX(1);
   }
-///////////////////////////////////////////////////////nav
+///////////////////////////////////////////////////////header nav
 header{
     z-index: 10;
     display: flex;
@@ -173,7 +173,7 @@ section.banner{
     padding-top: 7rem;
     background:url(../img/banner-sm-mountain.jpg) no-repeat;
     background-size:auto 100%;
-    height: 59rem;
+    height: 51rem;
     h1{
         padding: 1rem 0;
     }
@@ -187,11 +187,40 @@ section.banner{
     }
 }
 ////////////////about
+.about-pictures{
+    padding: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    .img-container{
+        width: 48%;
+        overflow: hidden;
+        height: 15rem;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        img{
+            height: 120%;
+            width: auto;
+        }
+    }
+}
+section.about{
+    .section-title{
+        padding-bottom: 2rem;
+    }
+}
 ////////////////works
 section.works{
     background: $color-black;
-    h1{
-        padding-bottom:2rem;
+    .section-title{
+        padding-bottom:4rem;
+        h1{
+            
+            color: $color-white;
+        }  
+    }
+    .description{
         color: $color-white;
     }
     .web-cards-container{
@@ -199,34 +228,30 @@ section.works{
         flex-wrap: wrap;
         gap: 3rem;
         .web-card{
-            background-color: $color-white;
-            border-radius: 1rem;
-            background-color: $color-grey;
             a{
-                padding:1rem 0;
-                color:$color-white;
-                .content{
-                    padding:1rem;
-                    h2{
-                        transition: padding 300ms ease-in-out;
-                    }
+                background-color: #333333;
+                color: #d8d8d8;
+                transition: margin 300ms ease-in-out;
+                .head{
+                    padding:2rem 1rem;
+                    background-color: #424242;
+                    min-height: 12rem;
                 }
-                .tools-used{
-                    padding:1rem;
-                    background:$color-white;
-                    display: flex;
-                    gap: 1rem;
-                    flex-wrap: wrap;
-                    color:$color-black;
-                    p{
-                        padding: 0;
-                    }
-                }
-                &:hover h2{
-                    padding-left: 1rem;
+                .body{
+                    visibility: hidden;
+                    height: 0;
+                    padding: 0;
                 }
             }
+            a:hover{
+                margin-top:-1rem;
+                margin-bottom:1rem;
+                transition: margin 300ms ease-in-out;
+            }
         }
+    }
+    .button{
+        margin-top: 2rem;
     }
 }
 ////////////////contacts
@@ -272,4 +297,16 @@ footer{
             }    
         }
     }
+}
+
+///helper class
+.visually-hidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
 }

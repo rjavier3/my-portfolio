@@ -1,0 +1,791 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Dashboard</title>
+        <link rel="stylesheet" href="css/tailwind.css" />
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <header class="bg-white fixed w-full px-2">
+            <nav class="md:flex md:justify-between">
+                <div class="flex justify-between">
+                    <div class="py-2">
+                        <a href="index.html">
+                            <h1>
+                                <img class="h-10 w-10" src="img/logo.png" alt="Web People Logo" />
+                            </h1>
+                        </a>
+                    </div>
+                    <div id="menu-icon" class="py-1 md:hidden">
+                        <svg class="h-10 w-10" version="1.1" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+                            <path d="M2 6h28v6h-28zM2 14h28v6h-28zM2 22h28v6h-28z"></path>
+                        </svg>
+                    </div>
+                </div>
+                <ul class="hidden py-5 md:block md:flex md:py-0">
+                    <li class="hover:bg-blue-300 active:bg-blue-300 focus:outline-none border-b-2 w-full md:border-none md:w-auto md:px-4">
+                        <a class="flex py-4 items-center" href="#"> <img class="mx-3 w-4 h-4 rounded-full md:m-1" src="img/user-pic.jpg" alt="user profile picture" />Zack Li</a>
+                    </li>
+                    <li class="hover:bg-blue-300 active:bg-blue-300 focus:outline-none border-b-2 w-full md:border-none md:w-auto md:px-4">
+                        <a class="flex py-4 items-center" href="#"> <img class="mx-3 w-4 h-4 md:m-1" src="img/notifications.svg" alt="notifications icon" /> Notifications </a>
+                    </li>
+                    <li class="hover:bg-blue-300 active:bg-blue-300 focus:outline-none border-b-2 w-full md:border-none md:w-auto md:px-4">
+                        <a class="flex py-4 items-center" href="#"> <img class="mx-3 w-4 h-4 md:m-1" src="img/messages.svg" alt="messages icon" /> Messages </a>
+                    </li>
+                    <li class="hover:bg-blue-300 active:bg-blue-300 focus:outline-none border-b-2 w-full md:border-none md:w-auto md:px-4">
+                        <a class="flex py-4 items-center" href="#"> <img class="mx-3 w-4 h-4 md:m-1" src="img/tools.svg" alt="tools icon" /> Tools </a>
+                    </li>
+                    <li class="hover:bg-blue-300 active:bg-blue-300 focus:outline-none border-b-2 w-full md:border-none md:w-auto md:px-4">
+                        <a class="flex py-4 items-center" href="#"> <img class="mx-3 w-4 h-4 md:m-1" src="img/sign-out.svg" alt="sign-out icon" /> Sign-out </a>
+                    </li>
+                    <li class="hover:bg-blue-300 active:bg-blue-300 focus:outline-none border-b-2 w-full md:border-none md:w-auto md:px-4">
+                        <a class="flex py-4 items-center" href="#"> <img class="mx-3 w-4 h-4 md:m-1" src="img/settings.svg" alt="setting icon" /> Settings </a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+            <div class="banner w-100">
+                <svg class="banner-title" viewBox="0 0 960 300">
+                    <symbol id="s-text">
+                        <text text-anchor="middle" x="50%" y="80%">Dashboard</text>
+                    </symbol>
+                
+                    <g class = "g-ants">
+                        <use xlink:href="#s-text" class="text-copy"></use>
+                        <use xlink:href="#s-text" class="text-copy"></use>
+                        <use xlink:href="#s-text" class="text-copy"></use>
+                        <use xlink:href="#s-text" class="text-copy"></use>
+                        <use xlink:href="#s-text" class="text-copy"></use>
+                        <use xlink:href="#s-text" class="text-copy"></use>
+                        <use xlink:href="#s-text" class="text-copy"></use>
+                    </g>
+                </svg> 
+            </div>
+        <div class="main-container">
+            <div class="img-holder"></div>
+            <div class="w-full px-2 pb-24 bg-white">
+            <section class="md:flex md:flex-wrap md:justify-center lg:gap-x-16">
+                <h1 class="text-3xl py-4 -mb-8 font-serif md:w-2/3">Recent Projects</h1>
+<!-- project 1 -->
+                <section class="bg-blue-400 rounded-lg px-2 py-4 my-12 md:w-2/3 lg:w-5/12">
+                    <div class="flex justify-between mb-4">
+                        <div>
+                            <h2 class="text-xl text-blue-100">Building Dashboard</h2>
+                        </div>
+                        <div>
+                            <a href="#" class="flex text-blue-100 items-center h-full">
+                                archive
+                                <svg class="fill-current h-4" version="1.1" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+                                    <path d="M26 2h-20l-6 6v21c0 0.552 0.448 1 1 1h30c0.552 0 1-0.448 1-1v-21l-6-6zM16 26l-10-8h6v-6h8v6h6l-10 8zM4.828 6l2-2h18.343l2 2h-22.343z"></path>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- project1 description -->
+                    <section class="bg-blue-100 rounded-lg px-6 py-6">
+                        <h3 class="text-lg py-2 -mt-4">Description</h3>
+                        <p class="py-2">
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled
+                            it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+                        </p>
+                        <div class="py-2">
+                            <a class="flex" href="#"> <img class="h-6 w-auto" src="img/file-pdf.svg" alt="pdf icon" /> &nbsp; building-dashboard.pdf </a>
+                        </div>
+                        <div class="py-2">
+                            <p>Start date: March 6, 2020</p>
+                            <p>Due date: January 5, 2021</p>
+                            <p>Time Remaining: 120 Days</p>
+                        </div>
+                    </section>
+                    <!-- project1 team -->
+                    <section class="bg-blue-100 mt-8 mb-4 rounded-lg px-6 py-6">
+                        <h3 class="text-lg py-2 -mt-4">Team</h3>
+                        <div class="flex justify-between py-2 border-b-2">
+                            <img class="w-10 h-10 rounded-full" src="img/abby-armstrong.jpg" alt="Abby Armstrong picture" />
+                            <img class="w-10 h-10 rounded-full" src="img/billie-jones.jpg" alt="Billie Jones picture" />
+                            <img class="w-10 h-10 rounded-full" src="img/claire-wich.jpg" alt="Claire Wich picture" />
+                            <img class="w-10 h-10 rounded-full" src="img/dinner-doug.jpg" alt="Dinner Doug picture" />
+                            <img class="w-10 h-10 rounded-full" src="img/eren-hughman.jpg" alt="Eren Hughman picture" />
+                            <div class="w-10 h-10 rounded-full block bg-gray-300"><a class="block text-lg text-center py-1" href="#">+3</a></div>
+                        </div>
+                        <div class="py-4 h-64 overflow-scroll">
+                            <div class="flex py-2">
+                                <img class="w-10 h-10 rounded-full mx-1" src="img/abby-armstrong.jpg" alt="Abby Armstrong picture" />
+                                <div class="px-2">
+                                    <p class="text-sm">Abby Armstrong</p>
+                                    <p>I love this project, It's the best</p>
+                                    <p class="text-blue-500">replies</p>
+                                </div>
+                            </div>
+                            <div class="flex py-2">
+                                <img class="w-10 h-10 rounded-full mx-1" src="img/billie-jones.jpg" alt="Billie Jones picture" />
+                                <div class="px-2">
+                                    <p class="text-sm">Billie Jones</p>
+                                    <p>What color will our theme be? I will be working on the wireframe</p>
+                                    <p class="text-blue-500">replies</p>
+                                </div>
+                            </div>
+                            <div class="flex py-2">
+                                <img class="w-10 h-10 rounded-full mx-1" src="img/eren-hughman.jpg" alt="Eren Hughman picture" />
+                                <div class="px-2">
+                                    <p class="text-sm">Eren Hughman</p>
+                                    <p>I am the backend guy message me how you want it to work</p>
+                                    <p class="text-blue-500">replies</p>
+                                </div>
+                            </div>
+                            <div class="flex py-2">
+                                <img class="w-10 h-10 rounded-full mx-1" src="img/freddy-mars.jpg" alt="Freddy Mars picture" />
+                                <div class="px-2">
+                                    <p class="text-sm">Freddy Mars</p>
+                                    <p>We will be working at home due to COVID, but I'll be working at the park</p>
+                                    <p class="text-blue-500">replies</p>
+                                </div>
+                            </div>
+                            <div class="flex py-2">
+                                <img class="w-10 h-10 rounded-full" src="img/claire-wich.jpg" alt="Claire Wich picture" />
+                                <div class="px-2">
+                                    <p class="text-sm">Claier Wich</p>
+                                    <p>I don't like this project too much, but I will do it</p>
+                                    <p class="text-blue-500">replies</p>
+                                </div>
+                            </div>
+                            <div class="flex py-2">
+                                <img class="w-10 h-10 rounded-full mx-1" src="img/abby-armstrong.jpg" alt="Abby Armstrong picture" />
+                                <div class="px-2">
+                                    <p class="text-sm">Abby Armstrong</p>
+                                    <p>I love this project, It's the best</p>
+                                    <p class="text-blue-500">replies</p>
+                                </div>
+                            </div>
+                            <div class="flex py-2">
+                                <img class="w-10 h-10 rounded-full mx-1" src="img/abby-armstrong.jpg" alt="Abby Armstrong picture" />
+                                <div class="px-2">
+                                    <p class="text-sm">Abby Armstrong</p>
+                                    <p>I love this project, It's the best</p>
+                                    <p class="text-blue-500">replies</p>
+                                </div>
+                            </div>
+                            <div class="flex py-2">
+                                <img class="w-10 h-10 rounded-full mx-1" src="img/abby-armstrong.jpg" alt="Abby Armstrong picture" />
+                                <div class="px-2">
+                                    <p class="text-sm">Abby Armstrong</p>
+                                    <p>I love this project, It's the best</p>
+                                    <p class="text-blue-500">replies</p>
+                                </div>
+                            </div>
+                            <div class="flex py-2">
+                                <img class="w-10 h-10 rounded-full mx-1" src="img/abby-armstrong.jpg" alt="Abby Armstrong picture" />
+                                <div class="px-2">
+                                    <p class="text-sm">Abby Armstrong</p>
+                                    <p>I love this project, It's the best</p>
+                                    <p class="text-blue-500">replies</p>
+                                </div>
+                            </div>
+                            <div class="flex py-2">
+                                <img class="w-10 h-10 rounded-full mx-1" src="img/abby-armstrong.jpg" alt="Abby Armstrong picture" />
+                                <div class="px-2">
+                                    <p class="text-sm">Abby Armstrong</p>
+                                    <p>I love this project, It's the best</p>
+                                    <p class="text-blue-500">replies</p>
+                                </div>
+                            </div>
+                            <div class="flex py-2">
+                                <img class="w-10 h-10 rounded-full mx-1" src="img/abby-armstrong.jpg" alt="Abby Armstrong picture" />
+                                <div class="px-2">
+                                    <p class="text-sm">Abby Armstrong</p>
+                                    <p>I love this project, It's the best</p>
+                                    <p class="text-blue-500">replies</p>
+                                </div>
+                            </div>
+                            <div class="flex py-2">
+                                <img class="w-10 h-10 rounded-full mx-1" src="img/abby-armstrong.jpg" alt="Abby Armstrong picture" />
+                                <div class="px-2">
+                                    <p class="text-sm">Abby Armstrong</p>
+                                    <p>I love this project, It's the best</p>
+                                    <p class="text-blue-500">replies</p>
+                                </div>
+                            </div>
+                            <div class="flex py-2">
+                                <img class="w-10 h-10 rounded-full mx-1" src="img/abby-armstrong.jpg" alt="Abby Armstrong picture" />
+                                <div class="px-2">
+                                    <p class="text-sm">Abby Armstrong</p>
+                                    <p>I love this project, It's the best</p>
+                                    <p class="text-blue-500">replies</p>
+                                </div>
+                            </div>
+                            <div class="flex py-2">
+                                <img class="w-10 h-10 rounded-full mx-1" src="img/abby-armstrong.jpg" alt="Abby Armstrong picture" />
+                                <div class="px-2">
+                                    <p class="text-sm">Abby Armstrong</p>
+                                    <p>I love this project, It's the best</p>
+                                    <p class="text-blue-500">replies</p>
+                                </div>
+                            </div>
+                            <div class="flex py-2">
+                                <img class="w-10 h-10 rounded-full mx-1" src="img/abby-armstrong.jpg" alt="Abby Armstrong picture" />
+                                <div class="px-2">
+                                    <p class="text-sm">Abby Armstrong</p>
+                                    <p>I love this project, It's the best</p>
+                                    <p class="text-blue-500">replies</p>
+                                </div>
+                            </div>
+                            <div class="flex py-2">
+                                <img class="w-10 h-10 rounded-full mx-1" src="img/abby-armstrong.jpg" alt="Abby Armstrong picture" />
+                                <div class="px-2">
+                                    <p class="text-sm">Abby Armstrong</p>
+                                    <p>I love this project, It's the best</p>
+                                    <p class="text-blue-500">replies</p>
+                                </div>
+                            </div>
+                            <div class="flex py-2">
+                                <img class="w-10 h-10 rounded-full mx-1" src="img/abby-armstrong.jpg" alt="Abby Armstrong picture" />
+                                <div class="px-2">
+                                    <p class="text-sm">Abby Armstrong</p>
+                                    <p>I love this project, It's the best</p>
+                                    <p class="text-blue-500">replies</p>
+                                </div>
+                            </div>
+                            <div class="flex py-2">
+                                <img class="w-10 h-10 rounded-full mx-1" src="img/abby-armstrong.jpg" alt="Abby Armstrong picture" />
+                                <div class="px-2">
+                                    <p class="text-sm">Abby Armstrong</p>
+                                    <p>I love this project, It's the best</p>
+                                    <p class="text-blue-500">replies</p>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </section>
+<!-- project 2 -->
+                <section class="bg-blue-400 rounded-lg px-2 py-4 my-12 md:w-2/3 lg:w-5/12">
+                    <div class="flex justify-between mb-4">
+                        <div>
+                            <h2 class="text-xl text-blue-100">Target Website</h2>
+                        </div>
+                        <div>
+                            <a href="#" class="flex text-blue-100 items-center h-full">
+                                archive
+                                <svg class="fill-current h-4" version="1.1" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+                                    <path d="M26 2h-20l-6 6v21c0 0.552 0.448 1 1 1h30c0.552 0 1-0.448 1-1v-21l-6-6zM16 26l-10-8h6v-6h8v6h6l-10 8zM4.828 6l2-2h18.343l2 2h-22.343z"></path>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- project2 description -->
+                    <section class="bg-blue-100 rounded-lg px-6 py-6">
+                        <h3 class="text-lg py-2 -mt-4">Description</h3>
+                        <p class="py-2">
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled
+                            it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+                        </p>
+                        <div class="py-2">
+                            <p>Start date: April 22, 2020</p>
+                            <p>Due date: January 15, 2021</p>
+                            <p>Time Remaining: 118 Days</p>
+                        </div>
+                    </section>
+                    <!-- project2 team -->
+                    <section class="bg-blue-100 mt-8 mb-4 rounded-lg px-6 py-6">
+                        <h3 class="text-lg py-2 -mt-4">Team</h3>
+                        <div class="flex py-2 border-b-2">
+                            <img class="w-10 h-10 rounded-full mx-1" src="img/abby-armstrong.jpg" alt="Abby Armstrong picture" />
+                            <img class="w-10 h-10 rounded-full mx-1" src="img/billie-jones.jpg" alt="Billie Jones picture" />
+                            <img class="w-10 h-10 rounded-full mx-1" src="img/claire-wich.jpg" alt="Claire Wich picture" />
+                            <img class="w-10 h-10 rounded-full mx-1" src="img/dinner-doug.jpg" alt="Dinner Doug picture" />
+                        </div>
+                        <div class="py-4 h-64 overflow-scroll">
+                            <div class="flex py-2">
+                                <img class="w-10 h-10 rounded-full mx-1" src="img/abby-armstrong.jpg" alt="Abby Armstrong picture" />
+                                <div class="px-2">
+                                    <p class="text-sm">Abby Armstrong</p>
+                                    <p>I love this project, It's the best</p>
+                                    <p class="text-blue-500">replies</p>
+                                </div>
+                            </div>
+                            <div class="flex py-2">
+                                <img class="w-10 h-10 rounded-full mx-1" src="img/eren-hughman.jpg" alt="Eren Hughman picture" />
+                                <div class="px-2">
+                                    <p class="text-sm">Eren Hughman</p>
+                                    <p>I am the backend guy message me how you want it to work</p>
+                                    <p class="text-blue-500">replies</p>
+                                </div>
+                            </div>
+                            <div class="flex py-2">
+                                <img class="w-10 h-10 rounded-full mx-1" src="img/freddy-mars.jpg" alt="Freddy Mars picture" />
+                                <div class="px-2">
+                                    <p class="text-sm">Freddy Mars</p>
+                                    <p>We will be working at home due to COVID, but I'll be working at the park</p>
+                                    <p class="text-blue-500">replies</p>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </section>
+<!-- project 3 -->
+                <section class="bg-blue-400 rounded-lg px-2 py-4 my-12 md:w-2/3 lg:w-5/12">
+                    <div class="flex justify-between mb-4">
+                        <div>
+                            <h2 class="text-xl text-blue-100">Asus Website</h2>
+                        </div>
+                        <div>
+                            <a href="#" class="flex text-blue-100 items-center h-full">
+                                archive
+                                <svg class="fill-current h-4" version="1.1" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+                                    <path d="M26 2h-20l-6 6v21c0 0.552 0.448 1 1 1h30c0.552 0 1-0.448 1-1v-21l-6-6zM16 26l-10-8h6v-6h8v6h6l-10 8zM4.828 6l2-2h18.343l2 2h-22.343z"></path>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- project2 description -->
+                    <section class="bg-blue-100 rounded-lg px-6 py-6">
+                        <h3 class="text-lg py-2 -mt-4">Description</h3>
+                        <p class="py-2">
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled
+                            it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+                        </p>
+                        <div class="flex flex-wrap w-2/3">
+                            <div class="py-2 px-2">
+                                <a class="flex" href="#">
+                                    <img class="h-6 w-auto" src="img/file-pdf.svg" alt="pdf icon" title="instructions" />
+                                </a>
+                            </div>
+                            <div class="py-2 px-2">
+                                <a class="flex" href="#">
+                                    <img class="h-6 w-auto" src="img/file-text.svg" alt="file text icon" title="Asus words" />
+                                </a>
+                            </div>
+                            <div class="py-2 px-2">
+                                <a class="flex" href="#">
+                                    <img class="h-6 w-auto" src="img/file-zip.svg" alt="file zip icon" title="resources" />
+                                </a>
+                            </div>
+                            <div class="py-2 px-2">
+                                <a class="flex" href="#">
+                                    <img class="h-6 w-auto" src="img/file-picture.svg" alt="file picture icon" title="examples" />
+                                </a>
+                            </div>
+                            <div class="py-2 px-2">
+                                <a class="flex" href="#">
+                                    <img class="h-6 w-auto" src="img/file-pdf.svg" alt="pdf icon" title="competitor researched" />
+                                </a>
+                            </div>
+                            <div class="py-2 px-2">
+                                <a class="flex" href="#">
+                                    <img class="h-6 w-auto" src="img/file-zip.svg" alt="file zip icon" title="competitor files" />
+                                </a>
+                            </div>
+                            <div class="py-2 px-2">
+                                <a class="flex" href="#">
+                                    <img class="h-6 w-auto" src="img/file-zip.svg" alt="file zip icon" title="important files" />
+                                </a>
+                            </div>
+                            <div class="py-2 px-2">
+                                <a class="flex" href="#">
+                                    <img class="h-6 w-auto" src="img/file-zip.svg" alt="file zip icon" title="important files" />
+                                </a>
+                            </div>
+                            <div class="py-2 px-2">
+                                <a class="flex" href="#">
+                                    <img class="h-6 w-auto" src="img/file-pdf.svg" alt="pdf icon" title="important document" />
+                                </a>
+                            </div>
+                            <div class="py-2 px-2">
+                                <a class="flex" href="#">
+                                    <img class="h-6 w-auto" src="img/file-pdf.svg" alt="pdf icon" title="important document" />
+                                </a>
+                            </div>
+                            <div class="py-2 px-2">
+                                <a class="flex" href="#">
+                                    <img class="h-6 w-auto" src="img/file-pdf.svg" alt="pdf icon" title="important document" />
+                                </a>
+                            </div>
+                        </div>
+                        <div class="py-2">
+                            <p>Start date: April 22, 2020</p>
+                            <p>Due date: January 15, 2021</p>
+                            <p>Time Remaining: 118 Days</p>
+                        </div>
+                    </section>
+                    <!-- project2 team -->
+                    <section class="bg-blue-100 mt-8 mb-4 rounded-lg px-6 py-6">
+                        <h3 class="text-lg py-2 -mt-4">Team</h3>
+                        <div class="flex justify-between py-2 border-b-2">
+                            <img class="w-10 h-10 rounded-full" src="img/abby-armstrong.jpg" alt="Abby Armstrong picture" />
+                            <img class="w-10 h-10 rounded-full" src="img/billie-jones.jpg" alt="Billie Jones picture" />
+                            <img class="w-10 h-10 rounded-full" src="img/claire-wich.jpg" alt="Claire Wich picture" />
+                            <img class="w-10 h-10 rounded-full" src="img/dinner-doug.jpg" alt="Dinner Doug picture" />
+                            <img class="w-10 h-10 rounded-full" src="img/eren-hughman.jpg" alt="Eren Hughman picture" />
+                            <img class="w-10 h-10 rounded-full" src="img/freddy-mars.jpg" alt="Freddy Mars picture" />
+                            <div class="w-10 h-10 rounded-full block bg-gray-300"><a class="block text-lg text-center py-1" href="#">+10</a></div>
+                        </div>
+                        <div class="py-4 h-64 overflow-scroll">
+                            <div class="flex py-2">
+                                <img class="w-10 h-10 rounded-full mx-1" src="img/abby-armstrong.jpg" alt="Abby Armstrong picture" />
+                                <div class="px-2">
+                                    <p class="text-sm">Abby Armstrong</p>
+                                    <p>I love this project, It's the best</p>
+                                    <p class="text-blue-500">replies</p>
+                                </div>
+                            </div>
+                            <div class="flex py-2">
+                                <img class="w-10 h-10 rounded-full mx-1" src="img/eren-hughman.jpg" alt="Eren Hughman picture" />
+                                <div class="px-2">
+                                    <p class="text-sm">Eren Hughman</p>
+                                    <p>I am the backend guy message me how you want it to work</p>
+                                    <p class="text-blue-500">replies</p>
+                                </div>
+                            </div>
+                            <div class="flex py-2">
+                                <img class="w-10 h-10 rounded-full mx-1" src="img/freddy-mars.jpg" alt="Freddy Mars picture" />
+                                <div class="px-2">
+                                    <p class="text-sm">Freddy Mars</p>
+                                    <p>We will be working at home due to COVID, but I'll be working at the park</p>
+                                    <p class="text-blue-500">replies</p>
+                                </div>
+                            </div>
+                            <div class="flex py-2">
+                                <img class="w-10 h-10 rounded-full mx-1" src="img/abby-armstrong.jpg" alt="Abby Armstrong picture" />
+                                <div class="px-2">
+                                    <p class="text-sm">Abby Armstrong</p>
+                                    <p>I love this project, It's the best</p>
+                                    <p class="text-blue-500">replies</p>
+                                </div>
+                            </div>
+                            <div class="flex py-2">
+                                <img class="w-10 h-10 rounded-full mx-1" src="img/eren-hughman.jpg" alt="Eren Hughman picture" />
+                                <div class="px-2">
+                                    <p class="text-sm">Eren Hughman</p>
+                                    <p>I am the backend guy message me how you want it to work</p>
+                                    <p class="text-blue-500">replies</p>
+                                </div>
+                            </div>
+                            <div class="flex py-2">
+                                <img class="w-10 h-10 rounded-full mx-1" src="img/freddy-mars.jpg" alt="Freddy Mars picture" />
+                                <div class="px-2">
+                                    <p class="text-sm">Freddy Mars</p>
+                                    <p>We will be working at home due to COVID, but I'll be working at the park</p>
+                                    <p class="text-blue-500">replies</p>
+                                </div>
+                            </div>
+                            <div class="flex py-2">
+                                <img class="w-10 h-10 rounded-full mx-1" src="img/abby-armstrong.jpg" alt="Abby Armstrong picture" />
+                                <div class="px-2">
+                                    <p class="text-sm">Abby Armstrong</p>
+                                    <p>I love this project, It's the best</p>
+                                    <p class="text-blue-500">replies</p>
+                                </div>
+                            </div>
+                            <div class="flex py-2">
+                                <img class="w-10 h-10 rounded-full mx-1" src="img/eren-hughman.jpg" alt="Eren Hughman picture" />
+                                <div class="px-2">
+                                    <p class="text-sm">Eren Hughman</p>
+                                    <p>I am the backend guy message me how you want it to work</p>
+                                    <p class="text-blue-500">replies</p>
+                                </div>
+                            </div>
+                            <div class="flex py-2">
+                                <img class="w-10 h-10 rounded-full mx-1" src="img/freddy-mars.jpg" alt="Freddy Mars picture" />
+                                <div class="px-2">
+                                    <p class="text-sm">Freddy Mars</p>
+                                    <p>We will be working at home due to COVID, but I'll be working at the park</p>
+                                    <p class="text-blue-500">replies</p>
+                                </div>
+                            </div>
+                            <div class="flex py-2">
+                                <img class="w-10 h-10 rounded-full mx-1" src="img/abby-armstrong.jpg" alt="Abby Armstrong picture" />
+                                <div class="px-2">
+                                    <p class="text-sm">Abby Armstrong</p>
+                                    <p>I love this project, It's the best</p>
+                                    <p class="text-blue-500">replies</p>
+                                </div>
+                            </div>
+                            <div class="flex py-2">
+                                <img class="w-10 h-10 rounded-full mx-1" src="img/eren-hughman.jpg" alt="Eren Hughman picture" />
+                                <div class="px-2">
+                                    <p class="text-sm">Eren Hughman</p>
+                                    <p>I am the backend guy message me how you want it to work</p>
+                                    <p class="text-blue-500">replies</p>
+                                </div>
+                            </div>
+                            <div class="flex py-2">
+                                <img class="w-10 h-10 rounded-full mx-1" src="img/freddy-mars.jpg" alt="Freddy Mars picture" />
+                                <div class="px-2">
+                                    <p class="text-sm">Freddy Mars</p>
+                                    <p>We will be working at home due to COVID, but I'll be working at the park</p>
+                                    <p class="text-blue-500">replies</p>
+                                </div>
+                            </div>
+                            <div class="flex py-2">
+                                <img class="w-10 h-10 rounded-full mx-1" src="img/abby-armstrong.jpg" alt="Abby Armstrong picture" />
+                                <div class="px-2">
+                                    <p class="text-sm">Abby Armstrong</p>
+                                    <p>I love this project, It's the best</p>
+                                    <p class="text-blue-500">replies</p>
+                                </div>
+                            </div>
+                            <div class="flex py-2">
+                                <img class="w-10 h-10 rounded-full mx-1" src="img/eren-hughman.jpg" alt="Eren Hughman picture" />
+                                <div class="px-2">
+                                    <p class="text-sm">Eren Hughman</p>
+                                    <p>I am the backend guy message me how you want it to work</p>
+                                    <p class="text-blue-500">replies</p>
+                                </div>
+                            </div>
+                            <div class="flex py-2">
+                                <img class="w-10 h-10 rounded-full mx-1" src="img/freddy-mars.jpg" alt="Freddy Mars picture" />
+                                <div class="px-2">
+                                    <p class="text-sm">Freddy Mars</p>
+                                    <p>We will be working at home due to COVID, but I'll be working at the park</p>
+                                    <p class="text-blue-500">replies</p>
+                                </div>
+                            </div>
+                            <div class="flex py-2">
+                                <img class="w-10 h-10 rounded-full mx-1" src="img/abby-armstrong.jpg" alt="Abby Armstrong picture" />
+                                <div class="px-2">
+                                    <p class="text-sm">Abby Armstrong</p>
+                                    <p>I love this project, It's the best</p>
+                                    <p class="text-blue-500">replies</p>
+                                </div>
+                            </div>
+                            <div class="flex py-2">
+                                <img class="w-10 h-10 rounded-full mx-1" src="img/eren-hughman.jpg" alt="Eren Hughman picture" />
+                                <div class="px-2">
+                                    <p class="text-sm">Eren Hughman</p>
+                                    <p>I am the backend guy message me how you want it to work</p>
+                                    <p class="text-blue-500">replies</p>
+                                </div>
+                            </div>
+                            <div class="flex py-2">
+                                <img class="w-10 h-10 rounded-full mx-1" src="img/freddy-mars.jpg" alt="Freddy Mars picture" />
+                                <div class="px-2">
+                                    <p class="text-sm">Freddy Mars</p>
+                                    <p>We will be working at home due to COVID, but I'll be working at the park</p>
+                                    <p class="text-blue-500">replies</p>
+                                </div>
+                            </div>
+                            <div class="flex py-2">
+                                <img class="w-10 h-10 rounded-full mx-1" src="img/abby-armstrong.jpg" alt="Abby Armstrong picture" />
+                                <div class="px-2">
+                                    <p class="text-sm">Abby Armstrong</p>
+                                    <p>I love this project, It's the best</p>
+                                    <p class="text-blue-500">replies</p>
+                                </div>
+                            </div>
+                            <div class="flex py-2">
+                                <img class="w-10 h-10 rounded-full mx-1" src="img/eren-hughman.jpg" alt="Eren Hughman picture" />
+                                <div class="px-2">
+                                    <p class="text-sm">Eren Hughman</p>
+                                    <p>I am the backend guy message me how you want it to work</p>
+                                    <p class="text-blue-500">replies</p>
+                                </div>
+                            </div>
+                            <div class="flex py-2">
+                                <img class="w-10 h-10 rounded-full mx-1" src="img/freddy-mars.jpg" alt="Freddy Mars picture" />
+                                <div class="px-2">
+                                    <p class="text-sm">Freddy Mars</p>
+                                    <p>We will be working at home due to COVID, but I'll be working at the park</p>
+                                    <p class="text-blue-500">replies</p>
+                                </div>
+                            </div>
+                            <div class="flex py-2">
+                                <img class="w-10 h-10 rounded-full mx-1" src="img/abby-armstrong.jpg" alt="Abby Armstrong picture" />
+                                <div class="px-2">
+                                    <p class="text-sm">Abby Armstrong</p>
+                                    <p>I love this project, It's the best</p>
+                                    <p class="text-blue-500">replies</p>
+                                </div>
+                            </div>
+                            <div class="flex py-2">
+                                <img class="w-10 h-10 rounded-full mx-1" src="img/eren-hughman.jpg" alt="Eren Hughman picture" />
+                                <div class="px-2">
+                                    <p class="text-sm">Eren Hughman</p>
+                                    <p>I am the backend guy message me how you want it to work</p>
+                                    <p class="text-blue-500">replies</p>
+                                </div>
+                            </div>
+                            <div class="flex py-2">
+                                <img class="w-10 h-10 rounded-full mx-1" src="img/freddy-mars.jpg" alt="Freddy Mars picture" />
+                                <div class="px-2">
+                                    <p class="text-sm">Freddy Mars</p>
+                                    <p>We will be working at home due to COVID, but I'll be working at the park</p>
+                                    <p class="text-blue-500">replies</p>
+                                </div>
+                            </div>
+                            <div class="flex py-2">
+                                <img class="w-10 h-10 rounded-full mx-1" src="img/abby-armstrong.jpg" alt="Abby Armstrong picture" />
+                                <div class="px-2">
+                                    <p class="text-sm">Abby Armstrong</p>
+                                    <p>I love this project, It's the best</p>
+                                    <p class="text-blue-500">replies</p>
+                                </div>
+                            </div>
+                            <div class="flex py-2">
+                                <img class="w-10 h-10 rounded-full mx-1" src="img/eren-hughman.jpg" alt="Eren Hughman picture" />
+                                <div class="px-2">
+                                    <p class="text-sm">Eren Hughman</p>
+                                    <p>I am the backend guy message me how you want it to work</p>
+                                    <p class="text-blue-500">replies</p>
+                                </div>
+                            </div>
+                            <div class="flex py-2">
+                                <img class="w-10 h-10 rounded-full mx-1" src="img/freddy-mars.jpg" alt="Freddy Mars picture" />
+                                <div class="px-2">
+                                    <p class="text-sm">Freddy Mars</p>
+                                    <p>We will be working at home due to COVID, but I'll be working at the park</p>
+                                    <p class="text-blue-500">replies</p>
+                                </div>
+                            </div>
+                            <div class="flex py-2">
+                                <img class="w-10 h-10 rounded-full mx-1" src="img/abby-armstrong.jpg" alt="Abby Armstrong picture" />
+                                <div class="px-2">
+                                    <p class="text-sm">Abby Armstrong</p>
+                                    <p>I love this project, It's the best</p>
+                                    <p class="text-blue-500">replies</p>
+                                </div>
+                            </div>
+                            <div class="flex py-2">
+                                <img class="w-10 h-10 rounded-full mx-1" src="img/eren-hughman.jpg" alt="Eren Hughman picture" />
+                                <div class="px-2">
+                                    <p class="text-sm">Eren Hughman</p>
+                                    <p>I am the backend guy message me how you want it to work</p>
+                                    <p class="text-blue-500">replies</p>
+                                </div>
+                            </div>
+                            <div class="flex py-2">
+                                <img class="w-10 h-10 rounded-full mx-1" src="img/freddy-mars.jpg" alt="Freddy Mars picture" />
+                                <div class="px-2">
+                                    <p class="text-sm">Freddy Mars</p>
+                                    <p>We will be working at home due to COVID, but I'll be working at the park</p>
+                                    <p class="text-blue-500">replies</p>
+                                </div>
+                            </div>
+                            <div class="flex py-2">
+                                <img class="w-10 h-10 rounded-full mx-1" src="img/freddy-mars.jpg" alt="Freddy Mars picture" />
+                                <div class="px-2">
+                                    <p class="text-sm">Freddy Mars</p>
+                                    <p>We will be working at home due to COVID, but I'll be working at the park</p>
+                                    <p class="text-blue-500">replies</p>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </section>
+            </section>
+            </div>
+<!-- messages -->
+            <div class="container mx-auto px-2 py-2 md:w-2/3">
+                <section>
+                    <h1 class="text-3xl py-4 px-2 font-serif">Messages</h1>
+                    <div class="bg-gray-900 text-white px-2 py-2 rounded-lg">
+                        <div class="flex justify-between py-4">
+                            <div class="rounded bg-gray-500 text-black text-sm m-1">
+                                <div>
+                                    <a class="flex p-1" href="#">
+                                        <img class="h-5 w-5" src="img/message-plus.svg" alt="plus icon" />
+                                        <p class="px-2">New Message</p>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="rounded bg-gray-500 text-black text-sm w-32 m-1">
+                                <div>
+                                    <a class="flex p-1" href="#">
+                                        <img class="h-5 w-5" src="img/message-users.svg" alt="users icon" />
+                                        <p class="px-2">Teams</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- individual messages -->
+                        <div>
+                        <div>
+                            <div class="flex bg-gray-700 p-4 my-2 rounded-lg h-40">
+                                <img class="w-10 h-10 rounded-full mx-1" src="img/abby-armstrong.jpg" alt="Abby Armstrong picture" />
+                                <div class="flex flex-wrap items-start w-full px-2 overflow-hidden">
+                                    <div class=" w-full flex justify-between">
+                                        <p class="text-sm">Abby Armstrong</p>
+                                        <p class="text-sm">20/9/2020</p>
+                                    </div>
+                                    <div class="w-full h-20 overflow-hidden">
+                                        <p><b>Exited to work</b></p>
+                                        <p>Hey Zack I am so exited to work with you</p>
+                                    </div>
+                                    <div class="flex justify-between self-end w-full text-blue-500 text-sm">
+                                        <a href="#">reply</a>
+                                        <a href="#">delete</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex bg-gray-700 p-4 my-2 rounded-lg h-40">
+                                <img class="w-10 h-10 rounded-full mx-1" src="img/eren-hughman.jpg" alt="Eren Hughman picture" />
+                                <div class="flex flex-wrap items-start w-full px-2 overflow-hidden">
+                                    <div class=" w-full flex justify-between">
+                                        <p class="text-sm">Eren Hughman</p>
+                                        <p class="text-sm">30/9/2020</p>
+                                    </div>
+                                    <div class="w-full h-20 overflow-hidden">
+                                        <p><b>Back-end request</b></p>
+                                        <p>Hey Zack I am Eren the back-end guy, message me if you have a back-end request</p>
+                                    </div>                                    
+                                    <div class="flex justify-between self-end w-full text-blue-500 text-sm">
+                                        <a href="#">reply</a>
+                                        <a href="#">delete</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex bg-gray-700 p-4 my-2 rounded-lg h-40">
+                                <img class="w-10 h-10 rounded-full mx-1" src="img/freddy-mars.jpg" alt="Freddy Mars picture" />
+                                <div class="flex flex-wrap items-start w-full px-2 overflow-hidden">
+                                    <div class=" w-full flex justify-between">
+                                        <p class="text-sm">Freddy Mars</p>
+                                        <p class="text-sm">17/10/2020</p>
+                                    </div>
+                                    <div class="w-full h-20 overflow-hidden">
+                                        <p><b>Send me your work</b></p>
+                                        <p>Hey Zack I wanted to work at the office but COVID will not allow it, I will be working on the park, send me your work</p>
+                                    </div>
+                                    <div class="flex justify-between self-end w-full text-blue-500 text-sm">
+                                        <a href="#">reply</a>
+                                        <a href="#">delete</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex bg-gray-700 p-4 my-2 rounded-lg h-40">
+                                <img class="w-10 h-10 rounded-full mx-1" src="img/abby-armstrong.jpg" alt="Abby Armstrong picture" />
+                                <div class="flex flex-wrap items-start w-full px-2 overflow-hidden">
+                                    <div class=" w-full flex justify-between">
+                                        <p class="text-sm">Abby Armstrong</p>
+                                        <p class="text-sm">20/9/2020</p>
+                                    </div>
+                                    <div class="w-full h-20 overflow-hidden">
+                                        <p><b>Exited to work</b></p>
+                                        <p>Hey Zack I wanted to work at the office but COVID will not allow it, I will be working on the park, send me your work</p>
+                                    </div>
+                                    <div class="flex justify-between self-end w-full text-blue-500 text-sm">
+                                        <a href="#">reply</a>
+                                        <a href="#">delete</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+        <footer>
+            <div class="px-2 mt-4">
+                <p><small>&copy; 2020 by Russell John Javier</small></p>                
+            </div>
+        </footer>
+    </div>
+        <script src="js/main.js"></script>
+    </body>
+</html>

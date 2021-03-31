@@ -1,6 +1,7 @@
 
 let menuIcons = document.querySelectorAll('.menu-icon');
 let navMenu = document.querySelector('header nav ul');
+let header = document.querySelector('header');
 
 //toggle nav Icon between burger and X
 function toggleNav(event){
@@ -23,32 +24,7 @@ navMenu.addEventListener('click',(event)=>{
 	console.log(event.target);
 });
 
-
-// let header = document.querySelector('header');
-// window.onscroll = function () { 
-//     if (document.body.scrollTop >= 200 ) {
-//         header.classList.add("nav-colored");
-//         header.classList.remove("nav-transparent");
-//     } 
-//     else {
-//         header.classList.add("nav-transparent");
-//         header.classList.remove("nav-colored");
-//     }
-// };
-
-// window.onscroll = function() {scrollFunction()};
-
-// function scrollFunction() {
-//   if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
-//     document.getElementById("navbar").style.padding = "30px 10px";
-//     document.getElementById("logo").style.fontSize = "25px";
-//   } else {
-//     document.getElementById("navbar").style.padding = "80px 10px";
-//     document.getElementById("logo").style.fontSize = "35px";
-//   }
-// }
-let header = document.querySelector('header');
-
+//appearing nav menu background  when scroll down
 window.addEventListener('scroll', (event) =>{
     if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
         header.classList.add("nav-colored");

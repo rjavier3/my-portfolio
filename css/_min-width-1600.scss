@@ -9,22 +9,10 @@
             padding: 5rem 0;
         }
     }
-    //////works
-    section.works > div{
-        width: 100%;
-        margin:0;
-        .web-cards-container{
-            display: flex;
-            .web-card{
-                width: 23%;
-            }
-        }
-        h1{
-            width: 86rem;
-            margin: auto;
-        }
-        .button{
-            margin-left: auto;
+    //////about section
+    .about-pictures{
+        .img-container{
+            height: 45rem;
         }
     }
 }

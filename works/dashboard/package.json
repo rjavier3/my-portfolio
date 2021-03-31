@@ -1,0 +1,18 @@
+{
+  "name": "dashboard",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "postcss tailwind.css -o dashboard/css/tailwind.css"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "autoprefixer": "^10.0.1",
+    "postcss": "^8.1.0",
+    "postcss-cli": "^8.1.0",
+    "tailwindcss": "^1.9.6"
+  }
+}

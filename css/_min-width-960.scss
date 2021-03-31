@@ -29,18 +29,20 @@
         .web-cards-container{
             .web-card{
                 a{
-                    h2,
-                    p,
-                    .tools-used {
-                        padding-left:5rem;
-                        padding-right:5rem;
-                    }        
+                    .head{
+                        padding: 2rem 4rem;
+                    }
+                    .body{
+                        padding:2rem 4rem 4rem 4rem;
+                    }
                 }
-                a:hover h2{
-                    padding-left:6rem;
-                    padding-right: 4rem;
-                }            
             }
+        }
+    }
+    //////about section
+    .about-pictures{
+        .img-container{
+            height: 30rem;
         }
     }
 }
