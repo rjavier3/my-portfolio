@@ -5,24 +5,24 @@
         background-size:100% auto;
     }
     //////works
-    section.works{
-        & > div{
-            width: 100%;
-            max-width: 148rem;
-            .section-title,
-            .buttons-container{
-                width: 86rem;
-                margin: 0 auto;
-            }
-            .web-cards-container{
-                height: 87rem;
-                gap:6rem;
-                .web-card{
-                    width: 30%;
-                }
-            }
-        }
-    }
+    // section.works{
+    //     & > div{
+    //         width: 100%;
+    //         max-width: 148rem;
+    //         .section-title,
+    //         .buttons-container{
+    //             width: 86rem;
+    //             margin: 0 auto;
+    //         }
+    //         .web-cards-container{
+    //             max-height: 87rem;
+    //             gap:6rem;
+    //             .web-card{
+    //                 width: 30%;
+    //             }
+    //         }
+    //     }
+    // }
     //////about section
     .about-pictures{
         .img-container{

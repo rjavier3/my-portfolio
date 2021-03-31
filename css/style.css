@@ -510,22 +510,6 @@ footer .social-media div a:hover svg {
     background: url(../img/banner-lg-mountain.jpg) no-repeat;
     background-size: 100% auto;
   }
-  section.works > div {
-    width: 100%;
-    max-width: 148rem;
-  }
-  section.works > div .section-title,
-  section.works > div .buttons-container {
-    width: 86rem;
-    margin: 0 auto;
-  }
-  section.works > div .web-cards-container {
-    height: 87rem;
-    gap: 6rem;
-  }
-  section.works > div .web-cards-container .web-card {
-    width: 30%;
-  }
   .about-pictures .img-container {
     height: 35rem;
   }
