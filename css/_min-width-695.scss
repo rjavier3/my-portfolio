@@ -65,6 +65,18 @@
     }
     /////works section
     section.works{
+        .works-heading{
+            display: flex;
+            width: 100%;
+            gap: 3rem;
+            .section-title{
+                width: 48%;
+            }
+            .description{
+                margin-top: 10rem;
+                width: 48%;
+            }
+        }
         .web-cards-container{
             display: flex;
             flex-direction: column;

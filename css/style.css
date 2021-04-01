@@ -147,7 +147,7 @@ header nav ul {
   right: 0;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  background-color: #ffffff;
+  background-color: #000000;
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
@@ -165,7 +165,6 @@ header nav ul li {
 
 header nav ul li a {
   text-transform: uppercase;
-  color: #000000;
   display: block;
   padding: 5rem 0;
 }
@@ -183,18 +182,27 @@ header .menu-icon {
 header .menu-icon svg {
   width: 100%;
   height: 100%;
+  fill: #ffffff;
 }
 
 .nav-transparent {
   background-color: transparent;
-  -webkit-transition: background-color 300ms ease-in-out;
-  transition: background-color 300ms ease-in-out;
+  -webkit-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
+}
+
+.nav-transparent li a {
+  color: #000000;
 }
 
 .nav-colored {
-  background-color: #ffffff;
-  -webkit-transition: background-color 300ms ease-in-out;
-  transition: background-color 300ms ease-in-out;
+  background-color: #000000;
+  -webkit-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
+}
+
+.nav-colored li a {
+  color: #ffffff;
 }
 
 section {
@@ -260,30 +268,37 @@ section.works {
   background: #000000;
 }
 
-section.works .section-title {
-  padding-bottom: 4rem;
+section.works .works-heading .section-title {
+  padding-bottom: 5rem;
 }
 
-section.works .section-title h1 {
+section.works .works-heading .section-title h1 {
   color: #ffffff;
 }
 
-section.works .section-title h1 span {
-  font-size: 3rem;
+section.works .works-heading .section-title p {
+  font-family: 'Oswald', sans-serif;
+  font-weight: bold;
+  font-size: 4rem;
   text-transform: lowercase;
-  color: #d8d8d8;
+  color: #cecece;
 }
 
-section.works .description {
+section.works .works-heading .section-title p u {
+  text-decoration: none;
+  border-bottom: 1.5rem solid #cecece;
+}
+
+section.works .works-heading .description {
   color: #ffffff;
-  padding-bottom: 8rem;
+  padding-bottom: 5rem;
 }
 
-section.works .description p {
+section.works .works-heading .description p {
   font-size: 3rem;
 }
 
-section.works .description ul {
+section.works .works-heading .description ul {
   list-style: square;
   padding-left: 2rem;
 }
@@ -299,7 +314,7 @@ section.works .web-cards-container {
 
 section.works .web-cards-container .web-card a {
   background-color: #333333;
-  color: #d8d8d8;
+  color: #cecece;
   -webkit-transition: margin 300ms ease-in-out;
   transition: margin 300ms ease-in-out;
 }
@@ -327,6 +342,15 @@ section.works .button {
   margin-top: 2rem;
 }
 
+.contact-banner {
+  height: 40rem;
+  overflow: hidden;
+}
+
+.contact-banner img {
+  width: 100%;
+}
+
 section.contact div div {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -336,7 +360,7 @@ section.contact div div {
 
 section.contact input,
 section.contact textarea {
-  background: #d8d8d8;
+  background: #cecece;
   border: none;
   padding: 1rem;
   width: 100%;
@@ -447,6 +471,20 @@ footer .social-media div a:hover svg {
     width: 50ch;
     max-width: 50ch;
   }
+  section.works .works-heading {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    gap: 3rem;
+  }
+  section.works .works-heading .section-title {
+    width: 48%;
+  }
+  section.works .works-heading .description {
+    margin-top: 10rem;
+    width: 48%;
+  }
   section.works .web-cards-container {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -525,6 +563,7 @@ footer .social-media div a:hover svg {
   section.banner {
     background: url(../img/banner-lg-mountain.jpg) no-repeat;
     background-size: 100% auto;
+    background-position: 0 100%;
   }
   .about-pictures .img-container {
     height: 35rem;
@@ -535,8 +574,7 @@ footer .social-media div a:hover svg {
   section.banner {
     background: url(../img/banner-xlg-mountain.jpg) no-repeat;
     background-size: 100% auto;
-    background-position: 0 50%;
-    height: 40rem;
+    background-position: 0 100%;
   }
   section.banner > div {
     padding: 5rem 0;

@@ -2,7 +2,7 @@ $color-main:#ff6700;
 $color-hover:#FFC8A3;
 $color-black:#000000;
 $color-white:#ffffff; //preveiusly #faf4f1
-$color-grey:#d8d8d8;
+$color-grey:#cecece; //d8d8d8
 
 //global
 html{
@@ -125,7 +125,7 @@ header{
         top: 6.5rem;
         right: 0;
         flex-wrap: wrap;
-        background-color: $color-white;
+        background-color: $color-black;
         align-items: flex-end;
         max-height: 100vh;
         height: 100vh;
@@ -136,7 +136,6 @@ header{
             text-align: center;
             a{
                 text-transform: uppercase;
-                color: $color-black;
                 display: block;
                 padding: 5rem 0;
             }
@@ -152,16 +151,23 @@ header{
         svg{
             width: 100%;
             height: 100%;
+            fill: $color-white;
         }
     }
 }
 .nav-transparent{
     background-color: transparent;
-    transition: background-color 300ms ease-in-out;
+    transition: all 300ms ease-in-out;
+    li a{  
+        color: $color-black;
+    }
 }
 .nav-colored{
-    background-color: $color-white;
-    transition: background-color 300ms ease-in-out;
+    background-color: $color-black;
+    transition: all 300ms ease-in-out;
+    li a{  
+        color: $color-white;
+    }
 }
 ////////////////////////////////////////////////sections//////
 section{
@@ -212,27 +218,41 @@ section.about{
 ////////////////works
 section.works{
     background: $color-black;
-    .section-title{
-        padding-bottom:4rem;
-        h1{
-            color: $color-white;
-            span{
-                font-size: 3rem;
+    .works-heading{
+        .section-title{
+            padding-bottom:5rem;
+            h1{
+                color: $color-white;
+            }  
+            p{
+                font-family: 'Oswald', sans-serif;
+                font-weight: bold;
+                font-size: 4rem;
                 text-transform: lowercase;
                 color: $color-grey;
+                u{
+                    text-decoration: none;
+                    border-bottom: 1.5rem solid $color-grey;
+                }
             }
-        }  
-    }
-    .description{
-        color: $color-white;
-        padding-bottom: 8rem;
-        p{
-            font-size: 3rem;
+            // .bar{
+            //     background-color: $color-grey;
+            //     height: 1.5rem;
+            //     margin: 3rem 0;
+            //     width: 85%;
+            // }
         }
-        ul{
-            list-style: square;
-            padding-left: 2rem;
-        }
+        .description{
+            color: $color-white;
+            padding-bottom: 5rem;
+            p{
+                font-size: 3rem;
+            }
+            ul{
+                list-style: square;
+                padding-left: 2rem;
+            }
+        }        
     }
     .web-cards-container{
         display: flex;
@@ -266,6 +286,13 @@ section.works{
     }
 }
 ////////////////contacts
+.contact-banner{
+    height: 40rem;
+    overflow: hidden;
+    img{
+        width: 100%;
+    }
+}
 section.contact{
     div{
         div{
