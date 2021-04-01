@@ -125,7 +125,6 @@ header{
         top: 6.5rem;
         right: 0;
         flex-wrap: wrap;
-        background-color: $color-black;
         align-items: flex-end;
         max-height: 100vh;
         height: 100vh;
@@ -151,22 +150,38 @@ header{
         svg{
             width: 100%;
             height: 100%;
-            fill: $color-white;
         }
     }
 }
-.nav-transparent{
+//color change on scroll down form top
+.header-transparent{
     background-color: transparent;
     transition: all 300ms ease-in-out;
-    li a{  
-        color: $color-black;
+    nav ul{
+        background-color: $color-white;
+        li a{  
+            color: $color-black;
+        }
+    }
+    .menu-icon{
+        svg{
+            fill: $color-black;
+        }
     }
 }
-.nav-colored{
+.header-colored{
     background-color: $color-black;
     transition: all 300ms ease-in-out;
-    li a{  
-        color: $color-white;
+    nav ul{
+        background-color: $color-black;
+        li a{  
+            color: $color-white;
+        }        
+    }
+        .menu-icon{
+        svg{
+            fill: $color-white;
+        }
     }
 }
 ////////////////////////////////////////////////sections//////
@@ -220,7 +235,7 @@ section.works{
     background: $color-black;
     .works-heading{
         .section-title{
-            padding-bottom:5rem;
+            padding-bottom:3rem;
             h1{
                 color: $color-white;
             }  
@@ -230,17 +245,7 @@ section.works{
                 font-size: 4rem;
                 text-transform: lowercase;
                 color: $color-grey;
-                u{
-                    text-decoration: none;
-                    border-bottom: 1.5rem solid $color-grey;
-                }
             }
-            // .bar{
-            //     background-color: $color-grey;
-            //     height: 1.5rem;
-            //     margin: 3rem 0;
-            //     width: 85%;
-            // }
         }
         .description{
             color: $color-white;
@@ -294,7 +299,7 @@ section.works{
     }
 }
 section.contact{
-    div{
+    form{
         div{
             display: flex;
             margin:2rem 0;         

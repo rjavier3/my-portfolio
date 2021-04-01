@@ -27,11 +27,11 @@ navMenu.addEventListener('click',(event)=>{
 //appearing nav menu background  when scroll down
 window.addEventListener('scroll', (event) =>{
     if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
-        header.classList.add("nav-colored");
-        header.classList.remove("nav-transparent");
+        header.classList.add("header-colored");
+        header.classList.remove("header-transparent");
     } 
     else {
-        header.classList.add("nav-transparent");
-        header.classList.remove("nav-colored");
+        header.classList.add("header-transparent");
+        header.classList.remove("header-colored");
     }
 });

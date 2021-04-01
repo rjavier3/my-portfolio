@@ -147,7 +147,6 @@ header nav ul {
   right: 0;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  background-color: #000000;
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
@@ -182,27 +181,42 @@ header .menu-icon {
 header .menu-icon svg {
   width: 100%;
   height: 100%;
-  fill: #ffffff;
 }
 
-.nav-transparent {
+.header-transparent {
   background-color: transparent;
   -webkit-transition: all 300ms ease-in-out;
   transition: all 300ms ease-in-out;
 }
 
-.nav-transparent li a {
+.header-transparent nav ul {
+  background-color: #ffffff;
+}
+
+.header-transparent nav ul li a {
   color: #000000;
 }
 
-.nav-colored {
+.header-transparent .menu-icon svg {
+  fill: #000000;
+}
+
+.header-colored {
   background-color: #000000;
   -webkit-transition: all 300ms ease-in-out;
   transition: all 300ms ease-in-out;
 }
 
-.nav-colored li a {
+.header-colored nav ul {
+  background-color: #000000;
+}
+
+.header-colored nav ul li a {
   color: #ffffff;
+}
+
+.header-colored .menu-icon svg {
+  fill: #ffffff;
 }
 
 section {
@@ -269,7 +283,7 @@ section.works {
 }
 
 section.works .works-heading .section-title {
-  padding-bottom: 5rem;
+  padding-bottom: 3rem;
 }
 
 section.works .works-heading .section-title h1 {
@@ -282,11 +296,6 @@ section.works .works-heading .section-title p {
   font-size: 4rem;
   text-transform: lowercase;
   color: #cecece;
-}
-
-section.works .works-heading .section-title p u {
-  text-decoration: none;
-  border-bottom: 1.5rem solid #cecece;
 }
 
 section.works .works-heading .description {
@@ -351,7 +360,7 @@ section.works .button {
   width: 100%;
 }
 
-section.contact div div {
+section.contact form div {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -444,6 +453,10 @@ footer .social-media div a:hover svg {
   header .menu-icons-container {
     display: none;
   }
+  .header-transparent nav ul,
+  .header-colored nav ul {
+    background-color: transparent;
+  }
   section.banner {
     background: url(../img/banner-m-mountain.jpg) no-repeat;
     height: 35rem;
@@ -470,20 +483,6 @@ footer .social-media div a:hover svg {
   section.about .content .texts p {
     width: 50ch;
     max-width: 50ch;
-  }
-  section.works .works-heading {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    width: 100%;
-    gap: 3rem;
-  }
-  section.works .works-heading .section-title {
-    width: 48%;
-  }
-  section.works .works-heading .description {
-    margin-top: 10rem;
-    width: 48%;
   }
   section.works .web-cards-container {
     display: -webkit-box;
