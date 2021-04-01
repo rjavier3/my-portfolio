@@ -268,8 +268,24 @@ section.works .section-title h1 {
   color: #ffffff;
 }
 
+section.works .section-title h1 span {
+  font-size: 3rem;
+  text-transform: lowercase;
+  color: #d8d8d8;
+}
+
 section.works .description {
   color: #ffffff;
+  padding-bottom: 8rem;
+}
+
+section.works .description p {
+  font-size: 3rem;
+}
+
+section.works .description ul {
+  list-style: square;
+  padding-left: 2rem;
 }
 
 section.works .web-cards-container {
@@ -320,7 +336,7 @@ section.contact div div {
 
 section.contact input,
 section.contact textarea {
-  background: #dfdfdf;
+  background: #d8d8d8;
   border: none;
   padding: 1rem;
   width: 100%;

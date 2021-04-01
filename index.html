@@ -29,15 +29,15 @@
     <div class="container">
         <header class="nav-transparent">
             <div>
-                <a href="index.html">
+                <a href="/">
                     <img width="100" height="100" class="logo" src="img/logo.webp" alt="logo">
                 </a>
             </div>
             <nav>
                 <ul class="hidden">
                     <li><a href="#works">Websites</a></li>
-                    <li><a href="#contact">Contact</a></li>
                     <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
             <div class="menu-icons-container">
@@ -63,10 +63,18 @@
         <section class="works" id="works">
             <div>
                 <div class="section-title">
-                    <h1>Websites</h1>
+                    <h1>Website <span>bring graphics to life</span></h1>
                 </div>
                 <div class="description">
-                    <p>bring graphics to life</p>
+                    <ul>
+                        <li>Sketch and plan</li>
+                        <li>Learn new things</li>
+                        <li>Design with theme</li>
+                        <li>Optimized code</li>
+                        <li>Don't built sell that web,</li>
+                        <li>Build websites that sells</li>
+                        <li>What??</li>
+                    </ul>
                 </div>
                 <div class="web-cards-container">
                     <div class="web-card">
@@ -188,15 +196,15 @@
                 <form name="contact" action="https://formspree.io/f/maylzgoj" method="POST">
                     <div>
                         <label for="sender-name"></label>
-                        <input type="text" name="sender-name" id="sender-name" placeholder="Your Name"/>   
+                        <input type="text" name="sender-name" id="sender-name" placeholder="Your Name" required/>   
                     </div>
                     <div>
                         <label for="sender-email"></label>
-                        <input type="email" name="sender-email" id="sender-email" placeholder="Your Email"/>
+                        <input type="email" name="sender-email" id="sender-email" placeholder="Your Email" required/>
                     </div>
                     <div>
                         <label for="sender-message"></label>
-                        <textarea name="sender-message" id="sender-message" placeholder="Message"></textarea>
+                        <textarea name="sender-message" id="sender-message" placeholder="Message" required></textarea>
                     </div>
                     <div class="button">
                         <button type="submit">send</button>
