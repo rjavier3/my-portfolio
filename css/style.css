@@ -321,6 +321,10 @@ section.works .web-cards-container {
   gap: 3rem;
 }
 
+section.works .web-cards-container .web-card {
+  width: 100%;
+}
+
 section.works .web-cards-container .web-card a {
   background-color: #333333;
   color: #cecece;
@@ -335,9 +339,7 @@ section.works .web-cards-container .web-card a .head {
 }
 
 section.works .web-cards-container .web-card a .body {
-  visibility: hidden;
-  height: 0;
-  padding: 0;
+  display: none;
 }
 
 section.works .web-cards-container .web-card a:hover {
@@ -409,17 +411,6 @@ footer .social-media div a svg {
 
 footer .social-media div a:hover svg {
   fill: #FFC8A3;
-}
-
-.visually-hidden {
-  border: 0;
-  clip: rect(0 0 0 0);
-  height: 1px;
-  margin: -1px;
-  overflow: hidden;
-  padding: 0;
-  position: absolute;
-  width: 1px;
 }
 
 @media only screen and (min-width: 695px) {
@@ -497,10 +488,13 @@ footer .social-media div a:hover svg {
   section.works .web-cards-container .web-card {
     width: 48%;
   }
+  section.works .web-cards-container .web-card a .head {
+    padding: 2rem;
+  }
   section.works .web-cards-container .web-card a .body {
-    visibility: visible;
+    display: block;
     height: auto;
-    padding: 1rem 1rem 3rem 1rem;
+    padding: 1rem 2rem 3rem 2rem;
   }
   section.contact div form {
     max-width: 55rem;

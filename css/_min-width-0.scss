@@ -264,6 +264,7 @@ section.works{
         flex-wrap: wrap;
         gap: 3rem;
         .web-card{
+            width: 100%;
             a{
                 background-color: #333333;
                 color: $color-grey;
@@ -274,9 +275,7 @@ section.works{
                     min-height: 12rem;
                 }
                 .body{
-                    visibility: hidden;
-                    height: 0;
-                    padding: 0;
+                    display: none;
                 }
             }
             a:hover{
@@ -340,16 +339,4 @@ footer{
             }    
         }
     }
-}
-
-///helper class
-.visually-hidden {
-    border: 0;
-    clip: rect(0 0 0 0);
-    height: 1px;
-    margin: -1px;
-    overflow: hidden;
-    padding: 0;
-    position: absolute;
-    width: 1px;
 }

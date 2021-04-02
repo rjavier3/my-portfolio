@@ -75,10 +75,13 @@
             .web-card{
                 width: 48%;
                 a{
+                    .head{
+                        padding: 2rem;
+                    }
                     .body{
-                        visibility: visible;
+                        display: block;
                         height: auto;
-                        padding:1rem 1rem 3rem 1rem;
+                        padding:1rem 2rem 3rem 2rem;
                     }
                 }
             }

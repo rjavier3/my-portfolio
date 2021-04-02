@@ -21,7 +21,6 @@ navMenu.addEventListener('click',(event)=>{
 	if(event.target.tagName.toLowerCase() === 'a'){
 		toggleNav();
 	}
-	console.log(event.target);
 });
 
 //appearing nav menu background  when scroll down
