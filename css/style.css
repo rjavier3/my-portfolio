@@ -326,14 +326,6 @@ section.works .works-heading .section-title h1 {
   color: #ffffff;
 }
 
-section.works .works-heading .section-title p {
-  font-family: 'Oswald', sans-serif;
-  font-weight: bold;
-  font-size: 4rem;
-  text-transform: lowercase;
-  color: #cecece;
-}
-
 section.works .works-heading .description {
   color: #ffffff;
   padding-bottom: 5rem;
