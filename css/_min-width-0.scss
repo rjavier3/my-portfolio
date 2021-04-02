@@ -3,6 +3,7 @@ $color-hover:#FFC8A3;
 $color-black:#000000;
 $color-white:#ffffff; //preveiusly #faf4f1
 $color-grey:#cecece; //d8d8d8
+$color-brown:#7F746E;
 
 //global
 html{
@@ -229,6 +230,33 @@ section.about{
     .section-title{
         padding-bottom: 2rem;
     }
+    .texts{
+        padding-top:2rem;
+        p:nth-child(1){
+            border-left: solid 1.5rem #000000;
+            padding: 0 0 0 1.5rem;
+        }
+    }
+    .social-media{
+        display: flex;
+        padding-top: 2rem;
+        div{
+            padding-right: 2rem;
+            a{
+                width: 3rem;
+                height: 3rem;
+                display:block;
+                svg{
+                    fill: $color-main;
+                    width: 100%;
+                    height:auto;
+                }
+            }
+            a:hover svg{
+                fill: $color-hover;
+            }    
+        }
+    }
 }
 ////////////////works
 section.works{
@@ -266,12 +294,12 @@ section.works{
         .web-card{
             width: 100%;
             a{
-                background-color: #333333;
-                color: $color-grey;
+                background-color: #333333; //#333333 or color-brown
+                color: $color-grey; //color-grey or color-black
                 transition: margin 300ms ease-in-out;
                 .head{
                     padding:2rem 1rem;
-                    background-color: #424242;
+                    background-color: #424242; //#424242 or color-hover
                     min-height: 12rem;
                 }
                 .body{
@@ -290,14 +318,13 @@ section.works{
     }
 }
 ////////////////contacts
-.contact-banner{
-    height: 40rem;
-    overflow: hidden;
-    img{
-        width: 100%;
-    }
-}
 section.contact{
+    .description{
+        ul{
+            list-style: square;
+            padding:2rem 0 0 2rem;
+        }
+    }
     form{
         div{
             display: flex;
@@ -325,8 +352,8 @@ footer{
         div{
             padding-right: 1.5rem;
             a{
-                width: 2rem;
-                height: 2rem;
+                width: 3rem;
+                height: 3rem;
                 display:block;
                 svg{
                     fill: $color-white;

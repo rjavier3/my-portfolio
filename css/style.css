@@ -278,6 +278,42 @@ section.about .section-title {
   padding-bottom: 2rem;
 }
 
+section.about .texts {
+  padding-top: 2rem;
+}
+
+section.about .texts p:nth-child(1) {
+  border-left: solid 1.5rem #000000;
+  padding: 0 0 0 1.5rem;
+}
+
+section.about .social-media {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 2rem;
+}
+
+section.about .social-media div {
+  padding-right: 2rem;
+}
+
+section.about .social-media div a {
+  width: 3rem;
+  height: 3rem;
+  display: block;
+}
+
+section.about .social-media div a svg {
+  fill: #ff6700;
+  width: 100%;
+  height: auto;
+}
+
+section.about .social-media div a:hover svg {
+  fill: #FFC8A3;
+}
+
 section.works {
   background: #000000;
 }
@@ -353,13 +389,9 @@ section.works .button {
   margin-top: 2rem;
 }
 
-.contact-banner {
-  height: 40rem;
-  overflow: hidden;
-}
-
-.contact-banner img {
-  width: 100%;
+section.contact .description ul {
+  list-style: square;
+  padding: 2rem 0 0 2rem;
 }
 
 section.contact form div {
@@ -398,8 +430,8 @@ footer .social-media div {
 }
 
 footer .social-media div a {
-  width: 2rem;
-  height: 2rem;
+  width: 3rem;
+  height: 3rem;
   display: block;
 }
 
