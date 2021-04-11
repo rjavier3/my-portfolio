@@ -354,15 +354,15 @@ section.works .web-cards-container .web-card {
 }
 
 section.works .web-cards-container .web-card a {
-  background-color: #333333;
-  color: #cecece;
+  background-color: #7F746E;
+  color: #000000;
   -webkit-transition: margin 300ms ease-in-out;
   transition: margin 300ms ease-in-out;
 }
 
 section.works .web-cards-container .web-card a .head {
   padding: 2rem 1rem;
-  background-color: #424242;
+  background-color: #FFC8A3;
   min-height: 12rem;
 }
 

@@ -287,12 +287,12 @@ section.works{
         .web-card{
             width: 100%;
             a{
-                background-color: #333333; //#333333 or color-brown
-                color: $color-grey; //color-grey or color-black
+                background-color: $color-brown; //#333333 or color-brown
+                color: $color-black; //color-grey or color-black
                 transition: margin 300ms ease-in-out;
                 .head{
                     padding:2rem 1rem;
-                    background-color: #424242; //#424242 or color-hover
+                    background-color: $color-hover; //#424242 or color-hover
                     min-height: 12rem;
                 }
                 .body{
