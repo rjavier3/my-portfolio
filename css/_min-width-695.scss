@@ -39,49 +39,59 @@
     section.banner{
         background:url(../img/banner-m-mountain.jpg) no-repeat;
         height: 35rem;
-    }
-    //////about section
-    .about-pictures{
-        gap: 1%;
-        .img-container{
-            width: 24.25%;
-            height: 25rem;
-            img{
-                height: 100%;
-            }
+        .contents{
+            margin-top: 1rem;
         }
     }
+    //////about section
     section.about{
-        padding-top:5rem;
-        .content{
+        .about-pictures{
+            width: 110%;
+            margin-left: -5%;
+            gap: 1%;
+            flex-wrap: unset;
+            flex-direction: row;
+            .img-container{
+                width: 24.25%;
+                height: 30rem;
+                img{
+                    height: 100%;
+                }
+                &:first-child,
+                &:last-child{
+                    height: 25rem;
+                }
+                &:nth-child(3){
+                    height: 28rem;
+                }
+            }
+        }
+        .contents{
             .title{
                 width: 100%;
             }
             .texts{
                 width: 100%;
-                p{
-                    width: 50ch;
-                    max-width: 50ch;
-                }
             }
         }
     }
     /////works section
     section.works{
+        padding-bottom: 20rem;
         .web-cards-container{
             display: flex;
             flex-direction: column;
-            max-height: 132rem;
+            max-height: 100rem;
             .web-card{
-                width: 48%;
+                width: 32%;
                 a{
                     .head{
                         padding: 2rem;
                     }
                     .body{
-                        display: block;
                         height: auto;
-                        padding:1rem 2rem 3rem 2rem;
+                        padding:.5rem;
+                        padding-bottom: 0;
                     }
                 }
             }

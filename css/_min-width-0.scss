@@ -187,7 +187,7 @@ header{
 }
 ////////////////////////////////////////////////sections//////
 section{
-    padding: 5rem 1rem 5rem 1rem;
+    padding: 10rem 1rem 10rem 1rem;
 }
 ///////////////////banner
 section.banner{
@@ -195,67 +195,80 @@ section.banner{
     background:url(../img/banner-sm-mountain.jpg) no-repeat;
     background-size:auto 100%;
     height: 51rem;
-    h1{
-        padding: 1rem 0;
-    }
-    p{
-        text-transform: uppercase;
-        padding: 1rem;
-        font-size: 2.4rem;
-    }
-    div{
-        margin:1rem 0;
+    .contents{
+        margin-top:5rem;
+        h1{
+            padding: 1rem 0;
+        }
+        p{
+            text-transform: uppercase;
+            padding: 1rem;
+            font-size: 2.4rem;
+        }
+        .button{
+            margin:1rem 0;
+        }   
     }
 }
 ////////////////about
-.about-pictures{
-    padding: 1rem;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1rem;
-    .img-container{
-        width: 48%;
-        overflow: hidden;
-        height: 15rem;
-        display: flex;
-        justify-content: center;
-        align-items: flex-end;
-        img{
-            height: 120%;
-            width: auto;
-        }
-    }
-}
 section.about{
-    .section-title{
-        padding-bottom: 2rem;
-    }
-    .texts{
-        padding-top:2rem;
-        p:nth-child(1){
-            border-left: solid 1.5rem #000000;
-            padding: 0 0 0 1.5rem;
-        }
-    }
-    .social-media{
+    .about-pictures{
         display: flex;
-        padding-top: 2rem;
-        div{
-            padding-right: 2rem;
-            a{
-                width: 3rem;
-                height: 3rem;
-                display:block;
-                svg{
-                    fill: $color-main;
-                    width: 100%;
-                    height:auto;
-                }
+        flex-wrap: wrap;
+        gap: 1rem;
+        flex-direction: column;
+        max-height: 45rem;
+        .img-container{
+            width: 48%;
+            overflow: hidden;
+            height: 15rem;
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+            img{
+                height: 120%;
+                width: auto;
             }
-            a:hover svg{
-                fill: $color-hover;
-            }    
+            &:first-child,
+            &:last-child{
+                height: 20rem;
+            }
         }
+    }
+    .contents{
+        padding-top: 5rem;
+        .section-title{
+            padding-bottom: 2rem;
+        }
+        .texts{
+            p{
+                max-width: 50ch;
+            }
+            // p:nth-child(1){
+            //     border-left: solid 1.5rem #000000;
+            //     padding: 0 0 0 1.5rem;
+            // }
+        }
+        .social-media{
+            display: flex;
+            padding-top: 2rem;
+            div{
+                padding-right: 2rem;
+                a{
+                    width: 3rem;
+                    height: 3rem;
+                    display:block;
+                    svg{
+                        fill: $color-main;
+                        width: 100%;
+                        height:auto;
+                    }
+                }
+                a:hover svg{
+                    fill: $color-hover;
+                }    
+            }
+        }            
     }
 }
 ////////////////works
@@ -283,26 +296,39 @@ section.works{
     .web-cards-container{
         display: flex;
         flex-wrap: wrap;
-        gap: 3rem;
+        gap: 1rem;
         .web-card{
             width: 100%;
             a{
                 background-color: $color-brown; //#333333 or color-brown
                 color: $color-black; //color-grey or color-black
-                transition: margin 300ms ease-in-out;
+                transition: all 300ms ease-in-out;
                 .head{
                     padding:2rem 1rem;
                     background-color: $color-hover; //#424242 or color-hover
                     min-height: 12rem;
                 }
                 .body{
-                    display: none;
+                    height: 0;
+                    overflow: hidden;
+                    img{
+                        width: 100%;
+                        filter: grayscale(100%);
+                        transition: all 300ms ease-in-out;
+                        height: auto;
+                    }
                 }
             }
             a:hover{
                 margin-top:-1rem;
                 margin-bottom:1rem;
-                transition: margin 300ms ease-in-out;
+                transition: all 300ms ease-in-out;
+                .body{
+                    img{
+                        filter: saturate(200%);
+                        transition: all 300ms ease-in-out;
+                    }
+                }
             }
         }
     }
@@ -321,7 +347,7 @@ section.contact{
     form{
         div{
             display: flex;
-            margin:2rem 0;         
+            margin:1rem 0;         
         }
     }
     input,

@@ -1,10 +1,34 @@
 @media only screen and (min-width:960px){
     section.banner > div,
-    section.about > div,
     section.works > div,
     section.contact > div{
         width: 86rem;
         margin: auto;
+    }
+    section.about{
+        max-width: 86rem;
+        margin: 0 auto;
+        .contents{
+            padding-top: 0;
+            order: -1;
+            width: 90%;
+        }
+        .about-pictures{
+            width: 100%;
+            margin-left: 0;
+            flex-wrap: wrap;
+            flex-direction: column;
+            div.img-container{
+                height: 32rem;
+                &:first-child,
+                &:last-child{
+                    height: 25rem;
+                }
+                &:nth-child(3){
+                    height: 28rem;
+                }
+            }
+        }
     }
     //////banner
     section.banner{
@@ -32,17 +56,18 @@
                     .head{
                         padding: 2rem 4rem;
                     }
-                    .body{
-                        padding:2rem 4rem 4rem 4rem;
-                    }
                 }
             }
         }
     }
     //////about section
-    .about-pictures{
-        .img-container{
-            height: 30rem;
-        }
+    section.about{
+        display: flex;
+        gap: 5%;
+        .about-pictures{
+            .img-container{
+                height: 30rem;
+            }
+        }        
     }
 }
