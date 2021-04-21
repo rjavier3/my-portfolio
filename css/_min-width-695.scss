@@ -45,33 +45,23 @@
     }
     //////about section
     section.about{
-        .about-pictures{
-            width: 110%;
-            margin-left: -5%;
-            gap: 1%;
-            flex-wrap: unset;
-            flex-direction: row;
-            .img-container{
-                width: 24.25%;
-                height: 30rem;
-                img{
-                    height: 100%;
-                }
-                &:first-child,
-                &:last-child{
-                    height: 25rem;
-                }
-                &:nth-child(3){
-                    height: 28rem;
-                }
-            }
-        }
+        display: flex;
+        gap: 5%;
         .contents{
+            padding-top: 0;
+            order:-1;
             .title{
                 width: 100%;
             }
             .texts{
                 width: 100%;
+            }
+        }
+        .about-pictures{
+            .img-container{
+                img{
+                    height: 100%;
+                }
             }
         }
     }
