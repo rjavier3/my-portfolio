@@ -34,7 +34,6 @@ h3 {
 h1 {
   font-size: 6.78rem;
   font-weight: bold;
-  text-transform: uppercase;
 }
 
 h2 {
@@ -582,16 +581,16 @@ footer .social-media div a:hover svg {
     background-size: auto 100%;
     height: 50rem;
   }
-  section.banner > div {
-    padding: 10rem 0;
+  section.banner .contents {
+    padding: 7rem 0;
   }
-  section.banner > div h1 {
+  section.banner .contents h1 {
     margin: 2rem 0;
   }
-  section.banner > div p {
+  section.banner .contents p {
     margin: 2rem 0;
   }
-  section.banner > div div {
+  section.banner .contents div {
     margin: 2rem 0;
   }
   section.works .web-cards-container .web-card a .head {
