@@ -240,7 +240,7 @@ section.banner .contents h1 {
 section.banner .contents p {
   text-transform: uppercase;
   padding: 1rem;
-  font-size: 2.4rem;
+  font-size: 2rem;
 }
 
 section.banner .contents .button {
@@ -396,8 +396,6 @@ section.works .web-cards-container .web-card a:hover {
 }
 
 section.works .web-cards-container .web-card a:hover .body img {
-  -webkit-filter: saturate(200%);
-          filter: saturate(200%);
   -webkit-transition: all 300ms ease-in-out;
   transition: all 300ms ease-in-out;
 }

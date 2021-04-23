@@ -1,0 +1,36 @@
+@media(min-width:768px){
+    main{
+        display: flex;
+    }
+    .hidden{
+        max-height: 100vh;
+    }
+    header{
+        nav{
+            ul{
+                background-color: transparent;
+                display: flex;
+                height: auto;
+                width: auto;
+                position:static;
+                li{
+                    width: auto;
+                    min-width: 0;
+                    a{
+                        padding: 2rem;
+                        transition: padding 300ms ease-in-out;
+                    }
+                    a:hover{
+                        padding: 1.7rem 2rem 2.3rem 2rem;
+                    }
+                }
+            }
+        }
+        .menu-icons-container{
+            display: none;
+        }
+    }
+    .dog-image-section{
+        width: 120rem;
+    }
+}

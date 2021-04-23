@@ -52,30 +52,42 @@
                 </div>
             </div>
         </header>
-        <section class="dog-image-section">
-            <div class="contents">
-                <div class="img-container">
-                    <img class="random-dog-img" alt="random dog" src="img/default-dog.jpg">                    
+        <main>
+            <section class="dog-image-section">
+                <div class="contents">
+                    <div class="img-container">
+                        <img class="random-dog-img" alt="random dog" src="img/default-dog.jpg">                    
+                    </div>
+                    <div class="texts">
+                        <p class="quote">guess my breed right and I'll give you something</p>
+                        <p class="score">Your Score: <span id="score">00</span></p>
+                    </div>                
                 </div>
-                <div class="texts">
-                    <p>guess my breed right and I'll give you something</p>
-                    <p class="score">Your Score: <span id="score">00</span></p>
-                </div>                
-            </div>
-        </section>
-        <section class="action-section">
-            <div class="contents">
-                <div>Mistakes: <span id='mistakes'>0</span> of <span id='maxWrong'></span></div>
-                <p id="wordSpotlight">The word to be guessed goes here</p>
-                <div id="keyboard"></div>
-                <button class="next-btn hide-btn" id="next-btn">Next Dog</button>
-                <button class="reset-btn" id="reset-btn">Reset</button>
-            </div>
-        </section>
-        <section class="abstract-section">
+            </section>
+            <section class="action-section">
+                <div class="contents">
+                    <div>
+                        <div class="mistakes">Mistakes: <span id='mistakes'>0</span> of <span id='max-wrong'></span></div>
+                    </div>            
+                    <div>
+                        <p class="word-spotlight" id="word-spotlight">The word to be guessed goes here</p>
+                        <hr>
+                        <div class="keyboard" id="keyboard"></div>
+                        <div class="buttons">
+                            <button class="next-btn hide-btn" id="next-btn">Next Dog</button>
+                            <button class="reset-btn" id="reset-btn">Reset</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="abstract-section">
 
-        </section>
+            </section>            
+        </main>
         <footer>
+            <div class="contents">
+                <a href="https//:russelljohnjavier.com">&#169; 2021 Russell John Javier</a>
+            </div>
         </footer>
     </div>
     <script type="text/javascript" src="js/main.js"></script>

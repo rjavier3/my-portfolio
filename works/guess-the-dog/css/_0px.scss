@@ -93,7 +93,7 @@ section{
     padding:2rem 0;
 }
 
-/////////////////////header
+////////////////////////////////////sections and header
 .hidden-icon {
     display: none;
 }
@@ -109,8 +109,10 @@ header{
     .logo{
         padding: .5rem;
         a{
+            color: $color-dark;
             p{
                 margin: 0;
+                text-transform: uppercase;
             }
         }
     }
@@ -143,6 +145,7 @@ header{
         padding: .5rem;
     } 
 } 
+
 .dog-image-section{
     background: $color-accent;
     color: $color-light;
@@ -152,12 +155,92 @@ header{
             img{
                 width: 100%;
             }
-        }        
+        }
+        .texts{
+            .quote{
+                font-size: .875rem;
+            }
+            .score{
+                font-size: 1.25rem;
+                font-weight: bold;
+                span{
+                    font-size: 3.125rem;
+                }
+            }
+        }   
     }
 }
+
 .action-section{
     background: $color-primary;
+    
     .contents{
         padding:0 1rem;
+        display: flex;
+        flex-wrap: wrap;
+        min-height: 28.8125rem;
+        align-content: space-between;
+        & > div{
+            width: 100%;
+        }
+        .mistakes{
+            text-align: right;
+        }
+        .word-spotlight{
+            font-family: 'DM Serif Display', serif;
+            font-size: 2.1875rem;
+        }
+        hr{
+            background: black;
+            height: .2rem;
+            border: none;
+            margin: 2rem 0 1.5rem 0;
+        }
+        .keyboard{
+            min-height: 15rem;
+            .alphabet-key{
+                background: $color-primary-dark;
+                width: 2.5rem;
+                height: 2.5rem;
+                border: none;
+                margin: 0.1rem;
+                border-radius: .3rem;
+            }
+        }
+        .buttons{
+            display: flex;
+            justify-content: flex-end;
+            .reset-btn,
+            .next-btn{
+                height: 2.5rem;
+                min-width: 6rem;
+                background: $color-accent;
+                border: none;
+                color: $color-light;
+                border-radius: .3rem;
+            }
+            .next-btn{
+                background: $color-primary-darker;
+            }
+        }
+    }
+}
+
+.abstract-section{
+    height: 10rem;
+    background: url(../img/abstract.jpg) no-repeat;
+    background-size: 100% auto;
+}
+
+footer{
+    background: $color-dark;
+    .contents{
+        height: 3rem;
+        display: flex;
+        align-items: center;
+        padding: .5rem;
+        a{
+            color: $color-light;
+        }
     }
 }

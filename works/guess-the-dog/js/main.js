@@ -113,7 +113,7 @@ function checkIfGameWon() {
 //if lose
 function checkIfGameLost() {
 	if (mistakes === maxWrong) {
-	  document.getElementById('wordSpotlight').innerHTML = 'The answer was: ' + answer;
+	  document.getElementById('word-spotlight').innerHTML = 'answer was: ' + answer;
 	  document.getElementById('keyboard').innerHTML = 'You Lost!!!';
 	}
   }
@@ -121,15 +121,8 @@ function checkIfGameLost() {
 //the blank
 function guessedWord() {
 	wordStatus = answer.split('').map(letter => (guessed.indexOf(letter) >= 0 ? letter : " _ ")).join('');
-	document.getElementById('wordSpotlight').innerHTML = wordStatus;
+	document.getElementById('word-spotlight').innerHTML = wordStatus;
   }
-
-function checkIfGameLost() {
-	if (mistakes === maxWrong) {
-	  document.getElementById('wordSpotlight').innerHTML = 'The answer was: ' + answer;
-	  document.getElementById('keyboard').innerHTML = 'You Lost!!!';
-	}
-}
 
 function updateMistakes() {
 	document.getElementById('mistakes').innerHTML = mistakes;
@@ -160,7 +153,7 @@ dogImage.onload = function(){
 }
 
 
-document.getElementById('maxWrong').innerHTML = maxWrong;
+document.getElementById('max-wrong').innerHTML = maxWrong;
 breedName();
 generateButtons();
 guessedWord();

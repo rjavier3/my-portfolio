@@ -203,7 +203,7 @@ section.banner{
         p{
             text-transform: uppercase;
             padding: 1rem;
-            font-size: 2.4rem;
+            font-size: 2rem;
         }
         .button{
             margin:1rem 0;
@@ -324,7 +324,6 @@ section.works{
                 transition: all 300ms ease-in-out;
                 .body{
                     img{
-                        filter: saturate(200%);
                         transition: all 300ms ease-in-out;
                     }
                 }
