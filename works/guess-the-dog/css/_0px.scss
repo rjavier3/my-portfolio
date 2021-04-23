@@ -4,6 +4,7 @@ $color-primary:#93C4E0;
 $color-primary-dark:#005D93;
 $color-primary-darker:#094074;
 $color-dark:#000000;
+$color-grey:#808080;
 $color-light:#FFFFFF;
 
 //typography
@@ -17,41 +18,41 @@ body{
     font-family: 'Open Sans', sans-serif;
     color: $color-dark;
 }
-h1, .alpha,
-h2, .beta,
-h3, .gamma,
-h4, .delta,
-h5, .epsilon,
-h6, .zeta {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
     font-weight: bold;
     margin: 0;
 }
-h1, .alpha {
+h1{
     font-size: 3rem;
     line-height: 1;
     margin-bottom: 0.5rem;
 }
-h2, .beta {
+h2{
     font-size: 2.25rem;
     line-height: 1.3333333333333333;
     margin-bottom: 0.6666666666666666rem;
 }
-h3, .gamma {
+h3{
     font-size: 1.5rem;
     line-height: 1;
     margin-bottom: 1rem;
 }
-h4, .delta {
+h4{
     font-size: 1.3125rem;
     line-height: 1.1428571428571428;
     margin-bottom: 1.1428571428571428rem;
 }
-h5, .epsilon {
+h5{
     font-size: 1.125em;
     line-height: 1.3333333333333333;
     margin-bottom: 1.3333333333333333em;
 }
-h6, .zeta {
+h6{
     font-size: 1em;
     line-height: 1.5;
     margin-bottom: 1.5em;
@@ -61,10 +62,7 @@ blockquote {
     font-size: 1rem;
     margin: 0 0 1.5rem;
     line-height: 1.5;
-    -webkit-hyphens: auto;
-       -moz-hyphens: auto;
-        -ms-hyphens: auto;
-            hyphens: auto;
+    hyphens: auto;
 }
 dl,
 ol,
@@ -128,13 +126,14 @@ header{
     max-height: 100vh;
     height: 100vh;
     transition: max-height 300ms ease-in-out;
+    margin: 0;
         li{
             width: 100%;
             text-align: center;
             a{
                 text-transform: uppercase;
                 display: block;
-                padding: 5rem 0;
+                padding: 1rem 0;
                 svg{
                     fill: $color-primary-darker;
                 }
@@ -173,7 +172,6 @@ header{
 
 .action-section{
     background: $color-primary;
-    
     .contents{
         padding:0 1rem;
         display: flex;
@@ -200,11 +198,16 @@ header{
             min-height: 15rem;
             .alphabet-key{
                 background: $color-primary-dark;
-                width: 2.5rem;
+                width: 14.3%;
                 height: 2.5rem;
-                border: none;
+                border: .1rem solid $color-primary-dark;
                 margin: 0.1rem;
                 border-radius: .3rem;
+                color: $color-light;
+            }
+            .alphabet-key:disabled{
+                background: $color-primary;
+                color: $color-grey;
             }
         }
         .buttons{

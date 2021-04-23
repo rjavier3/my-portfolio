@@ -8,47 +8,47 @@ body {
   color: #000000;
 }
 
-h1, .alpha,
-h2, .beta,
-h3, .gamma,
-h4, .delta,
-h5, .epsilon,
-h6, .zeta {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-weight: bold;
   margin: 0;
 }
 
-h1, .alpha {
+h1 {
   font-size: 3rem;
   line-height: 1;
   margin-bottom: 0.5rem;
 }
 
-h2, .beta {
+h2 {
   font-size: 2.25rem;
   line-height: 1.3333333333333333;
   margin-bottom: 0.6666666666666666rem;
 }
 
-h3, .gamma {
+h3 {
   font-size: 1.5rem;
   line-height: 1;
   margin-bottom: 1rem;
 }
 
-h4, .delta {
+h4 {
   font-size: 1.3125rem;
   line-height: 1.1428571428571428;
   margin-bottom: 1.1428571428571428rem;
 }
 
-h5, .epsilon {
+h5 {
   font-size: 1.125em;
   line-height: 1.3333333333333333;
   margin-bottom: 1.3333333333333333em;
 }
 
-h6, .zeta {
+h6 {
   font-size: 1em;
   line-height: 1.5;
   margin-bottom: 1.5em;
@@ -60,8 +60,8 @@ blockquote {
   margin: 0 0 1.5rem;
   line-height: 1.5;
   -webkit-hyphens: auto;
-  -ms-hyphens: auto;
-  hyphens: auto;
+      -ms-hyphens: auto;
+          hyphens: auto;
 }
 
 dl,
@@ -142,6 +142,7 @@ header nav ul {
   height: 100vh;
   -webkit-transition: max-height 300ms ease-in-out;
   transition: max-height 300ms ease-in-out;
+  margin: 0;
 }
 
 header nav ul li {
@@ -152,7 +153,7 @@ header nav ul li {
 header nav ul li a {
   text-transform: uppercase;
   display: block;
-  padding: 5rem 0;
+  padding: 1rem 0;
 }
 
 header nav ul li a svg {
@@ -231,11 +232,17 @@ header .menu-icons-container {
 
 .action-section .contents .keyboard .alphabet-key {
   background: #005D93;
-  width: 2.5rem;
+  width: 14.3%;
   height: 2.5rem;
-  border: none;
+  border: 0.1rem solid #005D93;
   margin: 0.1rem;
   border-radius: .3rem;
+  color: #FFFFFF;
+}
+
+.action-section .contents .keyboard .alphabet-key:disabled {
+  background: #93C4E0;
+  color: #808080;
 }
 
 .action-section .contents .buttons {
@@ -291,6 +298,7 @@ footer .contents a {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    height: calc(100vh - 2.5rem);
   }
   .hidden {
     max-height: 100vh;
@@ -309,18 +317,65 @@ footer .contents a {
     min-width: 0;
   }
   header nav ul li a {
-    padding: 2rem;
-    -webkit-transition: padding 300ms ease-in-out;
-    transition: padding 300ms ease-in-out;
-  }
-  header nav ul li a:hover {
-    padding: 1.7rem 2rem 2.3rem 2rem;
+    padding: .5rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
   header .menu-icons-container {
     display: none;
   }
   .dog-image-section {
-    width: 120rem;
+    width: 50%;
+  }
+  .dog-image-section .contents {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .dog-image-section .contents .img-container {
+    width: 69%;
+    max-height: 82.5vh;
+    overflow: hidden;
+  }
+  .dog-image-section .contents .texts {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 4rem;
+    -webkit-writing-mode: vertical-rl;
+        -ms-writing-mode: tb-rl;
+            writing-mode: vertical-rl;
+    text-orientation: mixed;
+  }
+  .dog-image-section .contents .texts .quote {
+    line-height: 5;
+  }
+  .dog-image-section .contents .texts .score span {
+    -webkit-writing-mode: horizontal-tb;
+        -ms-writing-mode: lr-tb;
+            writing-mode: horizontal-tb;
+    margin-left: .5rem;
+    line-height: 1;
+    margin-right: -1rem;
+  }
+  .action-section {
+    width: 35%;
+  }
+  .action-section .contents .keyboard .alphabet-key {
+    width: 13.9%;
+  }
+  .abstract-section {
+    height: 94vh;
+    background: url(../img/abstract-desktop.jpg);
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    min-width: 15%;
+    z-index: -1;
+    background-position: 10%;
   }
 }
 /*# sourceMappingURL=styles.css.map */

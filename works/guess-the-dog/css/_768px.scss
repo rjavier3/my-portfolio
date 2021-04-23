@@ -1,6 +1,7 @@
 @media(min-width:768px){
     main{
         display: flex;
+        height: calc(100vh - 2.5rem) ;
     }
     .hidden{
         max-height: 100vh;
@@ -17,11 +18,8 @@
                     width: auto;
                     min-width: 0;
                     a{
-                        padding: 2rem;
-                        transition: padding 300ms ease-in-out;
-                    }
-                    a:hover{
-                        padding: 1.7rem 2rem 2.3rem 2rem;
+                        padding: .5rem;
+                        display: flex;
                     }
                 }
             }
@@ -30,7 +28,57 @@
             display: none;
         }
     }
+    
     .dog-image-section{
-        width: 120rem;
+        width: 50%;
+        .contents{ 
+            display: flex;
+            justify-content: center; 
+            // margin-right: -4.687rem;
+            .img-container{
+                width: 69%;
+                max-height: 82.5vh;
+                overflow: hidden;
+            }
+            .texts{
+                display: flex;
+                width: 4rem;
+                writing-mode: vertical-rl;
+                text-orientation: mixed;
+                .quote{
+                    line-height: 5;
+                }
+                .score{
+                    span{
+                        writing-mode: horizontal-tb;
+                        margin-left: .5rem;
+                        line-height: 1;
+                        margin-right: -1rem;
+                    }
+                }
+            }
+        }
+
+    }
+    
+    .action-section{
+        width: 35%;
+        .contents{
+            .keyboard{
+                .alphabet-key{
+                    width: 13.9%;
+                }
+            }
+        }
+    }
+
+    .abstract-section{
+        height: 94vh;
+        background: url(../img/abstract-desktop.jpg);
+        background-size: auto 100%;
+        background-repeat: no-repeat;
+        min-width: 15%;
+        z-index: -1;
+        background-position:10% ;
     }
 }
