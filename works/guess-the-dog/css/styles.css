@@ -1,0 +1,181 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Open+Sans&display=swap");
+html {
+  font-size: 100%;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  color: #000000;
+}
+
+h1, .alpha,
+h2, .beta,
+h3, .gamma,
+h4, .delta,
+h5, .epsilon,
+h6, .zeta {
+  font-weight: bold;
+  margin: 0;
+}
+
+h1, .alpha {
+  font-size: 3rem;
+  line-height: 1;
+  margin-bottom: 0.5rem;
+}
+
+h2, .beta {
+  font-size: 2.25rem;
+  line-height: 1.3333333333333333;
+  margin-bottom: 0.6666666666666666rem;
+}
+
+h3, .gamma {
+  font-size: 1.5rem;
+  line-height: 1;
+  margin-bottom: 1rem;
+}
+
+h4, .delta {
+  font-size: 1.3125rem;
+  line-height: 1.1428571428571428;
+  margin-bottom: 1.1428571428571428rem;
+}
+
+h5, .epsilon {
+  font-size: 1.125em;
+  line-height: 1.3333333333333333;
+  margin-bottom: 1.3333333333333333em;
+}
+
+h6, .zeta {
+  font-size: 1em;
+  line-height: 1.5;
+  margin-bottom: 1.5em;
+}
+
+p,
+blockquote {
+  font-size: 1rem;
+  margin: 0 0 1.5rem;
+  line-height: 1.5;
+  -webkit-hyphens: auto;
+  -ms-hyphens: auto;
+  hyphens: auto;
+}
+
+dl,
+ol,
+ul {
+  font-size: 1rem;
+  margin: 0 0 1.5rem;
+  padding: 0;
+}
+
+dd,
+dt,
+li {
+  line-height: 1.5;
+  margin: 0;
+}
+
+.hide-btn {
+  display: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+section {
+  padding: 2rem 0;
+}
+
+.hidden-icon {
+  display: none;
+}
+
+.hidden {
+  max-height: 0;
+}
+
+header {
+  background: #FFFFFF;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+}
+
+header .logo {
+  padding: .5rem;
+}
+
+header .logo a p {
+  margin: 0;
+}
+
+header nav ul {
+  overflow: hidden;
+  background: #FFFFFF;
+  width: 100%;
+  position: absolute;
+  top: 3.1rem;
+  right: 0;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  max-height: 100vh;
+  height: 100vh;
+  -webkit-transition: max-height 300ms ease-in-out;
+  transition: max-height 300ms ease-in-out;
+}
+
+header nav ul li {
+  width: 100%;
+  text-align: center;
+}
+
+header nav ul li a {
+  text-transform: uppercase;
+  display: block;
+  padding: 5rem 0;
+}
+
+header nav ul li a svg {
+  fill: #094074;
+}
+
+header .menu-icons-container {
+  padding: .5rem;
+}
+
+.dog-image-section {
+  background: #850005;
+  color: #FFFFFF;
+}
+
+.dog-image-section .contents {
+  padding: 0 1rem;
+}
+
+.dog-image-section .contents .img-container img {
+  width: 100%;
+}
+
+.action-section {
+  background: #93C4E0;
+}
+
+.action-section .contents {
+  padding: 0 1rem;
+}
+/*# sourceMappingURL=styles.css.map */

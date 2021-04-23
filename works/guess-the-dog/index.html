@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <title>Random Dog Pictures Generator</title>
+
+    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1" />
+
+    <meta name="author" content="Russell John Javier">
+    <meta name="description" content="Generate ramdom pictures of dog and it's breed from the internet">
+    <meta name="keywords" content="dog, infinite, woof, random, cute, i want many dogs, doggo, doggos">
+
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <!--Fonts
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Source Sans Pro', sans-serif;-->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Source+Sans+Pro:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">
+                <a href="index.html">
+                    <p>guess the breed of random dog</p>
+                </a>
+            </div>
+            <nav>
+                <ul class="hidden">
+                    <li><a href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm6.066 9.645c.183 4.04-2.83 8.544-8.164 8.544-1.622 0-3.131-.476-4.402-1.291 1.524.18 3.045-.244 4.252-1.189-1.256-.023-2.317-.854-2.684-1.995.451.086.895.061 1.298-.049-1.381-.278-2.335-1.522-2.304-2.853.388.215.83.344 1.301.359-1.279-.855-1.641-2.544-.889-3.835 1.416 1.738 3.533 2.881 5.92 3.001-.419-1.796.944-3.527 2.799-3.527.825 0 1.572.349 2.096.907.654-.128 1.27-.368 1.824-.697-.215.671-.67 1.233-1.263 1.589.581-.07 1.135-.224 1.649-.453-.384.578-.87 1.084-1.433 1.489z"/></svg>
+                    </a></li>
+                    <li><a href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm6.066 9.645c.183 4.04-2.83 8.544-8.164 8.544-1.622 0-3.131-.476-4.402-1.291 1.524.18 3.045-.244 4.252-1.189-1.256-.023-2.317-.854-2.684-1.995.451.086.895.061 1.298-.049-1.381-.278-2.335-1.522-2.304-2.853.388.215.83.344 1.301.359-1.279-.855-1.641-2.544-.889-3.835 1.416 1.738 3.533 2.881 5.92 3.001-.419-1.796.944-3.527 2.799-3.527.825 0 1.572.349 2.096.907.654-.128 1.27-.368 1.824-.697-.215.671-.67 1.233-1.263 1.589.581-.07 1.135-.224 1.649-.453-.384.578-.87 1.084-1.433 1.489z"/></svg>
+                    </a></li>
+                    <li><a href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm6.066 9.645c.183 4.04-2.83 8.544-8.164 8.544-1.622 0-3.131-.476-4.402-1.291 1.524.18 3.045-.244 4.252-1.189-1.256-.023-2.317-.854-2.684-1.995.451.086.895.061 1.298-.049-1.381-.278-2.335-1.522-2.304-2.853.388.215.83.344 1.301.359-1.279-.855-1.641-2.544-.889-3.835 1.416 1.738 3.533 2.881 5.92 3.001-.419-1.796.944-3.527 2.799-3.527.825 0 1.572.349 2.096.907.654-.128 1.27-.368 1.824-.697-.215.671-.67 1.233-1.263 1.589.581-.07 1.135-.224 1.649-.453-.384.578-.87 1.084-1.433 1.489z"/></svg>
+                    </a></li>
+                </ul>
+            </nav>
+            <div class="menu-icons-container">
+                <div class="menu-icon burger">
+                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+                        <path d="M2 6h28v6h-28zM2 14h28v6h-28zM2 22h28v6h-28z"></path>
+                    </svg>
+                </div>
+                <div class="menu-icon x hidden-icon">
+                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+                        <path d="M30 24.398l-8.406-8.398 8.406-8.398-5.602-5.602-8.398 8.402-8.402-8.402-5.598 5.602 8.398 8.398-8.398 8.398 5.598 5.602 8.402-8.402 8.398 8.402z"></path>
+                    </svg>                    
+                </div>
+            </div>
+        </header>
+        <section class="dog-image-section">
+            <div class="contents">
+                <div class="img-container">
+                    <img class="random-dog-img" alt="random dog" src="img/default-dog.jpg">                    
+                </div>
+                <div class="texts">
+                    <p>guess my breed right and I'll give you something</p>
+                    <p class="score">Your Score: <span id="score">00</span></p>
+                </div>                
+            </div>
+        </section>
+        <section class="action-section">
+            <div class="contents">
+                <div>Mistakes: <span id='mistakes'>0</span> of <span id='maxWrong'></span></div>
+                <p id="wordSpotlight">The word to be guessed goes here</p>
+                <div id="keyboard"></div>
+                <button class="next-btn hide-btn" id="next-btn">Next Dog</button>
+                <button class="reset-btn" id="reset-btn">Reset</button>
+            </div>
+        </section>
+        <section class="abstract-section">
+
+        </section>
+        <footer>
+        </footer>
+    </div>
+    <script type="text/javascript" src="js/main.js"></script>
+</body>
+
+</html>

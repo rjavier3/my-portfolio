@@ -1,0 +1,163 @@
+//variables
+$color-accent:#850005;
+$color-primary:#93C4E0;
+$color-primary-dark:#005D93;
+$color-primary-darker:#094074;
+$color-dark:#000000;
+$color-light:#FFFFFF;
+
+//typography
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Open+Sans&display=swap');
+// font-family: 'DM Serif Display', serif;
+// font-family: 'Open Sans', sans-serif;
+html {
+    font-size: 100%;
+}
+body{
+    font-family: 'Open Sans', sans-serif;
+    color: $color-dark;
+}
+h1, .alpha,
+h2, .beta,
+h3, .gamma,
+h4, .delta,
+h5, .epsilon,
+h6, .zeta {
+    font-weight: bold;
+    margin: 0;
+}
+h1, .alpha {
+    font-size: 3rem;
+    line-height: 1;
+    margin-bottom: 0.5rem;
+}
+h2, .beta {
+    font-size: 2.25rem;
+    line-height: 1.3333333333333333;
+    margin-bottom: 0.6666666666666666rem;
+}
+h3, .gamma {
+    font-size: 1.5rem;
+    line-height: 1;
+    margin-bottom: 1rem;
+}
+h4, .delta {
+    font-size: 1.3125rem;
+    line-height: 1.1428571428571428;
+    margin-bottom: 1.1428571428571428rem;
+}
+h5, .epsilon {
+    font-size: 1.125em;
+    line-height: 1.3333333333333333;
+    margin-bottom: 1.3333333333333333em;
+}
+h6, .zeta {
+    font-size: 1em;
+    line-height: 1.5;
+    margin-bottom: 1.5em;
+}
+p,
+blockquote {
+    font-size: 1rem;
+    margin: 0 0 1.5rem;
+    line-height: 1.5;
+    -webkit-hyphens: auto;
+       -moz-hyphens: auto;
+        -ms-hyphens: auto;
+            hyphens: auto;
+}
+dl,
+ol,
+ul {
+    font-size: 1rem;
+    margin: 0 0 1.5rem;
+    padding: 0;
+}
+dd,
+dt,
+li {
+    line-height: 1.5;
+    margin: 0;
+}
+
+//buttons
+.hide-btn{
+    display: none;
+}
+a{
+    text-decoration: none;
+}
+
+//others
+section{
+    padding:2rem 0;
+}
+
+/////////////////////header
+.hidden-icon {
+    display: none;
+}
+.hidden {
+    max-height: 0;
+}
+header{
+    background: $color-light;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    .logo{
+        padding: .5rem;
+        a{
+            p{
+                margin: 0;
+            }
+        }
+    }
+    nav ul{
+    overflow: hidden;
+    background: $color-light;
+    width: 100%;
+    position: absolute;
+    top: 3.1rem;
+    right: 0;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    max-height: 100vh;
+    height: 100vh;
+    transition: max-height 300ms ease-in-out;
+        li{
+            width: 100%;
+            text-align: center;
+            a{
+                text-transform: uppercase;
+                display: block;
+                padding: 5rem 0;
+                svg{
+                    fill: $color-primary-darker;
+                }
+            }
+        }
+    }
+    .menu-icons-container{
+        padding: .5rem;
+    } 
+} 
+.dog-image-section{
+    background: $color-accent;
+    color: $color-light;
+    .contents{
+        padding: 0 1rem;
+        .img-container{
+            img{
+                width: 100%;
+            }
+        }        
+    }
+}
+.action-section{
+    background: $color-primary;
+    .contents{
+        padding:0 1rem;
+    }
+}
