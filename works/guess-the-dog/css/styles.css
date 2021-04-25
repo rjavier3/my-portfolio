@@ -417,9 +417,15 @@ footer .contents a {
         -ms-writing-mode: tb-rl;
             writing-mode: vertical-rl;
     text-orientation: mixed;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
   .dog-image-section .contents .texts .quote {
     line-height: 4;
+  }
+  .dog-image-section .contents .texts .score {
+    margin: 0;
   }
   .dog-image-section .contents .texts .score span {
     -webkit-writing-mode: horizontal-tb;

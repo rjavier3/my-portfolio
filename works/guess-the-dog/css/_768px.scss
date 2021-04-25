@@ -61,10 +61,12 @@
                 width: 4rem;
                 writing-mode: vertical-rl;
                 text-orientation: mixed;
+                justify-content: space-between;
                 .quote{
                     line-height: 4;
                 }
                 .score{
+                    margin: 0;
                     span{
                         writing-mode: horizontal-tb;
                         margin-left: .5rem;
