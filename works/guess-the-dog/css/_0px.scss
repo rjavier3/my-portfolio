@@ -11,6 +11,16 @@ $color-dark-light:#808080;
 $color-light:#f7f5fb;
 $color-light-dark:#C2C2C2;
 
+@keyframes slideIn {
+  0% {
+    transform: translateY(100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+
 //typography
 @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Open+Sans&display=swap');
 // font-family: 'DM Serif Display', serif;
@@ -100,7 +110,7 @@ a{
     max-height: 0;
 }
 header{
-    background: $color-dark-light;
+    background: $color-dark;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -108,7 +118,7 @@ header{
     .logo{
         padding: .5rem;
         a{
-            color: $color-dark;
+            color: $color-light;
             font-weight: bold;
             p{
                 margin: 0;
@@ -118,7 +128,7 @@ header{
     }
     nav ul{
     overflow: hidden;
-    background: $color-dark-light;
+    background: $color-dark;
     width: 100%;
     position: absolute;
     top: 3.1rem;
@@ -137,7 +147,7 @@ header{
                 display: block;
                 padding: 1rem 0;
                 svg{
-                    fill: $color-dark;
+                    fill: $color-light;
                 }
             }
         }
@@ -159,8 +169,9 @@ header{
     .contents{
         padding: 0 1rem;
         .img-container{
-            background: rgba($color: $color-light-dark, $alpha: 1);
+            background: rgba($color: $color-accent, $alpha: 1);
             border-radius: 1rem;
+            overflow: hidden;
             img{
                 width: 100%;
                 cursor: zoom-out;
@@ -266,6 +277,8 @@ header{
 
 footer{
     background: $color-dark;
+    position: relative;
+    z-index: 100;
     .contents{
         height: 3rem;
         display: flex;

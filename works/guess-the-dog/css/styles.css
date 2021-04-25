@@ -1,4 +1,25 @@
 @import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Open+Sans&display=swap");
+@-webkit-keyframes slideIn {
+  0% {
+    -webkit-transform: translateY(100%);
+            transform: translateY(100%);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+@keyframes slideIn {
+  0% {
+    -webkit-transform: translateY(100%);
+            transform: translateY(100%);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
 html {
   font-size: 100%;
 }
@@ -96,7 +117,7 @@ a {
 }
 
 header {
-  background: #808080;
+  background: #000000;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -114,7 +135,7 @@ header .logo {
 }
 
 header .logo a {
-  color: #000000;
+  color: #f7f5fb;
   font-weight: bold;
 }
 
@@ -125,7 +146,7 @@ header .logo a p {
 
 header nav ul {
   overflow: hidden;
-  background: #808080;
+  background: #000000;
   width: 100%;
   position: absolute;
   top: 3.1rem;
@@ -154,7 +175,7 @@ header nav ul li a {
 }
 
 header nav ul li a svg {
-  fill: #000000;
+  fill: #f7f5fb;
 }
 
 header .menu-icons-container {
@@ -179,8 +200,9 @@ header .menu-icons-container svg {
 }
 
 .dog-image-section .contents .img-container {
-  background: #c2c2c2;
+  background: #850005;
   border-radius: 1rem;
+  overflow: hidden;
 }
 
 .dog-image-section .contents .img-container img {
@@ -318,6 +340,8 @@ header .menu-icons-container svg {
 
 footer {
   background: #000000;
+  position: relative;
+  z-index: 100;
 }
 
 footer .contents {
@@ -343,6 +367,7 @@ footer .contents a {
     display: flex;
     height: 38rem;
     width: 100%;
+    overflow: hidden;
   }
   .hidden {
     max-height: 100vh;
@@ -370,6 +395,8 @@ footer .contents a {
     display: none;
   }
   .dog-image-section {
+    -webkit-animation: 1s ease-out 0s 1 slideIn;
+            animation: 1s ease-out 0s 1 slideIn;
     width: 50%;
     min-width: 24rem;
     width: inherit;
@@ -387,7 +414,6 @@ footer .contents a {
   }
   .dog-image-section .contents .img-container {
     width: 69%;
-    overflow: hidden;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -436,6 +462,8 @@ footer .contents a {
     margin-right: -1rem;
   }
   .action-section {
+    -webkit-animation: 1.5s ease-out 0s 1 slideIn;
+            animation: 1.5s ease-out 0s 1 slideIn;
     padding: 5rem 0;
     width: 35%;
     min-width: 16.8rem;
@@ -444,14 +472,15 @@ footer .contents a {
     padding: 0 2rem;
   }
   .abstract-section {
+    -webkit-animation: 2s ease-out 0s 1 slideIn;
+            animation: 2s ease-out 0s 1 slideIn;
     min-width: 15%;
-    height: 29rem;
+    height: 38rem;
     z-index: -1;
     background: #850005;
   }
   .abstract-section .contents {
     width: 100%;
-    padding: 5rem 0;
     background: url(../img/abstract-desktop.jpg);
     background-size: cover;
     background-repeat: no-repeat;
