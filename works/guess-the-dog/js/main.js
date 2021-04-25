@@ -121,7 +121,7 @@ function checkIfGameLost() {
 
 //the blank
 function guessedWord() {
-	wordStatus = answer.split('').map(letter => (guessed.indexOf(letter) >= 0 ? letter : " _ ")).join('');
+	wordStatus = answer.split('').map(letter => (guessed.indexOf(letter) >= 0 ? letter : "_")).join('');
 	document.getElementById('word-spotlight').innerHTML = wordStatus;
   }
 

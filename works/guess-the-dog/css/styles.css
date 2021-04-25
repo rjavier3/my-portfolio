@@ -209,6 +209,7 @@ header .menu-icons-container svg {
   width: 100%;
   cursor: -webkit-zoom-out;
   cursor: zoom-out;
+  height: auto;
 }
 
 .dog-image-section .contents .texts .quote {
