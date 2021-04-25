@@ -2,6 +2,7 @@ let dogImage = document.querySelector('.random-dog-img');
 let resetBtn = document.getElementById('reset-btn');
 let nextBtn = document.getElementById('next-btn');
 let scoreContainer = document.getElementById('score');
+let imgContainer = document.querySelector('.img-container');
 
 let randomDogUrl = "https://dog.ceo/api/breeds/image/random";
 
@@ -101,7 +102,7 @@ function handleGuess(chosenLetter) {
 //if win
 function checkIfGameWon() {
 	if (wordStatus === answer) {
-	document.getElementById('keyboard').innerHTML = 'You Won!!!';
+	document.getElementById('keyboard').innerHTML = 'You Won!';
 	score++;
 	let scoreWithZeroFront = score.toString().padStart(2, "0");
 	scoreContainer.innerText = scoreWithZeroFront;
@@ -113,8 +114,8 @@ function checkIfGameWon() {
 //if lose
 function checkIfGameLost() {
 	if (mistakes === maxWrong) {
-	  document.getElementById('word-spotlight').innerHTML = 'answer was: ' + answer;
-	  document.getElementById('keyboard').innerHTML = 'You Lost!!!';
+	  document.getElementById('keyboard').innerHTML = 'answer was: ' + answer;
+	  document.getElementById('word-spotlight').innerHTML = 'You Lost';
 	}
   }
 
@@ -165,3 +166,7 @@ function fillSpace(){
 	}
 }
 fillSpace();
+
+imgContainer.addEventListener('click', ()=>{
+	imgContainer.classList.toggle('zoom');
+});

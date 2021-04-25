@@ -1,7 +1,8 @@
 @media(min-width:768px){
     main{
         display: flex;
-        height: calc(100vh - 2.5rem) ;
+        height: 38rem;
+        width: 100%;
     }
     .hidden{
         max-height: 100vh;
@@ -31,14 +32,29 @@
     
     .dog-image-section{
         width: 50%;
+        min-width: 24rem;
+        width: inherit;
+        .background{
+            padding:5rem 0;
+        }
         .contents{ 
             display: flex;
             justify-content: center; 
             // margin-right: -4.687rem;
             .img-container{
                 width: 69%;
-                max-height: 82.5vh;
                 overflow: hidden;
+                display: flex;
+                align-items: center;
+                height: 28rem;
+                &.zoom{
+                    display: flex;
+                    justify-content: center;
+                    img{
+                        height: 100%;
+                        width: auto;
+                    }
+                }
             }
             .texts{
                 display: flex;
@@ -46,7 +62,7 @@
                 writing-mode: vertical-rl;
                 text-orientation: mixed;
                 .quote{
-                    line-height: 5;
+                    line-height: 4;
                 }
                 .score{
                     span{
@@ -62,23 +78,26 @@
     }
     
     .action-section{
+        padding:5rem 0;
         width: 35%;
+        min-width: 16.8rem;
         .contents{
-            .keyboard{
-                .alphabet-key{
-                    width: 13.9%;
-                }
-            }
+            padding: 0 2rem;
         }
     }
 
     .abstract-section{
-        height: 94vh;
-        background: url(../img/abstract-desktop.jpg);
-        background-size: auto 100%;
-        background-repeat: no-repeat;
         min-width: 15%;
+        height: 29rem;
         z-index: -1;
-        background-position:10% ;
+        background: $color-accent;
+        .contents{
+            width: 100%;
+            padding:5rem 0;
+            background: url(../img/abstract-desktop.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position:5%;
+        }
     }
 }

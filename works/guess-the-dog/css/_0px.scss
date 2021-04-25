@@ -1,5 +1,6 @@
 //variables
 $color-accent:#850005;
+$color-accent-dark:#580000;
 $color-primary:#93C4E0;
 $color-primary-dark:#005D93;
 $color-primary-darker:#094074;
@@ -87,9 +88,6 @@ a{
 }
 
 //others
-section{
-    padding:2rem 0;
-}
 
 ////////////////////////////////////sections and header
 .hidden-icon {
@@ -99,7 +97,7 @@ section{
     max-height: 0;
 }
 header{
-    background: $color-light;
+    background: $color-dark;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -107,7 +105,7 @@ header{
     .logo{
         padding: .5rem;
         a{
-            color: $color-dark;
+            color: $color-light;
             p{
                 margin: 0;
                 text-transform: uppercase;
@@ -116,7 +114,7 @@ header{
     }
     nav ul{
     overflow: hidden;
-    background: $color-light;
+    background: $color-dark;
     width: 100%;
     position: absolute;
     top: 3.1rem;
@@ -135,22 +133,32 @@ header{
                 display: block;
                 padding: 1rem 0;
                 svg{
-                    fill: $color-primary-darker;
+                    fill: $color-primary;
                 }
             }
         }
     }
     .menu-icons-container{
         padding: .5rem;
+        svg{
+            fill:$color-light;
+        }
     } 
 } 
 
 .dog-image-section{
-    background: $color-accent;
+    background: url(../img/background-grain.jpeg) no-repeat;
     color: $color-light;
+    background-size: 100% 100%;
+    .background{
+        padding:2rem 0;
+        background: rgba($color: $color-accent, $alpha: .5);
+    }
     .contents{
         padding: 0 1rem;
         .img-container{
+            background: rgba($color: $color-accent-dark, $alpha: .6);
+            border-radius: 1rem;
             img{
                 width: 100%;
             }
@@ -171,6 +179,7 @@ header{
 }
 
 .action-section{
+    padding:2rem 0;
     background: $color-primary;
     .contents{
         padding:0 1rem;
@@ -187,6 +196,7 @@ header{
         .word-spotlight{
             font-family: 'DM Serif Display', serif;
             font-size: 2.1875rem;
+            line-height: 1;
         }
         hr{
             background: black;
@@ -196,9 +206,12 @@ header{
         }
         .keyboard{
             min-height: 15rem;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
             .alphabet-key{
                 background: $color-primary-dark;
-                width: 14.3%;
+                width: 16.5%;
                 height: 2.5rem;
                 border: .1rem solid $color-primary-dark;
                 margin: 0.1rem;
@@ -215,12 +228,19 @@ header{
             justify-content: flex-end;
             .reset-btn,
             .next-btn{
-                height: 2.5rem;
+                height: 2.2rem;
                 min-width: 6rem;
                 background: $color-accent;
                 border: none;
                 color: $color-light;
                 border-radius: .3rem;
+                &:hover{
+                    
+                    cursor: pointer;
+                }
+                &:active{
+                    filter: brightness(50%);
+                }
             }
             .next-btn{
                 background: $color-primary-darker;
@@ -231,8 +251,12 @@ header{
 
 .abstract-section{
     height: 10rem;
-    background: url(../img/abstract.jpg) no-repeat;
-    background-size: 100% auto;
+    .contents{
+        padding:2rem 0;
+        background: url(../img/abstract.jpg) no-repeat;
+        background-size: cover;
+        height: 100%;
+    }
 }
 
 footer{

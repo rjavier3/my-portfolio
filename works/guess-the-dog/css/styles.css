@@ -87,10 +87,6 @@ a {
   text-decoration: none;
 }
 
-section {
-  padding: 2rem 0;
-}
-
 .hidden-icon {
   display: none;
 }
@@ -100,7 +96,7 @@ section {
 }
 
 header {
-  background: #FFFFFF;
+  background: #000000;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -118,7 +114,7 @@ header .logo {
 }
 
 header .logo a {
-  color: #000000;
+  color: #FFFFFF;
 }
 
 header .logo a p {
@@ -128,7 +124,7 @@ header .logo a p {
 
 header nav ul {
   overflow: hidden;
-  background: #FFFFFF;
+  background: #000000;
   width: 100%;
   position: absolute;
   top: 3.1rem;
@@ -157,20 +153,35 @@ header nav ul li a {
 }
 
 header nav ul li a svg {
-  fill: #094074;
+  fill: #93C4E0;
 }
 
 header .menu-icons-container {
   padding: .5rem;
 }
 
+header .menu-icons-container svg {
+  fill: #FFFFFF;
+}
+
 .dog-image-section {
-  background: #850005;
+  background: url(../img/background-grain.jpeg) no-repeat;
   color: #FFFFFF;
+  background-size: 100% 100%;
+}
+
+.dog-image-section .background {
+  padding: 2rem 0;
+  background: rgba(133, 0, 5, 0.5);
 }
 
 .dog-image-section .contents {
   padding: 0 1rem;
+}
+
+.dog-image-section .contents .img-container {
+  background: rgba(88, 0, 0, 0.6);
+  border-radius: 1rem;
 }
 
 .dog-image-section .contents .img-container img {
@@ -191,6 +202,7 @@ header .menu-icons-container {
 }
 
 .action-section {
+  padding: 2rem 0;
   background: #93C4E0;
 }
 
@@ -217,6 +229,7 @@ header .menu-icons-container {
 .action-section .contents .word-spotlight {
   font-family: 'DM Serif Display', serif;
   font-size: 2.1875rem;
+  line-height: 1;
 }
 
 .action-section .contents hr {
@@ -228,11 +241,19 @@ header .menu-icons-container {
 
 .action-section .contents .keyboard {
   min-height: 15rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .action-section .contents .keyboard .alphabet-key {
   background: #005D93;
-  width: 14.3%;
+  width: 16.5%;
   height: 2.5rem;
   border: 0.1rem solid #005D93;
   margin: 0.1rem;
@@ -256,12 +277,23 @@ header .menu-icons-container {
 
 .action-section .contents .buttons .reset-btn,
 .action-section .contents .buttons .next-btn {
-  height: 2.5rem;
+  height: 2.2rem;
   min-width: 6rem;
   background: #850005;
   border: none;
   color: #FFFFFF;
   border-radius: .3rem;
+}
+
+.action-section .contents .buttons .reset-btn:hover,
+.action-section .contents .buttons .next-btn:hover {
+  cursor: pointer;
+}
+
+.action-section .contents .buttons .reset-btn:active,
+.action-section .contents .buttons .next-btn:active {
+  -webkit-filter: brightness(50%);
+          filter: brightness(50%);
 }
 
 .action-section .contents .buttons .next-btn {
@@ -270,8 +302,13 @@ header .menu-icons-container {
 
 .abstract-section {
   height: 10rem;
+}
+
+.abstract-section .contents {
+  padding: 2rem 0;
   background: url(../img/abstract.jpg) no-repeat;
-  background-size: 100% auto;
+  background-size: cover;
+  height: 100%;
 }
 
 footer {
@@ -298,7 +335,8 @@ footer .contents a {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    height: calc(100vh - 2.5rem);
+    height: 38rem;
+    width: 100%;
   }
   .hidden {
     max-height: 100vh;
@@ -327,6 +365,11 @@ footer .contents a {
   }
   .dog-image-section {
     width: 50%;
+    min-width: 24rem;
+    width: inherit;
+  }
+  .dog-image-section .background {
+    padding: 5rem 0;
   }
   .dog-image-section .contents {
     display: -webkit-box;
@@ -338,8 +381,26 @@ footer .contents a {
   }
   .dog-image-section .contents .img-container {
     width: 69%;
-    max-height: 82.5vh;
     overflow: hidden;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 28rem;
+  }
+  .dog-image-section .contents .img-container.zoom {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .dog-image-section .contents .img-container.zoom img {
+    height: 100%;
+    width: auto;
   }
   .dog-image-section .contents .texts {
     display: -webkit-box;
@@ -352,7 +413,7 @@ footer .contents a {
     text-orientation: mixed;
   }
   .dog-image-section .contents .texts .quote {
-    line-height: 5;
+    line-height: 4;
   }
   .dog-image-section .contents .texts .score span {
     -webkit-writing-mode: horizontal-tb;
@@ -363,19 +424,42 @@ footer .contents a {
     margin-right: -1rem;
   }
   .action-section {
+    padding: 5rem 0;
     width: 35%;
+    min-width: 16.8rem;
   }
-  .action-section .contents .keyboard .alphabet-key {
-    width: 13.9%;
+  .action-section .contents {
+    padding: 0 2rem;
   }
   .abstract-section {
-    height: 94vh;
-    background: url(../img/abstract-desktop.jpg);
-    background-size: auto 100%;
-    background-repeat: no-repeat;
     min-width: 15%;
+    height: 29rem;
     z-index: -1;
-    background-position: 10%;
+    background: #850005;
+  }
+  .abstract-section .contents {
+    width: 100%;
+    padding: 5rem 0;
+    background: url(../img/abstract-desktop.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 5%;
+  }
+}
+
+@media (min-width: 1024px) {
+  html {
+    font-size: 115%;
+  }
+  .action-section {
+    max-width: 23rem;
+    min-width: 23rem;
+  }
+}
+
+@media (min-width: 1440px) {
+  html {
+    font-size: 140%;
   }
 }
 /*# sourceMappingURL=styles.css.map */
