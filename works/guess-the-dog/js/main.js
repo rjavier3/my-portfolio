@@ -145,6 +145,7 @@ nextBtn.addEventListener('click', () =>{
 dogImage.onload = function(){
 	mistakes = 0;
 	guessed = [];
+	imgContainer.classList.add('zoom');
 
 	breedName();
 	guessedWord();
