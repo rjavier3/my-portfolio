@@ -96,7 +96,7 @@ a {
 }
 
 header {
-  background: #000000;
+  background: #808080;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -114,7 +114,8 @@ header .logo {
 }
 
 header .logo a {
-  color: #FFFFFF;
+  color: #000000;
+  font-weight: bold;
 }
 
 header .logo a p {
@@ -124,7 +125,7 @@ header .logo a p {
 
 header nav ul {
   overflow: hidden;
-  background: #000000;
+  background: #808080;
   width: 100%;
   position: absolute;
   top: 3.1rem;
@@ -153,7 +154,7 @@ header nav ul li a {
 }
 
 header nav ul li a svg {
-  fill: #93C4E0;
+  fill: #000000;
 }
 
 header .menu-icons-container {
@@ -161,18 +162,16 @@ header .menu-icons-container {
 }
 
 header .menu-icons-container svg {
-  fill: #FFFFFF;
+  fill: #f7f5fb;
 }
 
 .dog-image-section {
-  background: url(../img/background-grain.jpeg) no-repeat;
-  color: #FFFFFF;
-  background-size: 100% 100%;
+  color: #000000;
 }
 
 .dog-image-section .background {
   padding: 2rem 0;
-  background: rgba(133, 0, 5, 0.5);
+  background: #f7f5fb;
 }
 
 .dog-image-section .contents {
@@ -180,12 +179,14 @@ header .menu-icons-container svg {
 }
 
 .dog-image-section .contents .img-container {
-  background: rgba(88, 0, 0, 0.6);
+  background: #c2c2c2;
   border-radius: 1rem;
 }
 
 .dog-image-section .contents .img-container img {
   width: 100%;
+  cursor: -webkit-zoom-out;
+  cursor: zoom-out;
 }
 
 .dog-image-section .contents .texts .quote {
@@ -203,7 +204,7 @@ header .menu-icons-container svg {
 
 .action-section {
   padding: 2rem 0;
-  background: #93C4E0;
+  background: #C2C2C2;
 }
 
 .action-section .contents {
@@ -252,18 +253,22 @@ header .menu-icons-container svg {
 }
 
 .action-section .contents .keyboard .alphabet-key {
-  background: #005D93;
+  cursor: pointer;
+  background: #f7f5fb;
   width: 16.5%;
   height: 2.5rem;
-  border: 0.1rem solid #005D93;
+  border: 0.1rem solid #f7f5fb;
   margin: 0.1rem;
   border-radius: .3rem;
-  color: #FFFFFF;
+  color: #000000;
+  -webkit-transition: all 100ms ease-in-out;
+  transition: all 100ms ease-in-out;
 }
 
 .action-section .contents .keyboard .alphabet-key:disabled {
-  background: #93C4E0;
+  background: #C2C2C2;
   color: #808080;
+  border-color: #C2C2C2;
 }
 
 .action-section .contents .buttons {
@@ -281,7 +286,7 @@ header .menu-icons-container svg {
   min-width: 6rem;
   background: #850005;
   border: none;
-  color: #FFFFFF;
+  color: #f7f5fb;
   border-radius: .3rem;
 }
 
@@ -297,7 +302,7 @@ header .menu-icons-container svg {
 }
 
 .action-section .contents .buttons .next-btn {
-  background: #094074;
+  background: #106678;
 }
 
 .abstract-section {
@@ -327,7 +332,8 @@ footer .contents {
 }
 
 footer .contents a {
-  color: #FFFFFF;
+  font-size: .8rem;
+  color: #f7f5fb;
 }
 
 @media (min-width: 768px) {
