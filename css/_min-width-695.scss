@@ -37,7 +37,7 @@
     }
     ////banner section
     section.banner{
-        background:url(../img/banner-m-mountain.jpg) no-repeat;
+        background:url(../img/background/banner-m-mountain.png) no-repeat;
         height: 35rem;
         .contents{
             margin-top: 1rem;
@@ -45,22 +45,24 @@
     }
     //////about section
     section.about{
-        display: flex;
-        gap: 5%;
         .contents{
-            padding-top: 0;
-            order:-1;
-            .title{
-                width: 100%;
+            display: flex;
+            gap: 5%;            
+            .about-descriptions{
+                padding-top: 0;
+                order:-1;
+                .title{
+                    width: 100%;
+                }
+                .texts{
+                    width: 100%;
+                }
             }
-            .texts{
-                width: 100%;
-            }
-        }
-        .about-pictures{
-            .img-container{
-                img{
-                    height: 100%;
+            .about-pictures{
+                .img-container{
+                    img{
+                        height: 100%;
+                    }
                 }
             }
         }
@@ -80,7 +82,6 @@
                     }
                     .body{
                         height: auto;
-                        padding:.5rem;
                         padding-bottom: 0;
                     }
                 }

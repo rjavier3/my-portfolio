@@ -218,13 +218,21 @@ header .menu-icon svg {
   fill: #ffffff;
 }
 
+div.container {
+  background: url(../img/background/clouds.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 section {
   padding: 10rem 1rem 10rem 1rem;
 }
 
 section.banner {
   padding-top: 7rem;
-  background: url(../img/banner-sm-mountain.jpg) no-repeat;
+  background: url(../img/background/banner-sm-mountain.png) no-repeat;
   background-size: auto 100%;
   height: 51rem;
 }
@@ -245,6 +253,10 @@ section.banner .contents p {
 
 section.banner .contents .button {
   margin: 1rem 0;
+}
+
+section.about {
+  background: #ffffff;
 }
 
 section.about .about-pictures {
@@ -285,42 +297,42 @@ section.about .about-pictures .img-container:first-child, section.about .about-p
   height: 20rem;
 }
 
-section.about .contents {
+section.about .about-descriptions {
   padding-top: 5rem;
 }
 
-section.about .contents .section-title {
+section.about .about-descriptions .section-title {
   padding-bottom: 2rem;
 }
 
-section.about .contents .texts p {
+section.about .about-descriptions .texts p {
   max-width: 50ch;
 }
 
-section.about .contents .social-media {
+section.about .about-descriptions .social-media {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   padding-top: 2rem;
 }
 
-section.about .contents .social-media div {
+section.about .about-descriptions .social-media div {
   padding-right: 2rem;
 }
 
-section.about .contents .social-media div a {
+section.about .about-descriptions .social-media div a {
   width: 3rem;
   height: 3rem;
   display: block;
 }
 
-section.about .contents .social-media div a svg {
+section.about .about-descriptions .social-media div a svg {
   fill: #ff6700;
   width: 100%;
   height: auto;
 }
 
-section.about .contents .social-media div a:hover svg {
+section.about .about-descriptions .social-media div a:hover svg {
   fill: #FFC8A3;
 }
 
@@ -364,7 +376,6 @@ section.works .web-cards-container .web-card {
 }
 
 section.works .web-cards-container .web-card a {
-  background-color: #7F746E;
   color: #000000;
   -webkit-transition: all 300ms ease-in-out;
   transition: all 300ms ease-in-out;
@@ -402,6 +413,10 @@ section.works .web-cards-container .web-card a:hover .body img {
 
 section.works .button {
   margin-top: 2rem;
+}
+
+section.contact {
+  background: #ffffff;
 }
 
 section.contact .description ul {
@@ -496,31 +511,31 @@ footer .social-media div a:hover svg {
     background-color: transparent;
   }
   section.banner {
-    background: url(../img/banner-m-mountain.jpg) no-repeat;
+    background: url(../img/background/banner-m-mountain.png) no-repeat;
     height: 35rem;
   }
   section.banner .contents {
     margin-top: 1rem;
   }
-  section.about {
+  section.about .contents {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     gap: 5%;
   }
-  section.about .contents {
+  section.about .contents .about-descriptions {
     padding-top: 0;
     -webkit-box-ordinal-group: 0;
         -ms-flex-order: -1;
             order: -1;
   }
-  section.about .contents .title {
+  section.about .contents .about-descriptions .title {
     width: 100%;
   }
-  section.about .contents .texts {
+  section.about .contents .about-descriptions .texts {
     width: 100%;
   }
-  section.about .about-pictures .img-container img {
+  section.about .contents .about-pictures .img-container img {
     height: 100%;
   }
   section.works {
@@ -544,7 +559,6 @@ footer .social-media div a:hover svg {
   }
   section.works .web-cards-container .web-card a .body {
     height: auto;
-    padding: .5rem;
     padding-bottom: 0;
   }
   section.contact div form {
@@ -575,7 +589,7 @@ footer .social-media div a:hover svg {
     margin: auto;
   }
   section.banner {
-    background: url(../img/banner-lg-mountain.jpg) no-repeat;
+    background: url(../img/background/banner-lg-mountain.png) no-repeat;
     background-size: auto 100%;
     height: 50rem;
   }
@@ -594,7 +608,7 @@ footer .social-media div a:hover svg {
   section.works .web-cards-container .web-card a .head {
     padding: 2rem 4rem;
   }
-  section.about {
+  section.about .contents {
     max-width: 86rem;
     margin: 0 auto;
     display: -webkit-box;
@@ -602,7 +616,7 @@ footer .social-media div a:hover svg {
     display: flex;
     gap: 5%;
   }
-  section.about .contents {
+  section.about .contents .about-descriptions {
     padding-top: 0;
     -webkit-box-ordinal-group: 0;
         -ms-flex-order: -1;
@@ -613,7 +627,6 @@ footer .social-media div a:hover svg {
 
 @media only screen and (min-width: 1480px) {
   section.banner {
-    background: url(../img/banner-lg-mountain.jpg) no-repeat;
     background-size: 100% auto;
     background-position: 0 100%;
   }
@@ -624,15 +637,12 @@ footer .social-media div a:hover svg {
 
 @media only screen and (min-width: 1600px) {
   section.banner {
-    background: url(../img/banner-xlg-mountain.jpg) no-repeat;
+    background: url(../img/background/banner-xlg-mountain.png) no-repeat;
     background-size: 100% auto;
     background-position: 0 100%;
   }
   section.banner > div {
     padding: 5rem 0;
-  }
-  .about-pictures .img-container {
-    height: 45rem;
   }
 }
 /*# sourceMappingURL=style.css.map */
