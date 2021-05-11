@@ -317,11 +317,11 @@ section.works{
                     min-height: 12rem;
                 }
                 .body{
+                    transition: all 300ms ease-in-out;
                     height: 0;
                     overflow: hidden;
                     img{
                         width: 100%;
-                        transition: all 300ms ease-in-out;
                         height: auto;
                     }
                 }

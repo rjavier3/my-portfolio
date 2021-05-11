@@ -388,14 +388,14 @@ section.works .web-cards-container .web-card a .head {
 }
 
 section.works .web-cards-container .web-card a .body {
+  -webkit-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
   height: 0;
   overflow: hidden;
 }
 
 section.works .web-cards-container .web-card a .body img {
   width: 100%;
-  -webkit-transition: all 300ms ease-in-out;
-  transition: all 300ms ease-in-out;
   height: auto;
 }
 
@@ -549,7 +549,7 @@ footer .social-media div a:hover svg {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    max-height: 100rem;
+    max-height: 160rem;
   }
   section.works .web-cards-container .web-card {
     width: 32%;
@@ -560,6 +560,14 @@ footer .social-media div a:hover svg {
   section.works .web-cards-container .web-card a .body {
     height: auto;
     padding-bottom: 0;
+  }
+  section.works .web-cards-container:hover .web-card .body {
+    -webkit-filter: brightness(50%);
+            filter: brightness(50%);
+  }
+  section.works .web-cards-container .web-card:hover .body {
+    -webkit-filter: brightness(100%);
+            filter: brightness(100%);
   }
   section.contact div form {
     max-width: 55rem;

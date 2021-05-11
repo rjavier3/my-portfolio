@@ -73,7 +73,7 @@
         .web-cards-container{
             display: flex;
             flex-direction: column;
-            max-height: 100rem;
+            max-height: 160rem;
             .web-card{
                 width: 32%;
                 a{
@@ -86,6 +86,12 @@
                     }
                 }
             }
+        }
+        .web-cards-container:hover .web-card .body{
+            filter: brightness(50%);
+        }
+        .web-cards-container .web-card:hover .body{
+            filter: brightness(100%);
         }
     }
     ////conctact
