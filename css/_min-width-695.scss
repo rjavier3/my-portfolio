@@ -47,21 +47,20 @@
     section.about{
         .contents{
             display: flex;
-            gap: 5%;            
+            gap: 5%;
+            width: 100%; 
+            flex-direction: row-reverse;
             .about-descriptions{
-                padding-top: 0;
-                order:-1;
-                .title{
-                    width: 100%;
-                }
-                .texts{
-                    width: 100%;
-                }
+                width: 47.5%;
             }
             .about-pictures{
+                width: 47.5%;
+                padding-top: 5rem;
                 .img-container{
-                    img{
-                        height: 100%;
+                    height: 18rem;
+                    &:first-child,
+                    &:last-child{
+                        height: 24rem;
                     }
                 }
             }

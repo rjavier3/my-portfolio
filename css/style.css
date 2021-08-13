@@ -522,21 +522,24 @@ footer .social-media div a:hover svg {
     display: -ms-flexbox;
     display: flex;
     gap: 5%;
+    width: 100%;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
   }
   section.about .contents .about-descriptions {
-    padding-top: 0;
-    -webkit-box-ordinal-group: 0;
-        -ms-flex-order: -1;
-            order: -1;
+    width: 47.5%;
   }
-  section.about .contents .about-descriptions .title {
-    width: 100%;
+  section.about .contents .about-pictures {
+    width: 47.5%;
+    padding-top: 5rem;
   }
-  section.about .contents .about-descriptions .texts {
-    width: 100%;
+  section.about .contents .about-pictures .img-container {
+    height: 18rem;
   }
-  section.about .contents .about-pictures .img-container img {
-    height: 100%;
+  section.about .contents .about-pictures .img-container:first-child, section.about .contents .about-pictures .img-container:last-child {
+    height: 24rem;
   }
   section.works {
     padding-bottom: 20rem;
@@ -619,17 +622,6 @@ footer .social-media div a:hover svg {
   section.about .contents {
     max-width: 86rem;
     margin: 0 auto;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    gap: 5%;
-  }
-  section.about .contents .about-descriptions {
-    padding-top: 0;
-    -webkit-box-ordinal-group: 0;
-        -ms-flex-order: -1;
-            order: -1;
-    width: 90%;
   }
 }
 
