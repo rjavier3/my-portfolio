@@ -1,13 +1,15 @@
 $color-main:#ff6700;
 $color-hover:#FFC8A3;
-$color-black:#000000;
+$color-black:#202020;
 $color-white:#ffffff; //preveiusly #faf4f1
-$color-grey:#cecece; //d8d8d8
+$color-grey:#dfdfdf; //d8d8d8
 $color-brown:#7F746E;
+$color-yellow:#fff5e3;
 
 //global
 html{
 	font-size: 62.5%; /*10px*/
+    scroll-behavior: smooth;
 }
 body{
 	font-size: 1.6rem;
@@ -34,7 +36,8 @@ h3{
     line-height: 1;
 }
 h1{
-    font-size: 6.78rem;
+    // font-size: 6.78rem;
+    font-size: 5rem;
     font-weight: bold;
 }
 h2{
@@ -66,6 +69,7 @@ a{
     background: $color-main;
     width: 16rem;
     border-radius: .3rem;
+    border: $color-black solid 1.5px;
     a,
     button{
         text-transform: uppercase;
@@ -84,7 +88,7 @@ a{
     a:focus,
     button:hover,
     button:focus {
-      padding: 0.5rem 0.2rem 0.5rem 0.8rem;
+      padding: 0.2rem 0.5rem 0.8rem 0.5rem;
     }
 }
 
@@ -99,13 +103,13 @@ a{
     background-color: $color-hover;
   
     transition: transform 300ms ease-in-out;
-    transform: scaleX(0);
-    transform-origin: left;
+    transform: scaleY(0);
+    transform-origin: bottom;
 }
   
 .button:hover::before,
 .button:focus::before {
-  transform: scaleX(1);
+  transform: scaleY(1);
 }
 
 ///////////////////////////////////////////////////////header nav
@@ -187,7 +191,6 @@ header{
 }
 ////////////////////////////////////////////////sections//////
 div.container{
-    background:url(../img/background/clouds.jpg);
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -198,23 +201,112 @@ section{
 }
 ///////////////////banner
 section.banner{
-    padding-top: 7rem;
-    background:url(../img/background/banner-sm-mountain.png) no-repeat;
     background-size:auto 100%;
-    height: 51rem;
+    height: calc(100vh - 20rem);
+    position: relative;
     .contents{
         margin-top:5rem;
         h1{
             padding: 1rem 0;
+            text-align: center;
         }
         p{
             text-transform: uppercase;
+            text-align: center;
             padding: 1rem;
-            font-size: 2rem;
+            font-size: 1.8rem;
         }
         .button{
-            margin:1rem 0;
+            margin:0 auto;
+            margin-top: 1rem;
+            &::after{
+                content:" ";
+                position: absolute;
+                height: calc(100vh - (15rem + 16rem));
+                width: 1.5px;
+                background-color:$color-black;
+                top: 35px;
+                left: 50%;
+            }
         }   
+    }
+}
+////////////////works
+section.works{
+    background: $color-black;
+    display: flex;
+    flex-wrap: wrap;
+    .works-heading{
+        order: 2;
+        padding-top: 3rem;
+        .section-title{
+            padding-bottom:3rem;
+            h1{
+                color: $color-white;
+            }
+        }
+        .description{
+            color: $color-white;
+            p{
+                font-size: 3rem;
+            }
+            ul{
+                list-style: square;
+                padding-left: 2rem;
+            }
+        }        
+    }
+    .web-cards-container{
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+        max-height: 160rem;
+        flex-wrap: wrap;
+        max-width: 100%;
+        .web-card{
+            width: 48%;
+            a{
+                color: $color-black;
+                transition: all 300ms ease-in-out;
+                border-radius: 1.5rem;
+                overflow: hidden;
+                background-color: $color-white;
+                .tools-used{
+                    padding: 1rem;
+                    p{
+                        padding: 0;
+                        font-size: 1.6rem;
+                    }
+                }
+                .body{
+                    transition: all 300ms ease-in-out;
+                    overflow: hidden;
+                    img{
+                        width: 100%;
+                        height: auto;
+                        display: block;
+                    }
+                }
+                .title{
+                    padding: 1rem;
+                    h2{
+                        font-size: 2rem;
+                        text-align: center;
+                    }
+                }
+            }
+            a:hover,
+            a:focus{
+                margin-top:-.5rem;
+                margin-bottom:.5rem;
+                transition: all 300ms ease-in-out;
+                .body{
+                    img{
+                        transition: all 300ms ease-in-out;
+                    }
+                }
+            }
+        }
     }
 }
 ////////////////about
@@ -276,71 +368,9 @@ section.about{
         }            
     }
 }
-////////////////works
-section.works{
-    background: $color-black;
-    .works-heading{
-        .section-title{
-            padding-bottom:3rem;
-            h1{
-                color: $color-white;
-            }
-        }
-        .description{
-            color: $color-white;
-            padding-bottom: 5rem;
-            p{
-                font-size: 3rem;
-            }
-            ul{
-                list-style: square;
-                padding-left: 2rem;
-            }
-        }        
-    }
-    .web-cards-container{
-        display: flex;
-        flex-wrap: wrap;
-        gap: 1rem;
-        .web-card{
-            width: 100%;
-            a{
-                color: $color-black;
-                transition: all 300ms ease-in-out;
-                .head{
-                    padding:2rem 1rem;
-                    background-color: $color-hover; //#424242 or color-hover
-                    min-height: 12rem;
-                }
-                .body{
-                    transition: all 300ms ease-in-out;
-                    height: 0;
-                    overflow: hidden;
-                    img{
-                        width: 100%;
-                        height: auto;
-                    }
-                }
-            }
-            a:hover{
-                margin-top:-1rem;
-                margin-bottom:1rem;
-                transition: all 300ms ease-in-out;
-                .body{
-                    img{
-                        transition: all 300ms ease-in-out;
-                    }
-                }
-            }
-        }
-    }
-    .button{
-        margin-top: 2rem;
-    }
-}
 ////////////////contacts
 section.contact{
-    background: $color-white;
+    background: $color-yellow;
     .description{
         ul{
             list-style: square;
@@ -388,4 +418,16 @@ footer{
             }    
         }
     }
+}
+
+///////////////helper class
+.visually-hidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
 }

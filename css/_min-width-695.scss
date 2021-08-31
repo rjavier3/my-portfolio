@@ -37,10 +37,11 @@
     }
     ////banner section
     section.banner{
-        background:url(../img/background/banner-m-mountain.png) no-repeat;
-        height: 35rem;
         .contents{
             margin-top: 1rem;
+            .button::after{
+                height: calc(100vh - (11rem + 16rem));
+            }
         }
     }
     //////about section
@@ -69,10 +70,14 @@
     /////works section
     section.works{
         padding-bottom: 20rem;
+        .works-heading{
+            margin-top: -10rem;
+            margin-left: 50%;
+        }
         .web-cards-container{
             display: flex;
             flex-direction: column;
-            max-height: 160rem;
+            max-height: 130rem;
             .web-card{
                 width: 32%;
                 a{

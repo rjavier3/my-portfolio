@@ -1,13 +1,14 @@
 html {
   font-size: 62.5%;
   /*10px*/
+  scroll-behavior: smooth;
 }
 
 body {
   font-size: 1.6rem;
   line-height: 1.5;
   font-family: 'Open Sans', sans-serif;
-  color: #000000;
+  color: #202020;
   width: 100%;
   background: #ffffff;
 }
@@ -21,7 +22,7 @@ button {
   font-size: 1.6rem;
   line-height: 1.5;
   font-family: 'Open Sans', sans-serif;
-  color: #000000;
+  color: #202020;
 }
 
 h1,
@@ -32,7 +33,7 @@ h3 {
 }
 
 h1 {
-  font-size: 6.78rem;
+  font-size: 5rem;
   font-weight: bold;
 }
 
@@ -70,12 +71,13 @@ a {
   background: #ff6700;
   width: 16rem;
   border-radius: .3rem;
+  border: #202020 solid 1.5px;
 }
 
 .button a,
 .button button {
   text-transform: uppercase;
-  color: #000000;
+  color: #202020;
   padding: 0.5rem;
   width: 100%;
   text-align: center;
@@ -93,7 +95,7 @@ a {
 .button a:focus,
 .button button:hover,
 .button button:focus {
-  padding: 0.5rem 0.2rem 0.5rem 0.8rem;
+  padding: 0.2rem 0.5rem 0.8rem 0.5rem;
 }
 
 .button::before {
@@ -109,16 +111,16 @@ a {
   transition: -webkit-transform 300ms ease-in-out;
   transition: transform 300ms ease-in-out;
   transition: transform 300ms ease-in-out, -webkit-transform 300ms ease-in-out;
-  -webkit-transform: scaleX(0);
-          transform: scaleX(0);
-  -webkit-transform-origin: left;
-          transform-origin: left;
+  -webkit-transform: scaleY(0);
+          transform: scaleY(0);
+  -webkit-transform-origin: bottom;
+          transform-origin: bottom;
 }
 
 .button:hover::before,
 .button:focus::before {
-  -webkit-transform: scaleX(1);
-          transform: scaleX(1);
+  -webkit-transform: scaleY(1);
+          transform: scaleY(1);
 }
 
 header {
@@ -193,21 +195,21 @@ header .menu-icon svg {
 }
 
 .header-transparent nav ul li a {
-  color: #000000;
+  color: #202020;
 }
 
 .header-transparent .menu-icon svg {
-  fill: #000000;
+  fill: #202020;
 }
 
 .header-colored {
-  background-color: #000000;
+  background-color: #202020;
   -webkit-transition: all 300ms ease-in-out;
   transition: all 300ms ease-in-out;
 }
 
 .header-colored nav ul {
-  background-color: #000000;
+  background-color: #202020;
 }
 
 .header-colored nav ul li a {
@@ -219,7 +221,6 @@ header .menu-icon svg {
 }
 
 div.container {
-  background: url(../img/background/clouds.jpg);
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -231,10 +232,9 @@ section {
 }
 
 section.banner {
-  padding-top: 7rem;
-  background: url(../img/background/banner-sm-mountain.png) no-repeat;
   background-size: auto 100%;
-  height: 51rem;
+  height: calc(100vh - 20rem);
+  position: relative;
 }
 
 section.banner .contents {
@@ -243,16 +243,138 @@ section.banner .contents {
 
 section.banner .contents h1 {
   padding: 1rem 0;
+  text-align: center;
 }
 
 section.banner .contents p {
   text-transform: uppercase;
+  text-align: center;
   padding: 1rem;
-  font-size: 2rem;
+  font-size: 1.8rem;
 }
 
 section.banner .contents .button {
-  margin: 1rem 0;
+  margin: 0 auto;
+  margin-top: 1rem;
+}
+
+section.banner .contents .button::after {
+  content: " ";
+  position: absolute;
+  height: calc(100vh - (15rem + 16rem));
+  width: 1.5px;
+  background-color: #202020;
+  top: 35px;
+  left: 50%;
+}
+
+section.works {
+  background: #202020;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+section.works .works-heading {
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
+  padding-top: 3rem;
+}
+
+section.works .works-heading .section-title {
+  padding-bottom: 3rem;
+}
+
+section.works .works-heading .section-title h1 {
+  color: #ffffff;
+}
+
+section.works .works-heading .description {
+  color: #ffffff;
+}
+
+section.works .works-heading .description p {
+  font-size: 3rem;
+}
+
+section.works .works-heading .description ul {
+  list-style: square;
+  padding-left: 2rem;
+}
+
+section.works .web-cards-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 1.5rem;
+  max-height: 160rem;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  max-width: 100%;
+}
+
+section.works .web-cards-container .web-card {
+  width: 48%;
+}
+
+section.works .web-cards-container .web-card a {
+  color: #202020;
+  -webkit-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
+  border-radius: 1.5rem;
+  overflow: hidden;
+  background-color: #ffffff;
+}
+
+section.works .web-cards-container .web-card a .tools-used {
+  padding: 1rem;
+}
+
+section.works .web-cards-container .web-card a .tools-used p {
+  padding: 0;
+  font-size: 1.6rem;
+}
+
+section.works .web-cards-container .web-card a .body {
+  -webkit-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
+  overflow: hidden;
+}
+
+section.works .web-cards-container .web-card a .body img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+section.works .web-cards-container .web-card a .title {
+  padding: 1rem;
+}
+
+section.works .web-cards-container .web-card a .title h2 {
+  font-size: 2rem;
+  text-align: center;
+}
+
+section.works .web-cards-container .web-card a:hover,
+section.works .web-cards-container .web-card a:focus {
+  margin-top: -.5rem;
+  margin-bottom: .5rem;
+  -webkit-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
+}
+
+section.works .web-cards-container .web-card a:hover .body img,
+section.works .web-cards-container .web-card a:focus .body img {
+  -webkit-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
 }
 
 section.about {
@@ -336,87 +458,8 @@ section.about .about-descriptions .social-media div a:hover svg {
   fill: #FFC8A3;
 }
 
-section.works {
-  background: #000000;
-}
-
-section.works .works-heading .section-title {
-  padding-bottom: 3rem;
-}
-
-section.works .works-heading .section-title h1 {
-  color: #ffffff;
-}
-
-section.works .works-heading .description {
-  color: #ffffff;
-  padding-bottom: 5rem;
-}
-
-section.works .works-heading .description p {
-  font-size: 3rem;
-}
-
-section.works .works-heading .description ul {
-  list-style: square;
-  padding-left: 2rem;
-}
-
-section.works .web-cards-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  gap: 1rem;
-}
-
-section.works .web-cards-container .web-card {
-  width: 100%;
-}
-
-section.works .web-cards-container .web-card a {
-  color: #000000;
-  -webkit-transition: all 300ms ease-in-out;
-  transition: all 300ms ease-in-out;
-}
-
-section.works .web-cards-container .web-card a .head {
-  padding: 2rem 1rem;
-  background-color: #FFC8A3;
-  min-height: 12rem;
-}
-
-section.works .web-cards-container .web-card a .body {
-  -webkit-transition: all 300ms ease-in-out;
-  transition: all 300ms ease-in-out;
-  height: 0;
-  overflow: hidden;
-}
-
-section.works .web-cards-container .web-card a .body img {
-  width: 100%;
-  height: auto;
-}
-
-section.works .web-cards-container .web-card a:hover {
-  margin-top: -1rem;
-  margin-bottom: 1rem;
-  -webkit-transition: all 300ms ease-in-out;
-  transition: all 300ms ease-in-out;
-}
-
-section.works .web-cards-container .web-card a:hover .body img {
-  -webkit-transition: all 300ms ease-in-out;
-  transition: all 300ms ease-in-out;
-}
-
-section.works .button {
-  margin-top: 2rem;
-}
-
 section.contact {
-  background: #ffffff;
+  background: #fff5e3;
 }
 
 section.contact .description ul {
@@ -433,7 +476,7 @@ section.contact form div {
 
 section.contact input,
 section.contact textarea {
-  background: #cecece;
+  background: #dfdfdf;
   border: none;
   padding: 1rem;
   width: 100%;
@@ -445,7 +488,7 @@ section.contact textarea {
 
 footer {
   color: #ffffff;
-  background: #000000;
+  background: #202020;
   padding: 3rem 1rem;
 }
 
@@ -473,6 +516,17 @@ footer .social-media div a svg {
 
 footer .social-media div a:hover svg {
   fill: #FFC8A3;
+}
+
+.visually-hidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
 }
 
 @media only screen and (min-width: 695px) {
@@ -510,12 +564,11 @@ footer .social-media div a:hover svg {
   .header-colored nav ul {
     background-color: transparent;
   }
-  section.banner {
-    background: url(../img/background/banner-m-mountain.png) no-repeat;
-    height: 35rem;
-  }
   section.banner .contents {
     margin-top: 1rem;
+  }
+  section.banner .contents .button::after {
+    height: calc(100vh - (11rem + 16rem));
   }
   section.about .contents {
     display: -webkit-box;
@@ -544,6 +597,10 @@ footer .social-media div a:hover svg {
   section.works {
     padding-bottom: 20rem;
   }
+  section.works .works-heading {
+    margin-top: -10rem;
+    margin-left: 50%;
+  }
   section.works .web-cards-container {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -552,7 +609,7 @@ footer .social-media div a:hover svg {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    max-height: 160rem;
+    max-height: 130rem;
   }
   section.works .web-cards-container .web-card {
     width: 32%;
@@ -600,9 +657,7 @@ footer .social-media div a:hover svg {
     margin: auto;
   }
   section.banner {
-    background: url(../img/background/banner-lg-mountain.png) no-repeat;
     background-size: auto 100%;
-    height: 50rem;
   }
   section.banner .contents {
     padding: 7rem 0;
@@ -615,6 +670,12 @@ footer .social-media div a:hover svg {
   }
   section.banner .contents div {
     margin: 2rem 0;
+  }
+  section.banner .contents .button::after {
+    height: calc(100vh - (18rem + 21rem));
+  }
+  section.works .web-cards-container {
+    max-height: 140rem;
   }
   section.works .web-cards-container .web-card a .head {
     padding: 2rem 4rem;
