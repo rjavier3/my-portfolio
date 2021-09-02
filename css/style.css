@@ -2,6 +2,11 @@ html {
   font-size: 62.5%;
   /*10px*/
   scroll-behavior: smooth;
+  scrollbar-width: none;
+}
+
+html::-webkit-scrollbar {
+  display: none;
 }
 
 body {

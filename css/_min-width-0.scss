@@ -10,6 +10,10 @@ $color-yellow:#fff5e3;
 html{
 	font-size: 62.5%; /*10px*/
     scroll-behavior: smooth;
+    scrollbar-width: none; //for firefox
+    &::-webkit-scrollbar{
+        display: none;
+    }
 }
 body{
 	font-size: 1.6rem;
