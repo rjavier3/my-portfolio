@@ -703,7 +703,6 @@ footer .social-media div a:hover svg {
 
 @media only screen and (min-width: 1600px) {
   section.banner {
-    background: url(../img/background/banner-xlg-mountain.png) no-repeat;
     background-size: 100% auto;
     background-position: 0 100%;
   }
