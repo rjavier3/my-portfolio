@@ -406,10 +406,10 @@ footer{
     .social-media{
         display: flex;
         div{
-            padding-right: 1.5rem;
+            padding-right: 1rem;
             a{
-                width: 3rem;
-                height: 3rem;
+                width: 2.5rem;
+                height: 2.5rem;
                 display:block;
                 svg{
                     fill: $color-white;
@@ -420,6 +420,11 @@ footer{
             a:hover svg{
                 fill: $color-hover;
             }    
+        }
+    }
+    .copyright{
+        p{
+            font-size: 1.4rem;
         }
     }
 }

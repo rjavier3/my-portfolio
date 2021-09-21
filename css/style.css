@@ -504,12 +504,12 @@ footer .social-media {
 }
 
 footer .social-media div {
-  padding-right: 1.5rem;
+  padding-right: 1rem;
 }
 
 footer .social-media div a {
-  width: 3rem;
-  height: 3rem;
+  width: 2.5rem;
+  height: 2.5rem;
   display: block;
 }
 
@@ -521,6 +521,10 @@ footer .social-media div a svg {
 
 footer .social-media div a:hover svg {
   fill: #FFC8A3;
+}
+
+footer .copyright p {
+  font-size: 1.4rem;
 }
 
 .visually-hidden {
