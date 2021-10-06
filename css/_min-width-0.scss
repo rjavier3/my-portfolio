@@ -208,6 +208,10 @@ section.banner{
     background-size:auto 100%;
     height: calc(100vh - 20rem);
     position: relative;
+    background: url("../img/background/plant-shadow.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: bottom;
     .contents{
         margin-top:5rem;
         h1{

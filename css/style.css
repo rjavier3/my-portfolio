@@ -240,6 +240,10 @@ section.banner {
   background-size: auto 100%;
   height: calc(100vh - 20rem);
   position: relative;
+  background: url("../img/background/plant-shadow.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: bottom;
 }
 
 section.banner .contents {
@@ -665,9 +669,6 @@ footer .copyright p {
     width: 86rem;
     margin: auto;
   }
-  section.banner {
-    background-size: auto 100%;
-  }
   section.banner .contents {
     padding: 7rem 0;
   }
@@ -696,20 +697,12 @@ footer .copyright p {
 }
 
 @media only screen and (min-width: 1480px) {
-  section.banner {
-    background-size: 100% auto;
-    background-position: 0 100%;
-  }
   .about-pictures .img-container {
     height: 35rem;
   }
 }
 
 @media only screen and (min-width: 1600px) {
-  section.banner {
-    background-size: 100% auto;
-    background-position: 0 100%;
-  }
   section.banner > div {
     padding: 5rem 0;
   }
