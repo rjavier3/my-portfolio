@@ -1,5 +1,9 @@
 <?php
-include("/data/data.php");
+//include("/data/data.php");
+
+$path = $_SERVER['DOCUMENT_ROOT'];
+$path .= "/russelljohnjavier.com/data/data.php";
+include($path);
 
 if (isset($_POST['login'])) {
 	$username = $_POST['username'];
