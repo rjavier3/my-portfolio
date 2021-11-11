@@ -1,0 +1,90 @@
+<div class="registrant">
+	<div class="owner">
+		<div class="owner-detail">
+			<h2>michelle</h2>
+			<p>9879879878</p>
+		</div>
+		<div class="date">
+			<p>Oct 14, 2021</p>
+			<p>8:36pm Thursday</p>
+		</div>
+	</div>
+	<div class="pet">
+		<p>agatha | cat</p>
+		<div class="pet-img">
+			<img src="img/cat-min.png" alt="pet">
+		</div>
+	</div>
+</div>
+<div class="registrant">
+	<div class="owner">
+		<div class="owner-detail">
+			<h2>Arscent</h2>
+			<p>7801234567</p>
+		</div>
+		<div class="date">
+			<p>Oct 03, 2021</p>
+			<p>12:31am Sunday</p>
+		</div>
+	</div>
+	<div class="pet">
+		<p>Tofu | dog</p>
+		<div class="pet-img">
+			<img src="img/dog-min.png" alt="pet">
+		</div>
+	</div>
+</div>
+<div class="registrant">
+	<div class="owner">
+		<div class="owner-detail">
+			<h2>Yohan</h2>
+			<p>7801234567</p>
+		</div>
+		<div class="date">
+			<p>Oct 03, 2021</p>
+			<p>12:31am Sunday</p>
+		</div>
+	</div>
+	<div class="pet">
+		<p>Faithe | dog</p>
+		<div class="pet-img">
+			<img src="img/dog-min.png" alt="pet">
+		</div>
+	</div>
+</div>
+<div class="registrant">
+	<div class="owner">
+		<div class="owner-detail">
+			<h2>Ron Javier</h2>
+			<p>7801231234</p>
+		</div>
+		<div class="date">
+			<p>Oct 03, 2021</p>
+			<p>12:30am Sunday</p>
+		</div>
+	</div>
+	<div class="pet">
+		<p>Rio | dog</p>
+		<div class="pet-img">
+			<img src="img/dog-min.png" alt="pet">
+		</div>
+	</div>
+</div>
+<div class="registrant">
+	<div class="owner">
+		<div class="owner-detail">
+			<h2>Russell</h2>
+			<p>7807807800</p>
+		</div>
+		<div class="date">
+			<p>Oct 03, 2021</p>
+			<p>12:28am Sunday</p>
+		</div>
+	</div>
+	<div class="pet">
+		<p>Gabe | fish</p>
+		<div class="pet-img">
+			<img src="img/fish-min.png" alt="pet">
+		</div>
+	</div>
+</div>
