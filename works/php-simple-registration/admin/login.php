@@ -1,5 +1,5 @@
 <?php
-include("/data/data.php");
+include("/home/russelljohnjavier.com/data/data.php");
 
 if (isset($_POST['login'])) {
 	$username = $_POST['username'];
