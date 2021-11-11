@@ -1,4 +1,18 @@
-@media only screen and (min-width:1480px){
+@media only screen and (min-width:1440px){
+    section.banner > div,
+    section.works > div,
+    section.contact > div{
+        width: 120rem;
+        margin: auto;
+    }
+    //////works
+    section.works{
+        .web-cards-container{
+            .web-card{
+                width: 24%;
+            }
+        }
+    }
     //////about section
     .about-pictures{
         .img-container{

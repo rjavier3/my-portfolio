@@ -2,7 +2,7 @@
     section.banner > div,
     section.works > div,
     section.contact > div{
-        width: 86rem;
+        width: 96rem;
         margin: auto;
     }
     //////banner
@@ -26,7 +26,6 @@
     //////works
     section.works{
         .web-cards-container{
-            max-height: 140rem;
             .web-card{
                 a{
                     .head{

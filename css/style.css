@@ -323,7 +323,6 @@ section.works .web-cards-container {
       -ms-flex-direction: column;
           flex-direction: column;
   gap: 1.5rem;
-  max-height: 160rem;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   max-width: 100%;
@@ -618,11 +617,6 @@ footer .copyright p {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    max-height: 130rem;
   }
   section.works .web-cards-container .web-card {
     width: 32%;
@@ -666,7 +660,7 @@ footer .copyright p {
   section.banner > div,
   section.works > div,
   section.contact > div {
-    width: 86rem;
+    width: 96rem;
     margin: auto;
   }
   section.banner .contents {
@@ -684,9 +678,6 @@ footer .copyright p {
   section.banner .contents .button::after {
     height: calc(100vh - (18rem + 21rem));
   }
-  section.works .web-cards-container {
-    max-height: 140rem;
-  }
   section.works .web-cards-container .web-card a .head {
     padding: 2rem 4rem;
   }
@@ -696,7 +687,16 @@ footer .copyright p {
   }
 }
 
-@media only screen and (min-width: 1480px) {
+@media only screen and (min-width: 1440px) {
+  section.banner > div,
+  section.works > div,
+  section.contact > div {
+    width: 120rem;
+    margin: auto;
+  }
+  section.works .web-cards-container .web-card {
+    width: 24%;
+  }
   .about-pictures .img-container {
     height: 35rem;
   }

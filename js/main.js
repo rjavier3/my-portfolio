@@ -34,3 +34,24 @@ window.addEventListener('scroll', (event) =>{
         header.classList.remove("header-colored");
     }
 });
+
+// for simple adding web card
+let webCardContainer = document.querySelector(".web-cards-container");
+
+function isOverflown(element) {
+	//console.log("scrollheight = " + element.scrollHeight + ", clientHeight = " + element.clientHeight + ", scrollWidth = " + element.scrollWidth + ", clienWidth = " + element.clientWidth);
+	return element.scrollHeight > element.clientHeight || element.scrollWidth > element.clientWidth;
+}
+
+let whileNumber = 0;
+let maxHeight = 0;
+webCardContainer.style.maxHeight = "2rem";
+while(whileNumber != 1){
+	if (isOverflown(webCardContainer) == true) {
+		webCardContainer.style.maxHeight = maxHeight + "rem";
+		maxHeight += 5;
+	} else{
+		webCardContainer.style.maxHeight = maxHeight + 2 + "rem";
+		whileNumber = 1;
+	}
+}

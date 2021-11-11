@@ -264,11 +264,10 @@ section.works{
             }
         }        
     }
-    .web-cards-container{
+    .web-cards-container{       
         display: flex;
         flex-direction: column;
         gap: 1.5rem;
-        max-height: 160rem;
         flex-wrap: wrap;
         max-width: 100%;
         .web-card{
