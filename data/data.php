@@ -5,5 +5,6 @@ $valid_pass = "password";
 
 $encrypted_pass = password_hash($valid_pass, PASSWORD_DEFAULT);
 
-echo "youre here";
+echo "username: user";
+echo "password hint: starts with \"p\"";
  ?>

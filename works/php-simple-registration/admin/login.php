@@ -1,5 +1,6 @@
 <?php
-include("../../../data/data.php");
+//include("../../../data/data.php");
+include("/u802050120/domains/russelljohnjavier.com/public_html/data/data.php");
 
 if (isset($_POST['login'])) {
 	$username = $_POST['username'];
