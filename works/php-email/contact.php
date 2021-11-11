@@ -134,7 +134,7 @@ if (isset($_POST['submit'])) {
 		$to = "saaafe.spam@gmail.com";
 		$subject = "Web Form Submission";
 
-		$content = "<h2>From the DMIT2025-a02 lab3</h2>";
+		$content = "<h2>From the DMIT2025-a02 lab3. russelljohnjavier.com</h2>";
 		$content .= "<p>Name: $name</p>";
 		$content .= "<p>email: $email</p>";
 		$content .= "<p>event: $event_name</p>";

@@ -33,8 +33,8 @@ switch ($the_page) {
 			</section>
 			<nav>
 				<ul>
-					<li><a href="/dmit2025-a02/lab2/index.php">Public</a></li>
-					<li><a href="/dmit2025-a02/lab2/admin/insert.php">Insert</a></li>
+					<li><a href="index.php">Public</a></li>
+					<li><a href="admin/insert.php">Insert</a></li>
 				</ul>
 			</nav>		
 		</header>
