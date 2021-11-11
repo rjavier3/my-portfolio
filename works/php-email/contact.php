@@ -81,7 +81,7 @@ if (isset($_POST['submit'])) {
 
 
 	$refer = $_SERVER['HTTP_REFERER'];
-	$url = "https://rjavier3.dmitstudent.ca/dmit2025-a02/lab3/contact.php";
+	$url = "https://russelljohnjavier.com/works/php-email/contact.php";
 	if ($refer != $url && $refer != "$url?event=may27" && $refer != "$url?event=may28" && $refer != "$url?event=may29" && $refer != "$url?event=may30") {
 		$is_form_valid = false;
 		$message .= "<p>this info was not sent from our form. it will not be processed.</p>";
@@ -146,7 +146,7 @@ if (isset($_POST['submit'])) {
 		$headers .= "X-MSMail-Priority: Normal\n";
 		$headers .= "X-Mailer: php\n";
 
-		$headers .= "From: DMITstudent <info@dmitstudent.ca>\n";
+		$headers .= "From: RussellJohnJavier <info@russelljohnjavier.com>\n";
 
 		mail($to, $subject, $content, $headers);
 
