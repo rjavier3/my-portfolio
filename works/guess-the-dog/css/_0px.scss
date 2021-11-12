@@ -27,10 +27,15 @@ $color-light-dark:#C2C2C2;
 // font-family: 'Open Sans', sans-serif;
 html {
     font-size: 100%;
+    scrollbar-width: none; //for firefox
+    &::-webkit-scrollbar{
+        display: none;
+    }
 }
 body{
     font-family: 'Open Sans', sans-serif;
     color: $color-dark;
+    background: $color-dark;
 }
 h1,
 h2,
@@ -103,6 +108,10 @@ a{
 //others
 
 ////////////////////////////////////sections and header
+section{
+    border-radius: 0 1rem 0 0;
+    overflow: hidden;
+}
 .hidden-icon {
     display: none;
 }
