@@ -35,23 +35,26 @@ window.addEventListener('scroll', (event) =>{
     }
 });
 
-// for simple adding web card
+// for adding web card for dynamic max-height
 let webCardContainer = document.querySelector(".web-cards-container");
 
-function isOverflown(element) {
-	//console.log("scrollheight = " + element.scrollHeight + ", clientHeight = " + element.clientHeight + ", scrollWidth = " + element.scrollWidth + ", clienWidth = " + element.clientWidth);
-	return element.scrollHeight > element.clientHeight || element.scrollWidth > element.clientWidth;
+function snugFitWebCards(element){
+	let i = 0;
+	let maxHeight = 0;
+	element.style.maxHeight = "2rem";
+	while(i != 1){
+		if (element.scrollHeight > element.clientHeight || element.scrollWidth > element.clientWidth) {
+			element.style.maxHeight = maxHeight + "rem";
+			maxHeight += 5;
+		} else{
+			element.style.maxHeight = maxHeight + 2 + "rem";
+			i = 1;
+		}
+	}
 }
 
-let whileNumber = 0;
-let maxHeight = 0;
-webCardContainer.style.maxHeight = "2rem";
-while(whileNumber != 1){
-	if (isOverflown(webCardContainer) == true) {
-		webCardContainer.style.maxHeight = maxHeight + "rem";
-		maxHeight += 5;
-	} else{
-		webCardContainer.style.maxHeight = maxHeight + 2 + "rem";
-		whileNumber = 1;
-	}
+snugFitWebCards(webCardContainer);
+
+window.onresize = function(){
+	snugFitWebCards(webCardContainer)
 }

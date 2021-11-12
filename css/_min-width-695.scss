@@ -75,7 +75,7 @@
             margin-left: 50%;
         }
         .web-cards-container{
-            display: flex;
+            max-height: 150rem;
             .web-card{
                 width: 32%;
                 a{
@@ -83,7 +83,6 @@
                         padding: 2rem;
                     }
                     .body{
-                        height: auto;
                         padding-bottom: 0;
                     }
                 }
