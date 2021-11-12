@@ -224,7 +224,7 @@ section.works {
       section.works .web-cards-container .web-card a {
         color: #202020;
         transition: all 300ms ease-in-out;
-        border-radius: 1.5rem;
+        border-radius: 1rem;
         overflow: hidden;
         background-color: #ffffff; }
         section.works .web-cards-container .web-card a .tools-used {
@@ -263,6 +263,7 @@ section.about {
     flex-direction: column;
     max-height: 45rem; }
     section.about .about-pictures .img-container {
+      border-radius: 1rem;
       width: 48%;
       overflow: hidden;
       height: 15rem;
@@ -309,7 +310,8 @@ section.contact {
     background: #dfdfdf;
     border: none;
     padding: 1rem;
-    width: 100%; }
+    width: 100%;
+    border-radius: 1rem; }
   section.contact textarea {
     min-height: 20rem; }
 
