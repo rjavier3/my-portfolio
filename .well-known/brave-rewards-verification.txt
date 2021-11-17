@@ -1,0 +1,4 @@
+This is a Brave Rewards publisher verification file.
+
+Domain: russelljohnjavier.com
+Token: 1bdc792ca5fa6abc2ac21dfb0ba6b0318836be2fb83960cf92348d54d402ecb6
