@@ -288,7 +288,7 @@ section.works{
                     }
                 }
                 .body{
-                    transition: all 300ms ease-in-out;
+                    transition: all 200ms ease-in-out;
                     overflow: hidden;
                     height: fit-content;
                     img{
@@ -305,17 +305,17 @@ section.works{
                     }
                 }
             }
-            a:hover,
-            a:focus{
-                margin-top:-.5rem;
-                margin-bottom:.5rem;
-                transition: all 300ms ease-in-out;
-                .body{
-                    img{
-                        transition: all 300ms ease-in-out;
-                    }
-                }
-            }
+            // a:hover,
+            // a:focus{
+            //     margin-top:-.5rem;
+            //     margin-bottom:.5rem;
+            //     transition: all 300ms ease-in-out;
+            //     .body{
+            //         img{
+            //             transition: all 300ms ease-in-out;
+            //         }
+            //     }
+            // }
         }
     }
 }
