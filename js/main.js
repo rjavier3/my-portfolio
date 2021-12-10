@@ -35,26 +35,26 @@ window.addEventListener('scroll', (event) =>{
     }
 });
 
-// for adding web card for dynamic max-height
-let webCardContainer = document.querySelector(".web-cards-container");
+// // for adding web card for dynamic max-height
+// let webCardContainer = document.querySelector(".web-cards-container");
 
-function snugFitWebCards(element){
-	let i = 0;
-	let maxHeight = 0;
-	element.style.maxHeight = "2rem";
-	while(i != 1){
-		if (element.scrollHeight > element.clientHeight || element.scrollWidth > element.clientWidth) {
-			element.style.maxHeight = maxHeight + "rem";
-			maxHeight += 5;
-		} else{
-			element.style.maxHeight = maxHeight + 2 + "rem";
-			i = 1;
-		}
-	}
-}
+// function snugFitWebCards(element){
+// 	let i = 0;
+// 	let maxHeight = 0;
+// 	element.style.maxHeight = "2rem";
+// 	while(i != 1){
+// 		if (element.scrollHeight > element.clientHeight || element.scrollWidth > element.clientWidth) {
+// 			element.style.maxHeight = maxHeight + "rem";
+// 			maxHeight += 5;
+// 		} else{
+// 			element.style.maxHeight = maxHeight + 2 + "rem";
+// 			i = 1;
+// 		}
+// 	}
+// }
 
-snugFitWebCards(webCardContainer);
+// snugFitWebCards(webCardContainer);
 
-window.onresize = function(){
-	snugFitWebCards(webCardContainer)
-}
+// window.onresize = function(){
+// 	snugFitWebCards(webCardContainer)
+// }
