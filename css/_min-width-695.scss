@@ -75,9 +75,8 @@
             margin-left: 50%;
         }
         .web-cards-container{
-            max-height: 150rem;
+            column-count: 3;
             .web-card{
-                width: 32%;
                 a{
                     .head{
                         padding: 2rem;
