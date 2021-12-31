@@ -1,0 +1,36 @@
+html{
+	font-size: 62.5%;
+}
+body{
+	font-size: 1.6rem;
+	font-family: $font-primary;
+	color: $color-text;
+	width: 100%;
+	margin: 0;
+}
+h1,h2,h3,h4{
+	font-family: $font-heading;
+	color: $color-primary;
+}
+.message{
+	//position: absolute;
+    //top: 2rem;
+    color: #ffffff;
+    right: 5rem;
+	background: $color-warning;
+	padding: 1rem;
+	p{
+		margin: 0;
+	}
+}
+a{
+	text-decoration: none;
+	color: $color-text;
+}
+
+.f-basis-100{
+	flex-basis: 100%;
+}
+.center{
+	margin: 0 auto;
+}
