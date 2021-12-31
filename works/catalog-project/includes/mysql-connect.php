@@ -15,7 +15,7 @@ if ($conn->connect_error) {
 } 
 
 if (!defined("BASE_URL")) {
-    define("BASE_URL", "https://rjavier3.dmitstudent.ca/dmit2025-a02/catalog-project/");
+    define("BASE_URL", "https://russelljohnjavier.com/works/catalog-project/");
 }
 
 if (!defined("THIS_PAGE")) {
