@@ -19,14 +19,12 @@ include("includes/header.php");
     <div class="display-section">
         <?php 
         $current_year = date("Y");
-        $sql = "SELECT * FROM phones WHERE deleted_yn = 'N' AND phone_year = '$current_year'";
+        $sql = "SELECT * FROM phones WHERE deleted_yn = 'N' AND phone_year = '2021'";
         $sql_result = $conn->query($sql);
          ?>
          <?php if ($sql_result->num_rows > 0): ?>
-            <h1><?php echo "Featured $current_year's Phones" ?></h1>
+            <h1><?php echo "Featured 2021 Phones" ?></h1>
             <?php include("includes/display-phones.php") ?>
-        <?php else: ?>
-            <h1>no result</h1>
          <?php endif ?>        
     </div>
 </section>
