@@ -25,6 +25,8 @@ include("includes/header.php");
          <?php if ($sql_result->num_rows > 0): ?>
             <h1><?php echo "Featured $current_year's Phones" ?></h1>
             <?php include("includes/display-phones.php") ?>
+        <?php else: ?>
+            <h1>no result</h1>
          <?php endif ?>        
     </div>
 </section>
