@@ -39,7 +39,7 @@
     }
     //////about section
     section.about{
-        .contents{
+        & > div{
             max-width: 86rem;
             margin: 0 auto;
         }
