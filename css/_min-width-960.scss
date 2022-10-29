@@ -1,6 +1,5 @@
 @media only screen and (min-width:960px){
     section.banner > div,
-    section.works > div,
     section.contact > div{
         max-width: 96rem;
         margin: auto;
@@ -19,7 +18,7 @@
                     margin: 2rem 0;
                 }
                 .button::after{
-                    height: calc(100vh - (18rem + 21rem));
+                    height: calc(90vh - (18rem + 21rem));
                 }
         }
     }
@@ -28,7 +27,7 @@
         .web-cards-container{
             column-gap: 1.5rem;
             .web-card{
-                margin-top:1.5rem;
+                margin-bottom:1.5rem;
                 a{
                     .head{
                         padding: 2rem 4rem;
@@ -40,8 +39,6 @@
     //////about section
     section.about{
         & > div{
-            max-width: 86rem;
-            margin: 0 auto;
         }
     }
 }
