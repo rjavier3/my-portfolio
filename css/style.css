@@ -440,11 +440,11 @@ footer .copyright p {
     min-width: 0;
   }
   header nav ul li a {
-    padding: 2rem;
+    padding: 1.5rem 2rem;
     transition: padding 300ms ease-in-out;
   }
   header nav ul li a:hover {
-    padding: 1.7rem 2rem 2.3rem 2rem;
+    padding: 1.2rem 2rem 1.8rem 2rem;
   }
   header .menu-icons-container {
     display: none;
