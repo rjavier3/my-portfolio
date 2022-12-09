@@ -1,5 +1,4 @@
 <?php
-
 if (!isset($_GET['event'])  && !isset($_POST['event'])) {
 	header("Location:index.php");
 }
